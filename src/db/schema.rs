@@ -71,6 +71,7 @@ pub async fn init_db(db: &SqlitePool) -> Result<(), sqlx::Error> {
             created_at INTEGER NOT NULL,
             updated_at INTEGER NOT NULL,
             content TEXT NOT NULL,
+            chapter_number INTEGER,
             FOREIGN KEY(novel_id) REFERENCES novels(id) ON DELETE CASCADE
         );"#,
     )

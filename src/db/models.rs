@@ -45,4 +45,5 @@ pub struct Chapter {
     created_at: i64,
     updated_at: i64,
     content: String,
+    chapter_number: Option<i64>,
 }

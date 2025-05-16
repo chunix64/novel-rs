@@ -3,6 +3,7 @@ use clap::Parser;
 mod config;
 mod db;
 mod utils;
+mod site;
 use config::cli::Cli;
 use config::sites::get_sites;
 use db::DB;
