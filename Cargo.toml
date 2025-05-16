@@ -7,4 +7,5 @@ edition = "2024"
 clap = { version = "4.5.38", features = ["derive"] }
 reqwest = "0.12.15"
 scraper = "0.23.1"
+sqlx = { version = "0.8.5", features = ["sqlite", "runtime-tokio"] }
 tokio = { version = "1.45.0", features = ["full"] }
