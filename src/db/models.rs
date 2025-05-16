@@ -32,7 +32,7 @@ pub struct Novel {
 }
 
 #[derive(FromRow, Debug)]
-pub struct NovelTags {
+pub struct NovelTag {
     novel_id: i64,
     tag_id: i64,
 }

@@ -1,2 +1,2 @@
-pub mod string;
 pub mod env;
+pub mod string;
