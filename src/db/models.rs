@@ -24,6 +24,7 @@ pub struct Tag {
 pub struct Novel {
     id: i64,
     title: String,
+    thumbnail: Option<String>,
     description: Option<String>,
     author_id: Option<i64>,
     artist_id: Option<i64>,
