@@ -1,0 +1,3992 @@
+[
+    NovelRaw {
+        id: 15056,
+        title: "\"Cậu chẳng thể hôn được đâu ha?\" Khi tôi khiến cho cô bạn thuở nhỏ luôn trêu chọc mình hiểu chuyện, cô ấy đột nhiên trở nên dễ thương hơn nhiều",
+        slug: "/truyen/15056-kisu-nante-dekinai-deshoto-chouhatsu-suru-namaikina-osananajimi-wo-wakarasete-yattara-yosou-ijou-ni-dereta",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s15056-da17f7fd-9793-42a5-9f5b-64c8a7927853.jpg",
+        ),
+        description: Some(
+            "\"Sao chúng ta không... thử hôn nhỉ?\"\nNam sinh cao trung năm hai, Kazami Ibuki, có một cô bạn thuở nhỏ tinh nghịch,\nCô gái được đồn đại là xinh đẹp nhất trường, với mái tóc vàng óng và đôi mắt xanh lam...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 12808,
+        title: "\"Don’t take it wrong!\" That's what my childhood friend who gave me love chocolate said, but what does that mean don't take it wrong!?",
+        slug: "/truyen/12808-dont-take-it-wrong-thats-what-my-childhood-friend-who-gave-me-love-chocolate-said-but-what-does-that-mean-dont-take-it-wrong",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12808-1ce54b49-e221-4b9a-a93a-e65a8c68c066-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện về kẻ muốn nhận được sô-cô-la tình yêu vào ngày valentine, Hoshimi Akira và người đáp lại mong muốn của cậu, Kumosaki Karin hay cũng chính là bạn thủa nhỏ của cậu.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21690,
+        title: "\"Hãy là của em, anh hùng!\" - \"Ta từ chối!\"",
+        slug: "/truyen/21690-la-cua-em-anh-hung-ta-tu-choi",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s21690-8c7fce3a-9149-44a0-a67b-02a4ae301c83.jpg",
+        ),
+        description: Some(
+            "Trong một thế giới đang xảy ra chiến tranh giữa Nhân tộc và Quỷ tộc, người anh hùng vĩ đại nhất của Loài người đã xâm chiếm lâu đài của Quỷ Vương với hy vọng đánh bại ả.\nThay vì chống trả, Quỷ Vương đ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 11923,
+        title: "\"Hãy làm t*nh đi\" Lời cầu hôn đến bạn cùng lớp của tôi trước khi cô ấy nhảy lầu",
+        slug: "/truyen/11923-hay-lam-tnh-di-loi-cau-hon-den-ban-cung-lop-cua-toi-truoc-khi-co-ay-nhay-lau",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11923-5bfc4306-9d2b-48fb-af42-75c0b89ad417-m.jpg",
+        ),
+        description: Some(
+            "Một ngày nọ, tôi phát hiện bạn cùng lớp xinh đẹp của tôi đang chuẩn bị tự tử. Cô ấy là người tôi yêu nhất và tôi sẽ không bao giờ để cô thực hiện điều đó.\nVậy nên tôi đã nói:\n\"Hãy làm t*nh với mình đi...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20787,
+        title: "\"Im đi, ác Long! tôi không muốn có thêm con với cô nữa!\"",
+        slug: "/truyen/20787-im-di-con-rong-doc-ac-toi-khong-muon-co-them-con-voi-co-nua",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s20787-efebfcd7-7d97-4c8b-b1ec-2f09953c5871.jpg",
+        ),
+        description: Some(
+            "Sau khi bị đánh bại, người anh hùng diệt Rồng trở thành tù nhân của Nữ hoàng Bạc Long.\nTrước cái chết đang cận kề, Leon bằng cách nào đó say chuyển tình thế và khiến cho Nữ hoàng mang thai trước khi h...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 3845,
+        title: "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Gachizei ni Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        slug: "/truyen/3845-omae-gotoki-ga-maou-ni-kateru-to-omou-na-to-gachizei-ni-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-rxtawNUWpsA/XDUSHk0ueiI/AAAAAAACBMw/tohHKh_cNHgMesmb-L_jZyayKevofbteQCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Đây là một câu chuyện kể về cô gái - người từng mang danh Anh Hùng - đi lên từ dưới đáy xã hội để quay trở về cuộc sống bình thường.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 5091,
+        title: "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Gachizei ni Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        slug: "/truyen/5091-omae-gotoki-ga-maou-ni-kateru-to-omou-na-to-gachizei-ni-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5091-e5bfbc2e-ec9c-4b59-8529-dff3205e9682-m.jpg",
+        ),
+        description: Some(
+            "Flamm Apricot chưa từng bao giờ muốn rời khỏi làng của mình. Cô hài lòng dành cả quãng đời để sống yên bình tại nơi đây. Không may, sau khi bị chỉ định bởi lời tiên tri của Thần Sáng tạo [Origin] rằng...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 8184,
+        title: "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Gachizei ni Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        slug: "/truyen/8184-omae-gotoki-ga-maou-ni-kateru-to-omou-na-to-gachizei-ni-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8184-1100e2bb-14eb-43a6-9665-00e0735e4e6b-m.jpg",
+        ),
+        description: Some(
+            "Flamm Apricot, một trong 7 anh hùng được thần linh lựa chọn để tiêu diệt quỷ tộc cứu rỗi loài người.\nTrái ngược với đồng đội mình với chỉ số cao ngất trời, chỉ số của Flamm là con số 0 dù cô có làm gì...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20370,
+        title: "\"Tôi, Người Bị Phản Bội, Muốn Chìm Đắm Trong Tình Yêu Của Cô Bạn Thuở Nhỏ Yandere ~ Đối Với Những Ai Đã Sa Ngã Vì Sự Phụ Thuộc, Thì Giờ Đã Quá Muộn Rồi ~\"",
+        slug: "/truyen/20370-toi-nguoi-bi-phan-boi-muon-chim-dam-trong-tinh-yeu-cua-co-ban-thoi-tho-au-yandere-doi-voi-nhung-ai-da-sa-nga-vi-su-phu-thuoc-thi-gio-da-qua-muon-roi",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "mở đầu với Masatoshi Nagai, một học sinh trung học, bị bạn gái hiện tại của mình, Saki Kisaki, chia tay. Cuộc chia tay diễn ra sau ba tháng hẹn hò, và Masatoshi phát hiện rằng Saki đã lừa dối mình kh...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 11925,
+        title: "“Let’s Have Sex” My Proposal to My Classmate Just Before She Jumps Off",
+        slug: "/truyen/11925-lets-have-sex-my-proposal-to-my-classmate-just-before-she-jumps-off",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11925-aff87d9a-c529-4a5e-859f-352f8f07a0c5-m.jpg",
+        ),
+        description: Some(
+            "Tiêu đề thì như vậy, nhưng đây lại là một câu chuyện tình yêu đầy trong sáng!? Đối phương là mối tình đầu trầm lặng và dễ thương.Mối tình đầu đời của tôi, Koga Kurumi.\nSở hữu vẻ đẹp và tính cách dường...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 468,
+        title: "(Um, Sorry) I’ve Been Reincarnated!",
+        slug: "/truyen/468-um-sorry-ive-been-reincarnated",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-ciuJHNqZ2iQ/WO2wOLtgubI/AAAAAAAAKIQ/rG2aYbCj2sg/w215/series_468.jpg",
+        ),
+        description: Some(
+            "Vẫn là\u{a0}câu chuyện tái sinh ở thế giới khác. Lần này nguyên nhân là cứu bạn và chấn thương sọ não vì cái bình hoa của thượng đế. Được chọn giữa biến mất và tái sinh, câu trả lời là tái sinh và yêu cầu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 4849,
+        title: "(Um, Sorry) I’ve Been Reincarnated!",
+        slug: "/truyen/4849-um-sorry-ive-been-reincarnated",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4849-0663eedd-a005-4d45-83bb-c1ee6e8558e8-m.jpg",
+        ),
+        description: Some(
+            "Sau khi bị một vị thần vô tình cướp đi mạng sống của mình. Shou được tái sinh với món quà từ thần để bù dắp cho cậu. Shou yêu cầu giữ lại tất cả ký ức từ kiếp trước. Cậu tái sinh thành Will, con trai...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 19797,
+        title: "[Oneshot] Bạn gái tôi, người mà tôi đã hẹn hò được một năm, bảo rằng:\"đây chỉ là trò đùa thôi, chúng ta thậm chí còn chưa từng hẹn hò\"",
+        slug: "/truyen/19797-oneshot-ban-gai-toi-nguoi-ma-toi-da-hen-ho-duoc-mot-nam-noi-voi-toiday-la-tro-dua-thoi-chung-ta-tham-chi-con-chua-tung-hen-ho",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "\"Nó chỉ là trò đùa thôi. Hẹn hò với cậu chỉ là một phẩn của trò chơi trừng phạt thôi.\"\nSau một năm yêu nhau, bạn gái tôi bảo rằng, tất cả chỉ là một trò chơi thôi. Cô ấy nói rằng chúng tôi thậm chí cò...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 19828,
+        title: "[Oneshot] Bản giao hưởng bánh ngọt.",
+        slug: "/truyen/19828-oneshot-ban-giao-huong-banh-ngot",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Yamagishi Yumi sống một cuộc sống cô đơn, chịu đựng sự can thiệp và kiểm soát quá mức của mẹ cô, Keiko. Keiko, chủ một cửa hàng bánh ngọt, đã áp đặt lý tưởng của mình lên Yumi từ khi cô còn nhỏ, dồn c...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20311,
+        title: "[Oneshot] Câu chuyện về cách mà tôi, một ông chồng nội trợ toàn thời gian, đã tự kết thúc cuộc sống của mình, và vợ tôi chỉ còn biết than khóc",
+        slug: "/truyen/20311-oneshot-cau-chuyen-ve-cach-ma-toi-mot-ong-chong-noi-tro-toan-thoi-gian-da-tu-ket-thuc-cuoc-song-cua-minh-va-vo-toi-chi-con-biet-than-khoc",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Là một người chồng nội trợ toàn thời gian, tôi dành cả ngày để làm việc nhà cho vợ tôi, Nika. Tuy nhiên, tôi cứ liên tục gây ra rắc rối cho cô ấy. Cứ mỗi lần, tôi lại nghe Nika đay nghiến.\n“Anh thật k...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20955,
+        title: "[Oneshot] Câu chuyện về một cô gái hối hận vì đã bỏ rơi người bạn thời thơ ấu của mình",
+        slug: "/truyen/20955-oneshot-cau-chuyen-ve-mot-co-gai-hoi-han-vi-da-bo-roi-nguoi-ban-thoi-tho-au-cua-minh",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Câu chuyện về một cô gái hối hận vì đã bỏ rơi người bạn thời thơ ấu của mình\n.\nVà câu chuyện về một chàng trai không bao giờ từ bỏ dù cho người bạn thời thơ ấu đã bỏ rơi cậu.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21240,
+        title: "[Oneshot] Câu chuyện về việc tôi đã trở nên hạnh phúc như thế nào sau khi cô chị gái tham lam cướp đi tất cả mọi thứ",
+        slug: "/truyen/21240-oneshot-cau-chuyen-ve-viec-toi-da-tro-nen-hanh-phuc-nhu-the-nao-sau-khi-co-chi-gai-tham-lam-cuop-di-tat-ca-moi-thu",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Chị gái tôi, người lớn hơn tôi hai tuổi, muốn có mọi thứ. Chị ấy không chỉ tham lam về vật chất, mà còn không thể chịu đựng được khi tôi có bất cứ thứ gì trước chị. Nếu đó chỉ là quần áo hoặc một chiế...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20635,
+        title: "[Oneshot] Cô bạn gái đáng yêu đầu tiên của tôi mất trí nhớ trong một vụ tai nạn. Và rồi, tôi bị chia tay . . .?",
+        slug: "/truyen/20635-co-ban-gai-dang-yeu-dau-tien-cua-toi-mat-tri-nho-trong-mot-vu-tai-nan-va-roi-toi-bi-chia-tay",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi đã yêu ngay từ cái nhìn đầu tiên.\nCô ấy dễ thương và xinh đẹp như một nàng công chúa.\u{a0}\nTheo lẽ thường, chỉ trong mơ mới có thể hẹn hò được với một cô gái như thế. Nhưng, sau một chuỗi những điều k...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21137,
+        title: "[Oneshot] Cô bạn thuở nhỏ Tsundere của tôi đã dùng thôi miên để khiến tôi yêu cô ấy trong khi tôi đang ngủ",
+        slug: "/truyen/21137-oneshot-co-ban-thuo-nho-tsundere-cua-toi-da-dung-thoi-mien-de-khien-toi-yeu-co-ay-trong-khi-toi-dang-ngu",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Mặc dù là một chàng trai cơ bắp điển hình, nhưng thực ra tôi lại rất thích đồ ngọt. Tuy nhiên, vì cô bạn thời thơ ấu của tôi lại thích những “anh chàng mạnh mẽ”, nên tôi vẫn tiếp tục luyện tập Karate...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21622,
+        title: "[Oneshot] Cô gái đã từ chối tôi mười năm về trước",
+        slug: "/truyen/21622-oneshot-ve-co-gai-da-tu-choi-toi-muoi-nam-truoc",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi nghĩ cô ấy hẳn đang sống rất hạnh phúc.\nThời tiểu học, chúng tôi đã chôn một chiếc hộp thời gian. Tôi đã để bên trong đó một lá thư gửi cho cô bạn thuở nhỏ thâ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21459,
+        title: "[Oneshot] Đã một tháng sau lời tỏ tình, nhưng tôi vẫn chưa nói cho cậu ấy rằng đó chỉ là trò đùa thôi. Thay vào đó, tôi lại thật sự phải lòng cậu ấy mất rồi",
+        slug: "/truyen/21459-oneshot-da-mot-thang-sau-loi-to-tinh-nhung-toi-van-chua-noi-cho-cau-ay-rang-do-chi-la-tro-dua-thoi-thay-vao-do-toi-lai-that-su-phai-long-cau-ay-mat-roi",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "【Tác phẩm xếp hạng nhất thể loại “Đời thực (Lãng mạn)” trong bảng xếp hạng theo ngày trên \"Shousetsuka ni Narou\"】\n.\nĐây là phần ngoại truyện của Oneshot:https://docln.net/truyen/20550-oneshot-sau-na...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21227,
+        title: "[Oneshot] Mái ấm",
+        slug: "/truyen/21227-oneshot-mai-am",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Cách đây vài tháng, tôi nhận ra rằng mình đang bị theo dõi.\nÁnh mắt bí ẩn luôn nhìn chằm chằm vào tôi khiến tôi sợ hãi.\n...Tôi đã cố liên lạc với anh, nhưng anh lại trốn tránh và bỏ mặc tôi ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20302,
+        title: "[Oneshot] Sau khi chuyển trường, tôi hội ngộ với người bạn thời thơ ấu duyên dáng và đáng yêu của mình, nhưng khái niệm \"người bạn thời thơ ấu\" của cô ấy rõ ràng là kỳ lạ và áp đặt",
+        slug: "/truyen/20302-sau-khi-chuyen-truong-toi-hoi-ngo-voi-nguoi-ban-thoi-tho-au-duyen-dang-va-dang-yeu-cua-minh-nhung-khai-niem-nguoi-ban-thoi-tho-au-cua-co-ay-ro-rang-la-ky-la-va-ap-dat",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi, Otani Keiichi, đã đoàn tụ với người bạn thời thơ ấu của mình, Tachibana Chika, sau khi chuyển trường.\nChika, người luôn ở bên cạnh tôi khi chúng tôi còn nhỏ, đã trở thành một cô gái đáng yêu đến...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21075,
+        title: "[Oneshot] Sau khi khoe khoang với cả lớp về bạn cùng phòng (một nàng Corgi) dễ thương, dáng đẹp, mông to, thường xuyên lẻn vào giường tôi để vui vẻ mỗi tối, cô bạn thời thơ ấu của tôi bỗng nhiên lại có biểu hiện thật kỳ lạ",
+        slug: "/truyen/21075-oneshot-sau-khi-khoe-khoang-voi-ca-lop-ve-ban-cung-phong-mot-nang-corgi-de-thuong-dang-dep-mong-to-thuong-xuyen-len-vao-giuong-toi-de-vui-ve-moi-toi-co-ban-thoi-tho-au-cua-toi-bong-nhien-lai-co-bieu-hien-that-ky-la",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Dễ thương. Phong cách. Đào bự. Và lẻn vào giường của tôi để vui vẻ mỗi đêm. Đó là Kurumi, bạn cùng phòng của tôi.\nKhi tôi kể chuyện này với bạn bè, người bạn thời thơ ấu của tôi Sayuki đã tình cờ nghe...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20550,
+        title: "[Oneshot] Sáu năm sau lời tỏ tình, tôi vẫn chưa nói với anh ấy rằng đó chỉ là trò đùa, và giờ thì chúng tôi đã nộp đơn đăng ký kết hôn",
+        slug: "/truyen/20550-oneshot-sau-nam-sau-loi-to-tinh-toi-van-chua-noi-voi-anh-ay-rang-do-chi-la-tro-dua-va-gio-thi-chung-toi-da-nop-don-dang-ky-ket-hon",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Đây là câu chuyện về một cô gái, mặc dù ban đầu có ý định trả đũa một người nhưng cuối cùng lại nhận ra mình thực sự yêu anh ta.\nGiờ thì cô ấy yêu bạn trai mình đến phát điên!",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 21122,
+        title: "[Oneshot] Tôi chỉ hối tiếc sau khi đã nhận ra",
+        slug: "/truyen/21122-oneshot-toi-chi-hoi-tiec-sau-khi-da-nhan-ra",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Người bạn thời thơ ấu của tôi đã tham gia câu lạc bộ nhạc nhẹ. Cô ấy dành nhiều ngày để tận hưởng quãng thời gian đó và làm những gì mình yêu thích. Hầu như ngày nào cô ấy cũng hào hứng kể lại cho tôi...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20544,
+        title: "[Oneshot] Tôi đề nghị trả hết nợ cho cô bạn xinh đẹp cùng lớp để đổi lấy cơ thể của cô ấy, nhưng tôi chả làm gì cô ta cả",
+        slug: "/truyen/20544-oneshot-toi-de-nghi-tra-het-no-cho-co-ban-xinh-dep-cung-lop-de-doi-lay-co-the-cua-co-ay-nhung-toi-cha-lam-gi-co-ta-ca",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Mochizuki Haruka, cô gái đẹp nhất lớp, phải nghỉ học do khoản nợ của gia đình. Tôi liền đề nghị sẽ trả hết số nợ đó với điều kiện cô ấy phải dùng chính cơ thể của mình ra để trả nợ.\n…\nNhưng sao cô ta...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 19392,
+        title: "[Tin buồn]: Người bạn thuở nhỏ mà tôi nghĩ là tsundere suốt 10 năm lại thực sự ghét tôi.",
+        slug: "/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Akira Enomoto, một nam sinh sơ trung học bình thường đã mắc phải một sai lầm lớn trong đời.\nCậu đã ảo tưởng khi nghĩ người bạn thơ ấu của mình, Ninomiya Suzuka, là một tsundere.\nTrong suốt 10 năm, cậu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 20498,
+        title: "[Truyện ngắn] Đầu năm mới, cô nàng gal ngồi kế tôi nói “Đi chơi với tôi đi”, nên tôi nghĩ đó là một trò chơi trừng phạt, cơ mà hóa ra chỉ là một tsundere tỏ tình.",
+        slug: "/truyen/20498-truyen-ngan-dau-nam-moi-co-nang-gal-ngoi-ke-toi-noi-di-choi-voi-toi-di-nen-toi-nghi-do-la-mot-tro-choi-trung-phat-co-ma-hoa-ra-chi-la-mot-tsundere-to-tinh",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "“Ai lại dùng mấy câu kiểu ‘đi chơi với tôi đi’ để nghiêm túc tỏ tình vậy?”\n“Ư, tôi thích cậu. Làm ơn hẹn hò với tôi”.\nMới đầu năm, cô nàng gal ngồi kế tôi nói, “Này, cậu. Đi chơi với tôi đi”.\nTôi tưởn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 14935,
+        title: "※Dành Tình Yêu Cho Em Gái Cũng Là Một Công Việc Quan Trọng",
+        slug: "/truyen/14935-danh-tinh-yeu-cho-em-gai-cung-la-mot-cong-viec-quan-trong",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s14935-73c71dd4-8d49-4a2a-b84f-7362b569f312.jpg",
+        ),
+        description: Some(
+            "Cô em gái này, sao lại dễ thương quá trời vậy nè ! ? Cùng cười, cùng khóc và cùng run rẩy vì tác phẩm Imouto RomCom đầy sáng tạo và nhiệt huyết này đi!\nMitsuki Hiro có một cô em gái rượu mà anh sẵn sà...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 19282,
+        title: "1 Second Invincibility in the Game",
+        slug: "/truyen/19282-1-second-invincibility-in-the-game",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s19282-f729cf3e-bdef-4c43-8e6e-d87dd339f727.jpg",
+        ),
+        description: Some(
+            "Tôi chợt thấy mình trong thân xác của một thiếu gia mà ai ai cũng đều muốn giết. Nhưng tôi thì bất khả chiến bại, nên cứ để họ thử giết tôi. Chỉ có điều, sự bất khả chiến bại đó chỉ kéo dài trong một...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 5184,
+        title: "10 năm sau khi nói câu “Cứ đi đi, ở đây để tôi lo”, tôi đã trở thành một huyền thoại",
+        slug: "/truyen/5184-koko-wa-ore-ni-makasete-saki-ni-ike-to-itte-kara-10-nen-ga-tattara-densetsu-ni-natteita",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5184-5c9063be-fe93-45af-b80a-a8c416d91788-m.jpg",
+        ),
+        description: Some(
+            "Tổ Đội Anh Hùng bị tấn công bởi Quân Đoàn quỷ vương với số lượng vô số kể, không nghi ngờ gì nữa nếu đối đầu trực tiếp tổ đội sẽ hoàn toàn bị tiêu diệt.\nMột thành viên trong tổ đội, Pháp Sư mạnh nhất,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 7596,
+        title: "10 năm sau khi nói câu “Cứ đi đi, ở đây để tôi lo”, tôi đã trở thành một huyền thoại",
+        slug: "/truyen/7596-10-nam-sau-khi-noi-cau-cu-di-di-o-day-de-toi-lo-toi-da-tro-thanh-mot-huyen-thoai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7596-cd32fad4-92a2-42cd-b46a-ea7541ba9d6b-m.jpg",
+        ),
+        description: Some(
+            "Khi tổ Đội Anh Hùng bị tấn công bởi Quân Đoàn quỷ vương với số lượng vô số kể, không nghi ngờ gì nữa nếu đối đầu trực tiếp tổ đội sẽ hoàn toàn bị tiêu diệt.\nMột thành viên trong tổ đội, Pháp Sư mạnh n...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 759,
+        title: "10 nen goshi no HikiNiito o Yamete Gaishutsushitara Jitaku goto Isekai ni Ten’ishiteta",
+        slug: "/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s759-4109954a-6358-4bcf-9abb-4c6d5a2cfa1d-m.jpg",
+        ),
+        description: Some(
+            "Houjou Yuuji, 30 tuổi, thất nghiệp, là một hikikomori trong suốt 10 năm, quyết định đi ra khỏi nhà. Tuy nhiên, bên ngoài đó lại là một thế giới khác cùng với những sinh vật kì lạ mà cậu chưa từng biết...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 890,
+        title: "10 sai no Saikyou Madoushi",
+        slug: "/truyen/890-10-sai-no-saikyou-madoushi",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-aYUSfXJCoBs/WS2rXDUeIrI/AAAAAAAAU7E/P4rB6kpL3Jo2QnsGaoH2XuqpoM95nWfGwCHM/w215/default.jpg",
+        ),
+        description: Some(
+            "Pháp sư mạnh nhất không biết mình là “người mạnh nhất” đã xuất hiện!\n\n\u{a0}\n\nCô bé Ferris 10 tuổi là nô lệ làm việc ở khu mỏ khai thác ma thạch.\n\nTuy nhiên, khi bé được\u{a0}phát hiện đang mang trong mình tài...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 1739,
+        title: "10 Sai no Saikyou Madoushi",
+        slug: "/truyen/1739-juu-sai-no-saikyou-madoushi",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-UEgqsbpRBtc/Wf3YGNzbaRI/AAAAAAAAxyc/YSUcM2slIrEh9D8l4zP3NbiQip5zUHlEQCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Pháp sư mạnh nhất không biết mình là “người mạnh nhất” đã xuất hiện!\n\nCô bé Ferris 10 tuổi là nô lệ làm việc ở khu mỏ khai thác ma thạch.\n\nTuy nhiên, khi bé được\u{a0}phát hiện đang mang trong mình tài năn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 15462,
+        title: "10-nen Buri ni Saikai Shita Kusogaki wa Seijun Bishoujo JK ni Seichoushite Ita",
+        slug: "/truyen/15462-10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichoushita-ita",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s15462-94f2ccf2-9449-4ed4-a27e-10c5f70d19cf.jpg",
+        ),
+        description: Some(
+            "\"Đã lâu không gặp rồi nhỉ... sao anh lại không nhận ra em chứ!?\"\nAritsuki Yuu, 28 tuổi, sau khi nghỉ việc tại một công ty đen ở Tokyo và trở về quê nhà để khởi đầu một cuộc sống mới, đã bắt gặp một cô...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 15703,
+        title: "100 Cô Bạn Gái, Người Mà Thực Sự Thực Sự Thực Sự Thực Sự Thực Sự Yêu Bạn: Chuyện Tình Yêu Đặc Biệt ~ Chuyện Tình Bí Mật",
+        slug: "/truyen/15703-100-co-ban-gai-nguoi-ma-thuc-su-thuc-su-thuc-su-thuc-su-thuc-su-yeu-ban-chuyen-tinh-yeu-dac-biet-chuyen-tinh-bi-mat",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15703-b3c0491e-d9f4-45e9-a11d-829cb69c870a-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện kể về cuộc đời của nam sinh có tên Aijou Rentarou, người đã bị từ chối 100 lần liên tiếp bởi 100 cô gái khác nhau trước khi tốt nghiệp sơ trung.\nTrong một lần viếng thăm ngôi đền tình duyên...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 18031,
+        title: "100 điều em không biết về senpai",
+        slug: "/truyen/18031-100-dieu-em-khong-biet-ve-senpai",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18031-bc498d99-90f1-4384-8268-59309e7f23eb.jpg",
+        ),
+        description: Some(
+            "Senpai và kouhai, hai người vốn chỉ biết nhau là \"cùng chung ga tàu\" (*), bỗng một ngày nọ, đã cùng nhau lập một lời hứa.\u{a0}Nội dung của nó là: \"Mỗi ngày một câu hỏi, bất kể là gì, nhất định phải trả lờ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 5797,
+        title: "100 điều em không biết về senpai",
+        slug: "/truyen/5797-100-dieu-em-khong-biet-ve-senpai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5797-29ef7abb-8149-4bd2-b631-ae25e97f03a3-m.jpg",
+        ),
+        description: Some(
+            "\"Senpai, anh làm rơi gì này.\"\nCâu nói đột ngột ấy đánh dấu cho sự bắt đầu của mối quan hệ giữa senpai thơ thẩn và kouhai-chan dễ-thương-tăng-động. Mặc dù không có mối liên kết nào ngoài việc đi chung...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 13795,
+        title: "100 điều em không biết về senpai",
+        slug: "/truyen/13795-100-dieu-em-khong-biet-ve-senpai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s13795-7c6a9c4a-a618-476c-bd1c-b5074b832c64-m.jpg",
+        ),
+        description: Some(
+            "\"Senpai, anh làm rơi gì này.\"\nCâu nói đột ngột ấy đánh dấu cho sự bắt đầu của mối quan hệ giữa senpai thơ thẩn và kouhai-chan dễ-thương-tăng-động. Mặc dù không có mối liên kết nào ngoài việc đi chung...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 11727,
+        title: "100 Ngày Hạnh Phúc Của Tiểu Thư Phản Diện",
+        slug: "/truyen/11727-the-villainess-who-only-had-100-days-to-live-had-fun-every-day",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s11727-4fb8a792-0634-4948-a4d3-c439ab6fa6a6.jpg",
+        ),
+        description: Some(
+            "Một ngày nọ, Lelouche Elcage, con gái của công tước, nhận được lời nhắn từ một vị thần.\n\"Ngươi sẽ chết sau 100 ngày nữa\"\nNgười ta đồn rằng Thái tử, cũng là hôn phu của cô, đã tìm thấy tình yêu mới và...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548515,
+        updated_at: 1747548515,
+    },
+    NovelRaw {
+        id: 15056,
+        title: "\"Cậu chẳng thể hôn được đâu ha?\" Khi tôi khiến cho cô bạn thuở nhỏ luôn trêu chọc mình hiểu chuyện, cô ấy đột nhiên trở nên dễ thương hơn nhiều",
+        slug: "/truyen/15056-kisu-nante-dekinai-deshoto-chouhatsu-suru-namaikina-osananajimi-wo-wakarasete-yattara-yosou-ijou-ni-dereta",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s15056-da17f7fd-9793-42a5-9f5b-64c8a7927853.jpg",
+        ),
+        description: Some(
+            "\"Sao chúng ta không... thử hôn nhỉ?\"\nNam sinh cao trung năm hai, Kazami Ibuki, có một cô bạn thuở nhỏ tinh nghịch,\nCô gái được đồn đại là xinh đẹp nhất trường, với mái tóc vàng óng và đôi mắt xanh lam...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 12808,
+        title: "\"Don’t take it wrong!\" That's what my childhood friend who gave me love chocolate said, but what does that mean don't take it wrong!?",
+        slug: "/truyen/12808-dont-take-it-wrong-thats-what-my-childhood-friend-who-gave-me-love-chocolate-said-but-what-does-that-mean-dont-take-it-wrong",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12808-1ce54b49-e221-4b9a-a93a-e65a8c68c066-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện về kẻ muốn nhận được sô-cô-la tình yêu vào ngày valentine, Hoshimi Akira và người đáp lại mong muốn của cậu, Kumosaki Karin hay cũng chính là bạn thủa nhỏ của cậu.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21690,
+        title: "\"Hãy là của em, anh hùng!\" - \"Ta từ chối!\"",
+        slug: "/truyen/21690-la-cua-em-anh-hung-ta-tu-choi",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s21690-8c7fce3a-9149-44a0-a67b-02a4ae301c83.jpg",
+        ),
+        description: Some(
+            "Trong một thế giới đang xảy ra chiến tranh giữa Nhân tộc và Quỷ tộc, người anh hùng vĩ đại nhất của Loài người đã xâm chiếm lâu đài của Quỷ Vương với hy vọng đánh bại ả.\nThay vì chống trả, Quỷ Vương đ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 11923,
+        title: "\"Hãy làm t*nh đi\" Lời cầu hôn đến bạn cùng lớp của tôi trước khi cô ấy nhảy lầu",
+        slug: "/truyen/11923-hay-lam-tnh-di-loi-cau-hon-den-ban-cung-lop-cua-toi-truoc-khi-co-ay-nhay-lau",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11923-5bfc4306-9d2b-48fb-af42-75c0b89ad417-m.jpg",
+        ),
+        description: Some(
+            "Một ngày nọ, tôi phát hiện bạn cùng lớp xinh đẹp của tôi đang chuẩn bị tự tử. Cô ấy là người tôi yêu nhất và tôi sẽ không bao giờ để cô thực hiện điều đó.\nVậy nên tôi đã nói:\n\"Hãy làm t*nh với mình đi...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20787,
+        title: "\"Im đi, ác Long! tôi không muốn có thêm con với cô nữa!\"",
+        slug: "/truyen/20787-im-di-con-rong-doc-ac-toi-khong-muon-co-them-con-voi-co-nua",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s20787-efebfcd7-7d97-4c8b-b1ec-2f09953c5871.jpg",
+        ),
+        description: Some(
+            "Sau khi bị đánh bại, người anh hùng diệt Rồng trở thành tù nhân của Nữ hoàng Bạc Long.\nTrước cái chết đang cận kề, Leon bằng cách nào đó say chuyển tình thế và khiến cho Nữ hoàng mang thai trước khi h...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 3845,
+        title: "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Gachizei ni Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        slug: "/truyen/3845-omae-gotoki-ga-maou-ni-kateru-to-omou-na-to-gachizei-ni-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-rxtawNUWpsA/XDUSHk0ueiI/AAAAAAACBMw/tohHKh_cNHgMesmb-L_jZyayKevofbteQCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Đây là một câu chuyện kể về cô gái - người từng mang danh Anh Hùng - đi lên từ dưới đáy xã hội để quay trở về cuộc sống bình thường.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 5091,
+        title: "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Gachizei ni Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        slug: "/truyen/5091-omae-gotoki-ga-maou-ni-kateru-to-omou-na-to-gachizei-ni-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5091-e5bfbc2e-ec9c-4b59-8529-dff3205e9682-m.jpg",
+        ),
+        description: Some(
+            "Flamm Apricot chưa từng bao giờ muốn rời khỏi làng của mình. Cô hài lòng dành cả quãng đời để sống yên bình tại nơi đây. Không may, sau khi bị chỉ định bởi lời tiên tri của Thần Sáng tạo [Origin] rằng...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 8184,
+        title: "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Gachizei ni Yuusha Party wo Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        slug: "/truyen/8184-omae-gotoki-ga-maou-ni-kateru-to-omou-na-to-gachizei-ni-yuusha-party-wo-tsuihou-sareta-node-outo-de-kimama-ni-kurashitai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8184-1100e2bb-14eb-43a6-9665-00e0735e4e6b-m.jpg",
+        ),
+        description: Some(
+            "Flamm Apricot, một trong 7 anh hùng được thần linh lựa chọn để tiêu diệt quỷ tộc cứu rỗi loài người.\nTrái ngược với đồng đội mình với chỉ số cao ngất trời, chỉ số của Flamm là con số 0 dù cô có làm gì...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20370,
+        title: "\"Tôi, Người Bị Phản Bội, Muốn Chìm Đắm Trong Tình Yêu Của Cô Bạn Thuở Nhỏ Yandere ~ Đối Với Những Ai Đã Sa Ngã Vì Sự Phụ Thuộc, Thì Giờ Đã Quá Muộn Rồi ~\"",
+        slug: "/truyen/20370-toi-nguoi-bi-phan-boi-muon-chim-dam-trong-tinh-yeu-cua-co-ban-thoi-tho-au-yandere-doi-voi-nhung-ai-da-sa-nga-vi-su-phu-thuoc-thi-gio-da-qua-muon-roi",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "mở đầu với Masatoshi Nagai, một học sinh trung học, bị bạn gái hiện tại của mình, Saki Kisaki, chia tay. Cuộc chia tay diễn ra sau ba tháng hẹn hò, và Masatoshi phát hiện rằng Saki đã lừa dối mình kh...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 11925,
+        title: "“Let’s Have Sex” My Proposal to My Classmate Just Before She Jumps Off",
+        slug: "/truyen/11925-lets-have-sex-my-proposal-to-my-classmate-just-before-she-jumps-off",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11925-aff87d9a-c529-4a5e-859f-352f8f07a0c5-m.jpg",
+        ),
+        description: Some(
+            "Tiêu đề thì như vậy, nhưng đây lại là một câu chuyện tình yêu đầy trong sáng!? Đối phương là mối tình đầu trầm lặng và dễ thương.Mối tình đầu đời của tôi, Koga Kurumi.\nSở hữu vẻ đẹp và tính cách dường...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 468,
+        title: "(Um, Sorry) I’ve Been Reincarnated!",
+        slug: "/truyen/468-um-sorry-ive-been-reincarnated",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-ciuJHNqZ2iQ/WO2wOLtgubI/AAAAAAAAKIQ/rG2aYbCj2sg/w215/series_468.jpg",
+        ),
+        description: Some(
+            "Vẫn là\u{a0}câu chuyện tái sinh ở thế giới khác. Lần này nguyên nhân là cứu bạn và chấn thương sọ não vì cái bình hoa của thượng đế. Được chọn giữa biến mất và tái sinh, câu trả lời là tái sinh và yêu cầu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 4849,
+        title: "(Um, Sorry) I’ve Been Reincarnated!",
+        slug: "/truyen/4849-um-sorry-ive-been-reincarnated",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4849-0663eedd-a005-4d45-83bb-c1ee6e8558e8-m.jpg",
+        ),
+        description: Some(
+            "Sau khi bị một vị thần vô tình cướp đi mạng sống của mình. Shou được tái sinh với món quà từ thần để bù dắp cho cậu. Shou yêu cầu giữ lại tất cả ký ức từ kiếp trước. Cậu tái sinh thành Will, con trai...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 19797,
+        title: "[Oneshot] Bạn gái tôi, người mà tôi đã hẹn hò được một năm, bảo rằng:\"đây chỉ là trò đùa thôi, chúng ta thậm chí còn chưa từng hẹn hò\"",
+        slug: "/truyen/19797-oneshot-ban-gai-toi-nguoi-ma-toi-da-hen-ho-duoc-mot-nam-noi-voi-toiday-la-tro-dua-thoi-chung-ta-tham-chi-con-chua-tung-hen-ho",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "\"Nó chỉ là trò đùa thôi. Hẹn hò với cậu chỉ là một phẩn của trò chơi trừng phạt thôi.\"\nSau một năm yêu nhau, bạn gái tôi bảo rằng, tất cả chỉ là một trò chơi thôi. Cô ấy nói rằng chúng tôi thậm chí cò...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 19828,
+        title: "[Oneshot] Bản giao hưởng bánh ngọt.",
+        slug: "/truyen/19828-oneshot-ban-giao-huong-banh-ngot",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Yamagishi Yumi sống một cuộc sống cô đơn, chịu đựng sự can thiệp và kiểm soát quá mức của mẹ cô, Keiko. Keiko, chủ một cửa hàng bánh ngọt, đã áp đặt lý tưởng của mình lên Yumi từ khi cô còn nhỏ, dồn c...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20311,
+        title: "[Oneshot] Câu chuyện về cách mà tôi, một ông chồng nội trợ toàn thời gian, đã tự kết thúc cuộc sống của mình, và vợ tôi chỉ còn biết than khóc",
+        slug: "/truyen/20311-oneshot-cau-chuyen-ve-cach-ma-toi-mot-ong-chong-noi-tro-toan-thoi-gian-da-tu-ket-thuc-cuoc-song-cua-minh-va-vo-toi-chi-con-biet-than-khoc",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Là một người chồng nội trợ toàn thời gian, tôi dành cả ngày để làm việc nhà cho vợ tôi, Nika. Tuy nhiên, tôi cứ liên tục gây ra rắc rối cho cô ấy. Cứ mỗi lần, tôi lại nghe Nika đay nghiến.\n“Anh thật k...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20955,
+        title: "[Oneshot] Câu chuyện về một cô gái hối hận vì đã bỏ rơi người bạn thời thơ ấu của mình",
+        slug: "/truyen/20955-oneshot-cau-chuyen-ve-mot-co-gai-hoi-han-vi-da-bo-roi-nguoi-ban-thoi-tho-au-cua-minh",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Câu chuyện về một cô gái hối hận vì đã bỏ rơi người bạn thời thơ ấu của mình\n.\nVà câu chuyện về một chàng trai không bao giờ từ bỏ dù cho người bạn thời thơ ấu đã bỏ rơi cậu.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21240,
+        title: "[Oneshot] Câu chuyện về việc tôi đã trở nên hạnh phúc như thế nào sau khi cô chị gái tham lam cướp đi tất cả mọi thứ",
+        slug: "/truyen/21240-oneshot-cau-chuyen-ve-viec-toi-da-tro-nen-hanh-phuc-nhu-the-nao-sau-khi-co-chi-gai-tham-lam-cuop-di-tat-ca-moi-thu",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Chị gái tôi, người lớn hơn tôi hai tuổi, muốn có mọi thứ. Chị ấy không chỉ tham lam về vật chất, mà còn không thể chịu đựng được khi tôi có bất cứ thứ gì trước chị. Nếu đó chỉ là quần áo hoặc một chiế...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20635,
+        title: "[Oneshot] Cô bạn gái đáng yêu đầu tiên của tôi mất trí nhớ trong một vụ tai nạn. Và rồi, tôi bị chia tay . . .?",
+        slug: "/truyen/20635-co-ban-gai-dang-yeu-dau-tien-cua-toi-mat-tri-nho-trong-mot-vu-tai-nan-va-roi-toi-bi-chia-tay",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi đã yêu ngay từ cái nhìn đầu tiên.\nCô ấy dễ thương và xinh đẹp như một nàng công chúa.\u{a0}\nTheo lẽ thường, chỉ trong mơ mới có thể hẹn hò được với một cô gái như thế. Nhưng, sau một chuỗi những điều k...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21137,
+        title: "[Oneshot] Cô bạn thuở nhỏ Tsundere của tôi đã dùng thôi miên để khiến tôi yêu cô ấy trong khi tôi đang ngủ",
+        slug: "/truyen/21137-oneshot-co-ban-thuo-nho-tsundere-cua-toi-da-dung-thoi-mien-de-khien-toi-yeu-co-ay-trong-khi-toi-dang-ngu",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Mặc dù là một chàng trai cơ bắp điển hình, nhưng thực ra tôi lại rất thích đồ ngọt. Tuy nhiên, vì cô bạn thời thơ ấu của tôi lại thích những “anh chàng mạnh mẽ”, nên tôi vẫn tiếp tục luyện tập Karate...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21622,
+        title: "[Oneshot] Cô gái đã từ chối tôi mười năm về trước",
+        slug: "/truyen/21622-oneshot-ve-co-gai-da-tu-choi-toi-muoi-nam-truoc",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi nghĩ cô ấy hẳn đang sống rất hạnh phúc.\nThời tiểu học, chúng tôi đã chôn một chiếc hộp thời gian. Tôi đã để bên trong đó một lá thư gửi cho cô bạn thuở nhỏ thâ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21459,
+        title: "[Oneshot] Đã một tháng sau lời tỏ tình, nhưng tôi vẫn chưa nói cho cậu ấy rằng đó chỉ là trò đùa thôi. Thay vào đó, tôi lại thật sự phải lòng cậu ấy mất rồi",
+        slug: "/truyen/21459-oneshot-da-mot-thang-sau-loi-to-tinh-nhung-toi-van-chua-noi-cho-cau-ay-rang-do-chi-la-tro-dua-thoi-thay-vao-do-toi-lai-that-su-phai-long-cau-ay-mat-roi",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "【Tác phẩm xếp hạng nhất thể loại “Đời thực (Lãng mạn)” trong bảng xếp hạng theo ngày trên \"Shousetsuka ni Narou\"】\n.\nĐây là phần ngoại truyện của Oneshot:https://docln.net/truyen/20550-oneshot-sau-na...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21227,
+        title: "[Oneshot] Mái ấm",
+        slug: "/truyen/21227-oneshot-mai-am",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Cách đây vài tháng, tôi nhận ra rằng mình đang bị theo dõi.\nÁnh mắt bí ẩn luôn nhìn chằm chằm vào tôi khiến tôi sợ hãi.\n...Tôi đã cố liên lạc với anh, nhưng anh lại trốn tránh và bỏ mặc tôi ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20302,
+        title: "[Oneshot] Sau khi chuyển trường, tôi hội ngộ với người bạn thời thơ ấu duyên dáng và đáng yêu của mình, nhưng khái niệm \"người bạn thời thơ ấu\" của cô ấy rõ ràng là kỳ lạ và áp đặt",
+        slug: "/truyen/20302-sau-khi-chuyen-truong-toi-hoi-ngo-voi-nguoi-ban-thoi-tho-au-duyen-dang-va-dang-yeu-cua-minh-nhung-khai-niem-nguoi-ban-thoi-tho-au-cua-co-ay-ro-rang-la-ky-la-va-ap-dat",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi, Otani Keiichi, đã đoàn tụ với người bạn thời thơ ấu của mình, Tachibana Chika, sau khi chuyển trường.\nChika, người luôn ở bên cạnh tôi khi chúng tôi còn nhỏ, đã trở thành một cô gái đáng yêu đến...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21075,
+        title: "[Oneshot] Sau khi khoe khoang với cả lớp về bạn cùng phòng (một nàng Corgi) dễ thương, dáng đẹp, mông to, thường xuyên lẻn vào giường tôi để vui vẻ mỗi tối, cô bạn thời thơ ấu của tôi bỗng nhiên lại có biểu hiện thật kỳ lạ",
+        slug: "/truyen/21075-oneshot-sau-khi-khoe-khoang-voi-ca-lop-ve-ban-cung-phong-mot-nang-corgi-de-thuong-dang-dep-mong-to-thuong-xuyen-len-vao-giuong-toi-de-vui-ve-moi-toi-co-ban-thoi-tho-au-cua-toi-bong-nhien-lai-co-bieu-hien-that-ky-la",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Dễ thương. Phong cách. Đào bự. Và lẻn vào giường của tôi để vui vẻ mỗi đêm. Đó là Kurumi, bạn cùng phòng của tôi.\nKhi tôi kể chuyện này với bạn bè, người bạn thời thơ ấu của tôi Sayuki đã tình cờ nghe...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20550,
+        title: "[Oneshot] Sáu năm sau lời tỏ tình, tôi vẫn chưa nói với anh ấy rằng đó chỉ là trò đùa, và giờ thì chúng tôi đã nộp đơn đăng ký kết hôn",
+        slug: "/truyen/20550-oneshot-sau-nam-sau-loi-to-tinh-toi-van-chua-noi-voi-anh-ay-rang-do-chi-la-tro-dua-va-gio-thi-chung-toi-da-nop-don-dang-ky-ket-hon",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Đây là câu chuyện về một cô gái, mặc dù ban đầu có ý định trả đũa một người nhưng cuối cùng lại nhận ra mình thực sự yêu anh ta.\nGiờ thì cô ấy yêu bạn trai mình đến phát điên!",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 21122,
+        title: "[Oneshot] Tôi chỉ hối tiếc sau khi đã nhận ra",
+        slug: "/truyen/21122-oneshot-toi-chi-hoi-tiec-sau-khi-da-nhan-ra",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Người bạn thời thơ ấu của tôi đã tham gia câu lạc bộ nhạc nhẹ. Cô ấy dành nhiều ngày để tận hưởng quãng thời gian đó và làm những gì mình yêu thích. Hầu như ngày nào cô ấy cũng hào hứng kể lại cho tôi...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20544,
+        title: "[Oneshot] Tôi đề nghị trả hết nợ cho cô bạn xinh đẹp cùng lớp để đổi lấy cơ thể của cô ấy, nhưng tôi chả làm gì cô ta cả",
+        slug: "/truyen/20544-oneshot-toi-de-nghi-tra-het-no-cho-co-ban-xinh-dep-cung-lop-de-doi-lay-co-the-cua-co-ay-nhung-toi-cha-lam-gi-co-ta-ca",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Mochizuki Haruka, cô gái đẹp nhất lớp, phải nghỉ học do khoản nợ của gia đình. Tôi liền đề nghị sẽ trả hết số nợ đó với điều kiện cô ấy phải dùng chính cơ thể của mình ra để trả nợ.\n…\nNhưng sao cô ta...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 19392,
+        title: "[Tin buồn]: Người bạn thuở nhỏ mà tôi nghĩ là tsundere suốt 10 năm lại thực sự ghét tôi.",
+        slug: "/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Akira Enomoto, một nam sinh sơ trung học bình thường đã mắc phải một sai lầm lớn trong đời.\nCậu đã ảo tưởng khi nghĩ người bạn thơ ấu của mình, Ninomiya Suzuka, là một tsundere.\nTrong suốt 10 năm, cậu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 20498,
+        title: "[Truyện ngắn] Đầu năm mới, cô nàng gal ngồi kế tôi nói “Đi chơi với tôi đi”, nên tôi nghĩ đó là một trò chơi trừng phạt, cơ mà hóa ra chỉ là một tsundere tỏ tình.",
+        slug: "/truyen/20498-truyen-ngan-dau-nam-moi-co-nang-gal-ngoi-ke-toi-noi-di-choi-voi-toi-di-nen-toi-nghi-do-la-mot-tro-choi-trung-phat-co-ma-hoa-ra-chi-la-mot-tsundere-to-tinh",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "“Ai lại dùng mấy câu kiểu ‘đi chơi với tôi đi’ để nghiêm túc tỏ tình vậy?”\n“Ư, tôi thích cậu. Làm ơn hẹn hò với tôi”.\nMới đầu năm, cô nàng gal ngồi kế tôi nói, “Này, cậu. Đi chơi với tôi đi”.\nTôi tưởn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 14935,
+        title: "※Dành Tình Yêu Cho Em Gái Cũng Là Một Công Việc Quan Trọng",
+        slug: "/truyen/14935-danh-tinh-yeu-cho-em-gai-cung-la-mot-cong-viec-quan-trong",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s14935-73c71dd4-8d49-4a2a-b84f-7362b569f312.jpg",
+        ),
+        description: Some(
+            "Cô em gái này, sao lại dễ thương quá trời vậy nè ! ? Cùng cười, cùng khóc và cùng run rẩy vì tác phẩm Imouto RomCom đầy sáng tạo và nhiệt huyết này đi!\nMitsuki Hiro có một cô em gái rượu mà anh sẵn sà...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 19282,
+        title: "1 Second Invincibility in the Game",
+        slug: "/truyen/19282-1-second-invincibility-in-the-game",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s19282-f729cf3e-bdef-4c43-8e6e-d87dd339f727.jpg",
+        ),
+        description: Some(
+            "Tôi chợt thấy mình trong thân xác của một thiếu gia mà ai ai cũng đều muốn giết. Nhưng tôi thì bất khả chiến bại, nên cứ để họ thử giết tôi. Chỉ có điều, sự bất khả chiến bại đó chỉ kéo dài trong một...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 5184,
+        title: "10 năm sau khi nói câu “Cứ đi đi, ở đây để tôi lo”, tôi đã trở thành một huyền thoại",
+        slug: "/truyen/5184-koko-wa-ore-ni-makasete-saki-ni-ike-to-itte-kara-10-nen-ga-tattara-densetsu-ni-natteita",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5184-5c9063be-fe93-45af-b80a-a8c416d91788-m.jpg",
+        ),
+        description: Some(
+            "Tổ Đội Anh Hùng bị tấn công bởi Quân Đoàn quỷ vương với số lượng vô số kể, không nghi ngờ gì nữa nếu đối đầu trực tiếp tổ đội sẽ hoàn toàn bị tiêu diệt.\nMột thành viên trong tổ đội, Pháp Sư mạnh nhất,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 7596,
+        title: "10 năm sau khi nói câu “Cứ đi đi, ở đây để tôi lo”, tôi đã trở thành một huyền thoại",
+        slug: "/truyen/7596-10-nam-sau-khi-noi-cau-cu-di-di-o-day-de-toi-lo-toi-da-tro-thanh-mot-huyen-thoai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7596-cd32fad4-92a2-42cd-b46a-ea7541ba9d6b-m.jpg",
+        ),
+        description: Some(
+            "Khi tổ Đội Anh Hùng bị tấn công bởi Quân Đoàn quỷ vương với số lượng vô số kể, không nghi ngờ gì nữa nếu đối đầu trực tiếp tổ đội sẽ hoàn toàn bị tiêu diệt.\nMột thành viên trong tổ đội, Pháp Sư mạnh n...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 759,
+        title: "10 nen goshi no HikiNiito o Yamete Gaishutsushitara Jitaku goto Isekai ni Ten’ishiteta",
+        slug: "/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s759-4109954a-6358-4bcf-9abb-4c6d5a2cfa1d-m.jpg",
+        ),
+        description: Some(
+            "Houjou Yuuji, 30 tuổi, thất nghiệp, là một hikikomori trong suốt 10 năm, quyết định đi ra khỏi nhà. Tuy nhiên, bên ngoài đó lại là một thế giới khác cùng với những sinh vật kì lạ mà cậu chưa từng biết...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 890,
+        title: "10 sai no Saikyou Madoushi",
+        slug: "/truyen/890-10-sai-no-saikyou-madoushi",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-aYUSfXJCoBs/WS2rXDUeIrI/AAAAAAAAU7E/P4rB6kpL3Jo2QnsGaoH2XuqpoM95nWfGwCHM/w215/default.jpg",
+        ),
+        description: Some(
+            "Pháp sư mạnh nhất không biết mình là “người mạnh nhất” đã xuất hiện!\n\n\u{a0}\n\nCô bé Ferris 10 tuổi là nô lệ làm việc ở khu mỏ khai thác ma thạch.\n\nTuy nhiên, khi bé được\u{a0}phát hiện đang mang trong mình tài...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 1739,
+        title: "10 Sai no Saikyou Madoushi",
+        slug: "/truyen/1739-juu-sai-no-saikyou-madoushi",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-UEgqsbpRBtc/Wf3YGNzbaRI/AAAAAAAAxyc/YSUcM2slIrEh9D8l4zP3NbiQip5zUHlEQCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Pháp sư mạnh nhất không biết mình là “người mạnh nhất” đã xuất hiện!\n\nCô bé Ferris 10 tuổi là nô lệ làm việc ở khu mỏ khai thác ma thạch.\n\nTuy nhiên, khi bé được\u{a0}phát hiện đang mang trong mình tài năn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 15462,
+        title: "10-nen Buri ni Saikai Shita Kusogaki wa Seijun Bishoujo JK ni Seichoushite Ita",
+        slug: "/truyen/15462-10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichoushita-ita",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s15462-94f2ccf2-9449-4ed4-a27e-10c5f70d19cf.jpg",
+        ),
+        description: Some(
+            "\"Đã lâu không gặp rồi nhỉ... sao anh lại không nhận ra em chứ!?\"\nAritsuki Yuu, 28 tuổi, sau khi nghỉ việc tại một công ty đen ở Tokyo và trở về quê nhà để khởi đầu một cuộc sống mới, đã bắt gặp một cô...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 15703,
+        title: "100 Cô Bạn Gái, Người Mà Thực Sự Thực Sự Thực Sự Thực Sự Thực Sự Yêu Bạn: Chuyện Tình Yêu Đặc Biệt ~ Chuyện Tình Bí Mật",
+        slug: "/truyen/15703-100-co-ban-gai-nguoi-ma-thuc-su-thuc-su-thuc-su-thuc-su-thuc-su-yeu-ban-chuyen-tinh-yeu-dac-biet-chuyen-tinh-bi-mat",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15703-b3c0491e-d9f4-45e9-a11d-829cb69c870a-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện kể về cuộc đời của nam sinh có tên Aijou Rentarou, người đã bị từ chối 100 lần liên tiếp bởi 100 cô gái khác nhau trước khi tốt nghiệp sơ trung.\nTrong một lần viếng thăm ngôi đền tình duyên...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 18031,
+        title: "100 điều em không biết về senpai",
+        slug: "/truyen/18031-100-dieu-em-khong-biet-ve-senpai",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18031-bc498d99-90f1-4384-8268-59309e7f23eb.jpg",
+        ),
+        description: Some(
+            "Senpai và kouhai, hai người vốn chỉ biết nhau là \"cùng chung ga tàu\" (*), bỗng một ngày nọ, đã cùng nhau lập một lời hứa.\u{a0}Nội dung của nó là: \"Mỗi ngày một câu hỏi, bất kể là gì, nhất định phải trả lờ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 5797,
+        title: "100 điều em không biết về senpai",
+        slug: "/truyen/5797-100-dieu-em-khong-biet-ve-senpai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5797-29ef7abb-8149-4bd2-b631-ae25e97f03a3-m.jpg",
+        ),
+        description: Some(
+            "\"Senpai, anh làm rơi gì này.\"\nCâu nói đột ngột ấy đánh dấu cho sự bắt đầu của mối quan hệ giữa senpai thơ thẩn và kouhai-chan dễ-thương-tăng-động. Mặc dù không có mối liên kết nào ngoài việc đi chung...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 13795,
+        title: "100 điều em không biết về senpai",
+        slug: "/truyen/13795-100-dieu-em-khong-biet-ve-senpai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s13795-7c6a9c4a-a618-476c-bd1c-b5074b832c64-m.jpg",
+        ),
+        description: Some(
+            "\"Senpai, anh làm rơi gì này.\"\nCâu nói đột ngột ấy đánh dấu cho sự bắt đầu của mối quan hệ giữa senpai thơ thẩn và kouhai-chan dễ-thương-tăng-động. Mặc dù không có mối liên kết nào ngoài việc đi chung...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 11727,
+        title: "100 Ngày Hạnh Phúc Của Tiểu Thư Phản Diện",
+        slug: "/truyen/11727-the-villainess-who-only-had-100-days-to-live-had-fun-every-day",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s11727-4fb8a792-0634-4948-a4d3-c439ab6fa6a6.jpg",
+        ),
+        description: Some(
+            "Một ngày nọ, Lelouche Elcage, con gái của công tước, nhận được lời nhắn từ một vị thần.\n\"Ngươi sẽ chết sau 100 ngày nữa\"\nNgười ta đồn rằng Thái tử, cũng là hôn phu của cô, đã tìm thấy tình yêu mới và...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548516,
+        updated_at: 1747548516,
+    },
+    NovelRaw {
+        id: 5078,
+        title: "15 sai demo Ore no Yome!",
+        slug: "/truyen/5078-15-sai-demo-ore-no-yome",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5078-ad42e309-df5d-4f01-bcf8-de224b9b04e6-m.jpg",
+        ),
+        description: Some(
+            "Chuyện về Hinosaka Kenichi, một thanh niên công chức 27 tuổi kết hôn cùng với nữ sinh trung học 15 tuổi. Chuyện tình này không chỉ một mà đến những hai bé 15 tuổi mới đau chứ. Liệu thanh niên này sẽ s...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 8133,
+        title: "1LDK, Soshite 2JK. 26-sai Salaryman, Joshi Kousei Futari to Doukyou Hajimemashita",
+        slug: "/truyen/8133-1-ldk-soshite-2-jk-26-sai-salaryman-joshikousei-ni-nin-to-doukyo-hajimemashita",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8133-9baa3e68-1b67-4998-9342-37033257b650-m.jpg",
+        ),
+        description: Some(
+            "“Ahh, unm, cũng lâu rồi anh ha.”\n(……Không đời nào.)\nKomamura, một người làm công ăn lương độc thân, đã được giao phó cho việc chăm sóc cô em họ, Kanon, một gal JK.\nKhi vừa mới gắng hiểu sự thay đổi sự...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 20708,
+        title: "21:00",
+        slug: "/truyen/20708-2100",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s20708-279f2905-0ba8-417a-bced-0b94019711e4.jpg",
+        ),
+        description: Some(
+            "Sự sống bên trong cô là ánh sáng dẫn lối nhân loại, là ánh sáng chiếu soi bóng tối, là ánh sáng mà bóng tối không thể vượt qua.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 3660,
+        title: "23:11",
+        slug: "/truyen/3660-2311",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-kXSvTnxZ8ys/XBKNSxoa4SI/AAAAAAAB58Y/bJYY-ulN_0M-FfcooEiWpKNiFpXyC13UgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "“Nếu em muốn hạnh phúc mãi mãi về sau, anh sẵn sàng bắt đầu câu chuyện ngày xửa ngày xưa với em.” - Rico, 23:11 \nTóm tắt nội dung của tác giả:\nMột tác giả. Một kẻ lạ mặt kỳ quái. Rất nhiều cuộc hội th...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 8328,
+        title: "23/11",
+        slug: "/truyen/8328-2311",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8328-de0ec3cf-03fd-4d23-986b-295e0bc7c619-m.jpg",
+        ),
+        description: Some(
+            "phần tiếp theo sau cái kết của phần 23:11.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 2138,
+        title: "29-sai Dokushin wa Isekai de Jiyuu ni Ikita......katta",
+        slug: "/truyen/2138-29-years-old-bachelor-was-brought-to-a-different-world-to-live-freely",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-1O8TibBXvaU/WovJMyYTnSI/AAAAAAAA_18/sRf55GJAP20NgVb4BiX62wJcLwf2NMIqACHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Một anh main 29 tuổi còn độc thân được qua thế giới khác mà mình từng mong muốn…\nTừ những ngày đầu khi anh đăng ký vào Guild mạo hiểm giả, anh gặp một cô gái và đã miễn cưỡng phải cưới cô ấy.\nHơn mười...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 2840,
+        title: "3 Minutes Boy Meets Girl",
+        slug: "/truyen/2840-3-minutes-boy-meets-girl",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-8shteqngTDM/WzjkgV_LTaI/AAAAAAABXkE/PL7IYOgMHLUG_r0TZOXzjKrX2r9KsCDRwCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "3 Minutes Boy Meets Girl là một tuyển tập truyện ngắn của các tác giả làm việc tại Famitsu Bunko. Có 19 chương và là 19 truyện ngắn từ 19 tác giả khác nhau. Thể loại chung chính là lãng mạn. Truyện đư...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 2031,
+        title: "400 Years Old Virgin Demon King",
+        slug: "/truyen/2031-400-years-old-virgin-demon-king",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Chuyện về ma vương 400 tuổi còn trinh đi kiếm vợ và một gái muốn cưới hắn để nắm giữ quyền lực to lớn.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14836,
+        title: "45510",
+        slug: "/truyen/14836-45510",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s14836-f44e722f-0888-4518-9ffa-317865a13bd4-m.jpg",
+        ),
+        description: Some(
+            "Được chấp bút bởi Akasaka Aka (tác giả của loạt manga Kaguya sama: Love is war nổi tiếng),『45510』 đề cập đến khía cạnh chưa ai biết tới của Idol hoàn hảo tối thượng「B-Komachi」Ai. Cuốn tiểu thuyết...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14837,
+        title: "45510",
+        slug: "/truyen/14837-45510",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s14837-956f4f46-99bf-4b5b-9968-9560c8a60cae-m.jpg",
+        ),
+        description: Some(
+            "\"45510\" là một tiểu thuyết ngắn được viết bởi Aka Akasaka, nói về một khía cạnh chưa ai biết của idol thập toàn tối thượng \"B-Komachi\" Ai.\nĐây là câu chuyện gốc của bài hát chủ đề \"Idol\" của YOASOBI c...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 15927,
+        title: "6 nữ chính đều muốn toàn quyền độc chiếm tôi",
+        slug: "/truyen/15927-6-nu-chinh-deu-muon-toan-quyen-doc-chiem-toi",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15927-9cd62c9f-e138-4dbc-a646-b22be1730948-m.jpg",
+        ),
+        description: Some(
+            "[Cái gì nhiều quá cũng không tốt. Cả sở hữu vật chất lẫn các mối quan hệ.]\nShinichi Hirakawa, một nam sinh cao trung sống theo chủ nghĩa tối giản, chỉ giao lưu với số ít người, giờ lại tham gia một dự...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 1985,
+        title: "86 -eightysix-",
+        slug: "/truyen/1985-86-eightysix",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s1985-b606b7d8-33bc-4b2c-87a5-5f811c463ae8-m.jpg",
+        ),
+        description: Some(
+            "Cộng hòa San Magnolia.Quốc gia này từ lâu đã chịu phải ách xâm lược từ những Legion - chiến xa không người lái của phía Đế quốc. Để đáp trả lại mối đe doạ đó, nước Cộng hoà cũng phát triển thành công...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 16685,
+        title: "87 ngày cho đến lần đầu làm chuyện ấy với cô bạn gái ngây thơ và dễ dãi",
+        slug: "/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s16685-23173e61-bce9-44cc-9dbf-140c87a06365-m.jpg",
+        ),
+        description: Some(
+            "Như tiêu đề, đây là câu chuyện về 87 ngày cho đến lần đầu “ân ái” giữa chàng trai mang tiếng lăng nhăng nhưng thực chất là trai tân, và cô gái mang tiếng lẳng lơ nhưng thực chất là gái tơ.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 2463,
+        title: "99th vampire princess ~The last vampire~",
+        slug: "/truyen/2463-99th-vampire-princess-the-last-vampire",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-io56sbTwLKQ/WtNbfTL0lDI/AAAAAAABHzE/4C55FPwci4wEpA10SHqrMkoiIdxYQHrVgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "\"Lores\" - những hình thể đáng kể được sinh ra từ những truyền thuyết thành phố. Và học sinh trung học Tsukumo Jin, người đã vô tình giải phóng \"truyền thuyết về ma cà rồng\" mạnh mẽ nhất, giờ đây là ng...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 7990,
+        title: "A Banished Failure Survives in the Borderland and Becomes an S-Rank Exorcist",
+        slug: "/truyen/7990-a-banished-failure-survives-in-the-borderland-and-becomes-an-s-rank-exorcist",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7990-c92b1939-3e9e-4fa8-8187-32a3e50a29cc-m.jpg",
+        ),
+        description: Some(
+            "Đây là thế giới bị xâm chiếm bởi [Twilight]\n150 năm trước, trong cuộc chiến trường kì giữa nhân loại và ác quỷ. Loài người đã bại trận bởi một thứ gọi là [Twilight]. Và chúng đã xâm chiếm cả thế giới....",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14682,
+        title: "A Beautiful Girl Who Is Under the Delusion That She’s Dating Me, I Can’t Escape Because We Are Childhood Friends",
+        slug: "/truyen/14682-a-beautiful-girl-who-is-under-the-delusion-that-shes-dating-me-i-cant-escape-because-we-are-childhood-friends",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "“Nè, nếu tụi mình sống chung thì chỗ này tốt đó.~”\n“....Hờờ.”\nVào giờ nghỉ trưa, tôi, Izumi Saku, buông một tiếng thở dài chán nản.\nHiện tại trước mặt tôi đây là cô gái mang tên Shiina Yukiho.\nCon nhỏ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 17884,
+        title: "A Beautiful Girl Who Is Under the Delusion That She’s Dating Me, I Can’t Escape Because We Are Childhood Friends",
+        slug: "/truyen/17884-a-beautiful-girl-who-is-under-the-delusion-that-shes-dating-me-i-cant-escape-because-we-are-childhood-friends",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "“Nè, nếu tụi mình sống chung thì chỗ này tốt đó.~”\n“....Hờờ.”\nVào giờ nghỉ trưa, tôi, Izumi Saku, buông một tiếng thở dài chán nản.\nHiện tại trước mặt tôi đây là cô gái mang tên Shiina Yukiho.\nCon nhỏ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 13759,
+        title: "A boy who was falsely accused and hurt by the people he cares about, even if they apologize after finding out he’s innocent, he’ll never forgive them.",
+        slug: "/truyen/13759-a-boy-who-was-falsely-accused-and-hurt-by-the-people-he-cares-about-even-if-they-apologize-after-finding-out-hes-innocent-hell-never-forgive-them",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Ryosuke Yamamoto đã bị buộc tội hành hung một người phụ nữ và mất đi tất cả những người thân yêu với mình. Chị gái Kaede và em gái Nagisa hoàn toàn từ mặt cậu, ngay cả bố cậu cũng bỏ rơi cậu.\nRyosuke...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 9141,
+        title: "A Certain Elf’s Note",
+        slug: "/truyen/9141-a-certain-elfs-note",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Hồi ký của cô nàng elf nọ",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 19155,
+        title: "A Cheeky Junior Denied Me My Entire Life, so I Tested What Would Happen if I Jumped off a Rooftop to Vent My Anger",
+        slug: "/truyen/19155-a-cheeky-junior-denied-me-my-entire-life-so-i-tested-what-would-happen-if-i-jumped-off-a-rooftop-to-vent-my-anger",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Aoi Susumu, một thanh niên đang chán đời vì mọi thứ đều đi sai hướng với cậu , đứng một mình trên sân thượng trường ngắm trời. Sau đó, Kamiya Yona,\u{a0} một đàn em ở cùng câu lac bộ nghệ thuật tình cờ bắt...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 20312,
+        title: "A Childhood Friend I Used to Love Got Pregnant by My Best Friend.",
+        slug: "/truyen/20312-a-childhood-friend-i-used-to-love-got-pregnant-by-my-best-friend",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Có lần, khi còn học trung học, Sou đã thú nhận với người bạn thời thơ ấu Rio của mình, nhưng bị từ chối ngay lập tức. Vài năm sau, bất ngờ, Sou được mẹ thông báo rằng Rio đã mang thai. Việc Rio mang t...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14991,
+        title: "A Fairy Tale for the Villains",
+        slug: "/truyen/14991-a-fairy-tale-for-the-villains",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s14991-fa3d0053-e53e-4e35-8525-3fae12ee60bd-m.jpg",
+        ),
+        description: Some(
+            "Bỗng một ngày tôi được tái sinh làm nhân vật phụ trong một cuốn tiểu thuyết lãng mạn đẫm máu. Dù sinh ra trong một gia đình thường dân, nhưng cuộc sống của tôi vẫn đủ đầy do mẹ tôi làm bà vú cho nhà C...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 19099,
+        title: "A Family of Yandere Witches Living in Modern Day Won't Let Me Go",
+        slug: "/truyen/19099-a-family-of-yandere-witches-living-in-modern-day-wont-let-me-go",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s19099-c98e8fcd-33bd-4c90-adeb-1d46889ad1a0.jpg",
+        ),
+        description: Some(
+            "Nhân vật chính, Saegusa Touya, gần đây đang có một giấc mơ.\nCậu mơ thấy mình bị kẹp giữa hai người phụ nữ xinh đẹp.Tuy nhiên, đó không phải là một giấc mơ dễ chịu chút nào, vì họ đang khóc khi nhìn th...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 16265,
+        title: "A Flower For You",
+        slug: "/truyen/16265-a-flower-for-you",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tại một cửa tiệm hoa nọ, đề một tấm bảng rằng, “Tôi sẽ lựa chọn cho bạn loài hoa mà phù hợp với bản thân bạn nhất.”\nChủ tiệm sẽ lần lượt chọn ra và giới thiệu loài hoa nào phù hợp với khách hàng nhất,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 12910,
+        title: "A Gal Who Looks Good in an Apron is Unfair!",
+        slug: "/truyen/12910-a-gal-who-looks-good-in-an-apron-is-unfair",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12910-6484c271-1874-4ce4-b5c9-37c50af5e62a-m.jpg",
+        ),
+        description: Some(
+            "Hai người bạn thơ ấu đã lạnh nhạt nay lại làm lành với nhau.\nCô gái nổi tiếng trong lớp, Yuzuki Amiru, được biết đến như một ‘gyaru’ với mái tóc vàng và style chói lóa chính là bạn thuở nhỏ của tôi.\nC...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 8202,
+        title: "A Genius Healer Who Can Treat Instantly but Was Banished From Party Considered Doing Nothing ~ Even if They Told Him to Come Back Now, He Is Now Having Fun as a Dark Healer Now, So the Treatment Will Be Expensive, but Can You Pay for It? ~",
+        slug: "/truyen/8202-a-genius-healer-who-can-treat-instantly-but-was-banished-from-party-considered-doing-nothing-even-if-they-told-him-to-come-back-now-he-is-now-having-fun-as-a-dark-healer-now-so-the-treatment-will-be-expensive-but-can-you-pay-for-it",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8202-8f64e093-7ab5-4b02-9d77-627e5cc07d66-m.jpg",
+        ),
+        description: Some(
+            "\"Cậu chẳng làm được gì cả. Chúng tôi không cần đến cậu nữa\"\nMột ngày, đội trưởng Aston đã nói như vậy với Zenos.\nZenos là một trị liệu sư xuất thân từ khu ổ chuột và không có chứng nhận hợp pháp. Dù v...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 6647,
+        title: "A Guess In The Ghost House",
+        slug: "/truyen/6647-a-guess-in-the-ghost-house",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s6647-eec7d78c-f2bf-44c4-ac95-891358a5385f-m.jpg",
+        ),
+        description: Some(
+            "Cứ mỗi 3 ngày tôi lại nhân được 3 tấm ảnh báo trước cái chết của ai đó. Tôi bắt đầu tìm kiếm nguồn gốc của những bức ảnh này và chợt nhận ra mình đã bị mắc kẹt trong một ngôi nhà ma với 108 hồn ma nữ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 2868,
+        title: "A Guest in a Ghost House",
+        slug: "/truyen/2868-a-guest-in-a-ghost-house",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-T_r9V7NW5N8/Wz9uGsj7otI/AAAAAAABYnw/cV_JK8KXXlk-fzb33DJyAeVwY0uwQm5GgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Cứ mỗi 3 ngày tôi lại nhân được 3 tấm ảnh báo trước cái chết của ai đó. Tôi bắt đầu tìm kiếm nguồn gốc của những bức ảnh này và chợt nhận ra mình đã bị mắc kẹt trong một ngôi nhà ma với 108 hồn ma nữ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 19161,
+        title: "A Kiss for the Petals - Extra LN",
+        slug: "/truyen/19161-a-kiss-for-the-petals-extra-ln",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s19161-ce481729-73a1-4bdd-ada4-3f180b4b3bfb.jpg",
+        ),
+        description: Some(
+            "Tuyển tập các light novel extra cho series game \"A Kiss for the Petals\"\nCó vẻ tất cả đều là 18+, hãy cân nhắc",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 6674,
+        title: "A Monster Who Levels Up",
+        slug: "/truyen/6674-a-monster-who-levels-up",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s6674-fa5ad1a9-3dc9-489a-93e2-2300549326f8-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện về một chàng trai có tên là Kim Sae-Jin, người có thể biến thành Quái Vật và lên cấp.Ben 10 ver.Hàn",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 4915,
+        title: "A Monster Who Levels Up",
+        slug: "/truyen/4915-a-monster-who-levels-up",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4915-849f00e6-c4b1-4983-bd0d-a08a1eb3bdf4-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện về một chàng trai có tên là Kim Sae-Jin, người có thể biến thành Quái Vật và lên cấp.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14997,
+        title: "A Monster Who Levels Up",
+        slug: "/truyen/14997-a-monster-who-levels-up",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s14997-e0d45f7f-de5b-4fdb-80f6-c098a365fbf3-m.jpg",
+        ),
+        description: Some(
+            "Câu chuyện kể về một người đàn ông tên là Kim Sae-Jin. Một ngày nọ, không hiểu sao anh tỉnh dậy và biến thành Quái vật. Cùng theo dõi hành trình đầy nguy hiểm của anh ta để lấy lại cuộc sống như một C...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 15876,
+        title: "A NEET’s Guide to the Parallel World: Healer, the Strongest Cheat?",
+        slug: "/truyen/15876-a-neets-guide-to-the-parallel-world-healer-the-strongest-cheat",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15876-ff861f18-83d4-446f-bd8e-92fb1c8bd4ab-m.jpg",
+        ),
+        description: Some(
+            "Sau khi nhảy lầu tự tử, Masamune bị kéo vào một cuộc triệu hồi tới một thế giới khác.\nTại chính điện.\nTất cả mọi người đều nhận được những chức nghiệp cấp cao như Hiền Nhân hay Anh Hùng. Ngoại trừ Mas...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 7199,
+        title: "A NEET’s Guide to the Parallel World: Healer, the Strongest Cheat?",
+        slug: "/truyen/7199-a-neets-guide-to-the-parallel-world-healer-the-strongest-cheat",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7199-9a2a7dac-c711-442e-ba06-d0d062d0a196-m.jpg",
+        ),
+        description: Some(
+            "Sau khi nhảy lầu tự tử,\u{a0}Masamune bị lôi vào cuộc triệu hồi tới một thế giới khác.\nTại chính điện.\nTất cả mọi người đều nhận được những thiên chức cấp cao như Hiền Nhân hay Anh Hùng. Ngoại trừ\u{a0}Masamune...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 8502,
+        title: "A NEET’s Guide to the Parallel World: Healer, the Strongest Cheat?",
+        slug: "/truyen/8502-a-neets-guide-to-the-parallel-world-healer-the-strongest-cheat",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8502-fff39068-adb4-443b-8c98-47d19a270ba9-m.jpg",
+        ),
+        description: Some(
+            "Sau khi nhảy lầu tự tử, Masamune bị kéo vào một cuộc triệu hồi tới một thế giới khác.\nTại chính điện.\nTất cả mọi người đều nhận được những chức nghiệp cấp cao như Hiền Nhân hay Anh Hùng. Ngoại trừ Mas...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 12923,
+        title: "A Pregnancy Without Tomorrow",
+        slug: "/truyen/12923-a-pregnancy-without-tomorrow",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Cặp đôi chung sống Shuji và Misuzu phải đối mặt với thực tế khi tìm ra quá khứ của mình đã đi xa hơn cả những gì họ nghĩ. Liệu tình yêu sẽ vượt qua những chuẩn mực xã hội? Hay...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 10551,
+        title: "A Returnee Classmate, Number One On The List Of People I Want To Kill, Became My Wife",
+        slug: "/truyen/10551-a-returnee-classmate-number-one-on-the-list-of-people-i-want-to-kill-became-my-wife",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s10551-9e6648d0-02e7-48c8-b578-a90cadd92ff6-m.jpg",
+        ),
+        description: Some(
+            "“Mình thích cậu. Kageo!”\n\u{a0}\nTại lối vào nhà của chàng trai, cô gái đứng đầu trong danh sách người cậu muốn giết đè cậu xuống sàn nhà và mút dương vật của cậu.\n\u{a0}\nChỉ là, cái tình huống quái quỷ gì thế n...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 7485,
+        title: "A Returner’s Magic Should Be Special",
+        slug: "/truyen/7485-a-returners-magic-should-be-special",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7485-3c036bda-f089-40eb-8d14-8140574f07ba-m.jpg",
+        ),
+        description: Some(
+            "\"Giờ tôi đã trở về, tôi sẽ không để cho người thân của mình phải chết thêm lần nữa!\"Mê cung Bóng đêm - sự tồn tại thảm khốc nhất mà loài người phải đối mặt trong lịch sử.\nDesir Arman là một trong sáu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 3235,
+        title: "A Sequel For The Villainess ?",
+        slug: "/truyen/3235-a-sequel-for-the-villainess",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Sau khi hôn ước với nhị hoàng tử bị hủy bỏ, tôi đã bị ném thẳng vào khu ổ chuột. Tôi đã sống như một người dân thường..........nhưng lão vua lại triệu tập tôi ? Tôi chỉ là dân thường thôi mà, xin hãy...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 102,
+        title: "A Simple Survey",
+        slug: "/truyen/102-a-simple-survey",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-51uQTKpqfuM/WO2voaewtBI/AAAAAAAAJ3g/e_cgICaHg2E/w215/series_102.jpg",
+        ),
+        description: Some(
+            "Một số sinh viên đại học được đưa cho một cuộc khảo sát đơn giản, trong đó họ phải xem một vài đoạn phim ngắn và xếp hạng chúng theo tứ tự ưu tiên. Độc giả cũng tham gia vào cuộc thảo sát cùng với họ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 19905,
+        title: "A Story About a Girl Who Took Life for Granted and Fell in Love With a Kind and Introverted Boy",
+        slug: "/truyen/19905-a-story-about-a-girl-who-took-life-for-granted-and-fell-in-love-with-a-kind-and-introverted-boy",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tình yêu đích thực đã khiến cho tôi thay đổi...\nSau khi tỏ tình với một chàng trai hướng nội bởi trò chơi trừng phạt, cuộc đời tôi đã thay đổi một cách mạnh mẽ.\nĐây là câu chuyện về tình yêu đích thực...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18252,
+        title: "A Sweet Girl Won’t Be Fooled By The Villainess",
+        slug: "/truyen/18252-a-sweet-girl-wont-be-fooled-by-the-villainess",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18252-e3c6ceb1-463d-4efa-a787-919eb565205e.jpg",
+        ),
+        description: Some(
+            "Một chàng trai trẻ, khoẻ trong một gia đình giàu có đã bị biến thành một cô gái nghèo khổ tên Ifia. Rồi có một hệ thống đưa cô hai lựa chọn [Cứu thế giới] hoặc [Làm bạn với nhân vật phản diện]\u{a0}\n\u{a0}\nSo v...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 13909,
+        title: "A Sword Master Childhood Friend Power Harassed Me Harshly, So I Broke Off Our Relationship And Make A Fresh Start At The Frontier As A Magic Swordsman.",
+        slug: "/truyen/13909-a-sword-master-childhood-friend-power-harassed-me-harshly-so-i-broke-off-our-relationship-and-make-a-fresh-start-at-the-frontier-as-a-magic-swordsman",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s13909-3cb1ae23-57ea-4c6e-aa33-1bef15c597b8-m.jpg",
+        ),
+        description: Some(
+            "Finn quyết định cắt đứt quan hệ với thời thơ ấu Alfine, một [Sword Master] vì không thể chịu được tính khí của cô.\nVới một khởi đầu mới, anh quyết định bắt đầu lại mọi thứ tại một thành phố biên giới,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 11016,
+        title: "A Tale of the Secret Saint",
+        slug: "/truyen/11016-a-tale-of-the-secret-saint",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11016-d2afe427-343c-4910-b4cf-94d1ec4fcd37-m.jpg",
+        ),
+        description: Some(
+            "Sinh ra trong một gia đình có dòng dõi hiệp sĩ lâu đời, Fia quyết tâm muốn trở thành một hiệp sĩ giống như anh chị em của mình. Nhưng một lần suýt chết đã đánh thức những ký ức tiền kiếp của cô khi cò...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 7313,
+        title: "A Villainess? No, a Heinous Young Lady",
+        slug: "/truyen/7313-a-villainess-no-a-heinous-young-lady",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7313-83bd5183-d638-4e9c-b901-29e41655df12-m.jpg",
+        ),
+        description: Some(
+            "Rosalia, người con gái của một hầu tước, do vài lý do mà chỉ sống bên trong dinh thự của lãnh thổ nhà hầu tước. Một ngày nọ khi mà cô 16 tuổi, cô đã yêu một hiệp sĩ với mái tóc đỏ tình cờ lạc vào khu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18427,
+        title: "A! Megami-sama",
+        slug: "/truyen/18427-oh-my-goddess",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18427-44deb951-99e0-44bd-bb9d-9063e969bbd7.jpg",
+        ),
+        description: Some(
+            "Keiichi Morisato là sinh viên khoa công nghệ thông tin tại học viện Nekomi, là một chàng trai vừa lùn lại không mấy khá giả, lại còn không thu hút phái nữ. Ngày nọ, một nữ thần bằng xương bằng thịt độ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 15698,
+        title: "A.I Chuyển Sinh Vào Cơ Thể Một Kẻ Vô Dụng, Kết Quả Ra Sao? Một Siêu Công Nghệ Vượt Qua Vạn Vật Trong Thế Giới Ma Pháp Sẽ Ra Đời",
+        slug: "/truyen/15698-ai-chuyen-sinh",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15698-70091f7d-9ed8-4266-8798-c36cb45ee323-m.jpg",
+        ),
+        description: Some(
+            "Một A.I đến từ một tương lai rất xa đã được chuyển sinh sang dị giới.\nNó được đưa vào cơ thể của một cậu bé quý tộc tên là Qualia, một kẻ bị coi là thất bại do không giỏi kiếm mà cũng chẳng tinh thông...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 3120,
+        title: "About the Reckless Girl Who Kept Challenging a Reborn Man Like Me",
+        slug: "/truyen/3120-about-the-reckless-girl-who-kept-challenging-a-reborn-man-like-me",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-DPJrKNEWrIY/W3PXs_5mCtI/AAAAAAABh9U/Yy_dJM6NJjEeWrb_qAee6QPs2w5bdqJPQCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "\"Một thần đồng 10 tuổi, một thiên tài 15 tuổi, một người đàn ông bình thường đã 20 tuổi.\"Đây là một câu chuyện về cuộc đấu tranh của một người đàn ông như tôi \"tái sinh\", và một cô gái không lo âu đầy...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 9077,
+        title: "About the Time When I Lied to My Tsundere Childhood Friend That “I Got a Girlfriend”",
+        slug: "/truyen/9077-about-the-time-when-i-lied-to-my-tsundere-childhood-friend-that-i-got-a-girlfriend",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Tôi có một cô bạn thuở nhỏ, cũng là một Tsundere nữa. Dù chẳng hiểu vì sao cô ấy lại trở thành một Tsundere, nhưng có vẻ cô ấy chỉ Tsundere với mỗi mình tôi.\nTôi yêu cô ấy rất nhiều.\nTôi yêu cô ấy, vì...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 13541,
+        title: "About Touma-kun, Who Wants To Spend His Time Quietly, Is Liked By The School's Madonna",
+        slug: "/truyen/13541-about-touma-kun-who-wants-to-spend-his-time-quietly-is-liked-by-the-schools-madonna",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Touma Yoshino là một nam sinh cao trung bình thường. Bình thường như không thể bình thường hơn. Cậu ta khao khát một cuộc sống yên bình, cuộc sống mà bản thân không cần phải lo lắng về bất cứ điều gì....",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 170,
+        title: "Absolute Duo",
+        slug: "/truyen/170-absolute-duo",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-h5RZaOB8520/WO2vyTQIiHI/AAAAAAAAJ7w/i_7FdhEZWI0/w215/series_170.jpg",
+        ),
+        description: Some(
+            "《Blaze》 là một loại vũ khí được tạo ra từ sức mạnh ý chí của con người. Tôi, Kokonoe là một trong số những người có năng lực được cho là trong 1000 người mới có 1 người sở hữu nó vì thế mà tôi quyết...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 20840,
+        title: "Absolute Regression",
+        slug: "/truyen/20840-absolute-regression",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s20840-c8c49444-509d-403b-a6fb-8490fea288f4.jpg",
+        ),
+        description: Some(
+            "“Đưa ta trở về quá khứ.”\nĐó là cách bước đầu tiên trên con đường báo thù được khởi sự.",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14774,
+        title: "Absolute Zero",
+        slug: "/truyen/14774-absolute-zero",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Erwin là một cậu bé sống trong trại mồ côi tại Đế đô Leitenberg, là một tái sinh giả. Cậu sử dụng kiến thức từ kiếp trước ở Nhật Bản để bước đi trên con đường của riêng mình trong Đế Chế dị giới này....",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 19053,
+        title: "Ác Ma Trở Thành Thần Tại Dị Giới 【Tiến Hóa Phi Nhân Loại】",
+        slug: "/truyen/19053-ac-ma-tro-thanh-than-tai-di-gioi-tien-hoa-phi-nhan-loai",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s19053-1514c3cd-38eb-4b97-b2e0-badfdc37d3ca.jpg",
+        ),
+        description: Some(
+            "Một tựa game VRMMORPG mới, “World of Yggdrasia”, đang tuyển chọn những beta tester từ khắp nơi trên thế giới. Mười ngàn tester đã bắt đầu chuyến phiêu lưu của kiếm và ma thuật ở một thế giới mới, một...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 12831,
+        title: "Ác Nghịch Đại Chiến",
+        slug: "/truyen/12831-ac-nghich-dai-chien",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12831-337f16bb-857a-4a2d-acda-6fc4d55cfc62-m.jpg",
+        ),
+        description: Some(
+            "Mang theo tất cả cái [Ác] để cướp lấy ngai vàng địa ngục.\n\u{a0}\nPhải làm gì để cứu chuộc linh hồn đã rơi vào địa ngục đây?\n\u{a0}\nOhka Sakura, người thiếu nữ bị đẩy xuống tận cùng vực sâu với tấm thân vô tội....",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18341,
+        title: "Ác nữ 800 tuổi nhập vào một vị tiểu thư nhút nhát tận hưởng tuổi xuân nhàn hạ!",
+        slug: "/truyen/18341-ac-nu-800-tuoi-nhap-vao-mot-vi-tieu-thu-nhut-nhat-tan-huong-tuoi-xuan-nhan-ha",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18341-13e6e308-46a7-4f1a-bdd9-10faf6d3421e.jpg",
+        ),
+        description: Some(
+            "Nora kẻ đã bị phong ấn từ 800 năm trước vì tội đe dọa hủy diệt thế giới bây giờ đang rất buồn chán. Nhưng một ngày nọ, cô bị đánh thức bởi lời van xin muốn chết của một cô gái tên Cecily. Sau khi chứn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18269,
+        title: "Ác nữ đã đề xuất một cuộc hôn nhân theo hợp đồng",
+        slug: "/truyen/18269-nhan-vat-phan-dien-da-de-xuat-mot-cuoc-hon-nhan-theo-hop-dong",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18269-d286bb21-ca1e-4488-8ae7-6dfcb7d0e3d6.jpg",
+        ),
+        description: Some(
+            "Một ngày nọ, có một nữ phản diện đã đến với trại trẻ mồ côi.\n\"Tôi ghét trẻ con!\"\n\"Tại sao tôi lại phải nuôi con ở độ tuổi này chứ?\"\n\"Có gì vui khi chăm bọn trẻ suốt ngày quấy khóc thế...\"\nBỏ qua việc...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 19021,
+        title: "Ác Nữ Nửa Vời: Câu Chuyện Về Sự Hoán Đổi Thân Xác Của Hồ Điệp Và Chuột Ở Hậu Cung",
+        slug: "/truyen/19021-ac-nu-nua-voi-cau-chuyen-ve-su-hoan-doi-than-xac-cua-ho-diep-va-chuot-o-hau-cung",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s19021-27b385b3-d599-42a1-b14d-2ab2e5832187.jpg",
+        ),
+        description: Some(
+            "Tại vương quốc này, năm đại gia tộc sẽ tiến cử những thiếu nữ tài sắc vẹn toàn của mình nhập cung để trở thành phi tần của Hoàng đế, nhưng chỉ có một người duy nhất bước lên ngôi vị Hoàng hậu của vươn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 7293,
+        title: "Ác Nữ Phản Diện Đảo Ngược Đồng Hồ Cát",
+        slug: "/truyen/7293-the-villainess-reverse-the-hourglass",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7293-9465aba6-a235-4e72-9249-38dfdc1755da-m.jpg",
+        ),
+        description: Some(
+            "Aria có người mẹ làm nghề kĩ nữ, về sau khi bà kết hôn với một bá tước, Aria trở thành con gái của gia đình Roscent trên danh nghĩa.\nAria sống một cuộc sống sa hoa, nhưng cuối cùng cô bị giết chết bởi...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 10380,
+        title: "Ác nữ sống hai lần",
+        slug: "/truyen/10380-ac-nu-song-hai-lan",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s10380-59beac1d-d51c-4d46-b477-b62ea5a5899e-m.jpg",
+        ),
+        description: Some(
+            "Là một mưu lược gia thiên tài, có thể biến người khác thành hoàng đế!\n\"Nếu như anh con hạnh phúc, con cũng sẽ hạnh phúc.\"\nCô đã ra thực hiện rất nhiều tội ác để anh trai mình có thể trở thành hoàng đế...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18448,
+        title: "Ác Quỷ Thanh Xuân",
+        slug: "/truyen/18448-ac-quy-thanh-xuan",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18448-64ef64d8-7f78-4fcc-a7a1-1f0853260a61.jpg",
+        ),
+        description: Some(
+            "Thanh xuân, thời điểm hoài bão nhất của đời người, cũng như thời điểm con người dễ bị “ác quỷ” xui khiến nhất. Đêm hôm ấy, cùng với ngọn lửa rực rỡ giữa trời đêm, thanh xuân của tôi đã được sinh ra.\n\u{a0}...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18878,
+        title: "Academy's Second Seat",
+        slug: "/truyen/18878-academys-second-seat",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18878-099973b1-8eea-4a81-8146-b131fa6c768d.jpg",
+        ),
+        description: Some(
+            "Câu chuyện xoay quanh một anh chàng đã chuyển sinh vào thế giới game mang tên 'Pháp sư mạnh nhất của học viện ma thuật' tuy nhiên anh lại trở thành đối thủ của nhân vật chính với thân phận là Rudy Ast...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 21150,
+        title: "Academy’s Drunk Fighter",
+        slug: "/truyen/21150-academys-drunk-fighter",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s21150-074271f6-0ffe-47d8-9e4b-7f14e6fdd4cf.jpg",
+        ),
+        description: Some(
+            "Bằng cách nào đó, tôi trở thành một nhân vật trong bối cảnh học viện.\n\"Trường chúng ta có chính sách cấm rượu nghiêm ngặt đối với học sinh.\"\n\"Hả?\"",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 13296,
+        title: "Academy’s Undercover Professor",
+        slug: "/truyen/13296-academys-undercover-professor",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s13296-cc135dc7-e158-47c7-a67e-cb7cc2c910e0-m.jpg",
+        ),
+        description: Some(
+            "Nhân vật chính của chúng ta là một lính đánh thuê đang trên đường đi đến thủ đô đế quốc Exileon. Nhưng bất ngờ bị dính vào một cuộc truy sát. Sau những tình huống gây cấn thì để tránh để bị rắc rối an...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 100,
+        title: "Accel World",
+        slug: "/truyen/100-accel-world",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/--os7wMK9P4s/WO2voFt9vWI/AAAAAAAAJ3Y/KWLps1EnLsA/w215/series_100.jpg",
+        ),
+        description: Some(
+            "Vào năm 2046, Haruyuki, 1 cậu học sinh mập mạp chỉ vừa vào cấp 2 được nửa năm. Cậu có những vấn đề mà những mập mạp hay gặp phải như tự ti, bị bắt nạt ... Cậu chỉ biết trốn vào thế giới ảo, nơi mà tốc...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 4812,
+        title: "Adachi &amp; Shimamura",
+        slug: "/truyen/4812-adachi-shimamura",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4812-63fa4cdc-47ea-456c-a96f-c40e767dac51-m.jpg",
+        ),
+        description: Some(
+            "Tầng hai của nhà thể chất - đây luôn luôn là nơi gặp gỡ của chúng tôi. Đang là giờ học, nhưng tất nhiên, chẳng có tiết học nào đang diễn ra tại một nơi như thế này.\nĐây là nơi mà Shimamura và tôi trở...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 11045,
+        title: "Adachi to Shimamura",
+        slug: "/truyen/11045-adachi-to-shimamura",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s11045-165dc34e-89dd-4494-8d2f-3d27dc1b6fe4.jpg",
+        ),
+        description: Some(
+            "Họ gặp nhau trên căn gác lửng của nhà vận động của trường vào giờ học, nhưng vào thời điểm ấy, chẳng có tiết học nào được dạy ở đó cả. Hai nữ sinh này, Adachi và Shimamura, chỉ đơn giản là đang trốn h...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 11033,
+        title: "Adachi và Shimamura",
+        slug: "/truyen/11033-adachi-va-shimamura",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11033-0525fa8f-c827-405c-8024-bf42f60dc6d0-m.jpg",
+        ),
+        description: Some(
+            "Tầng 2 của phòng thể chất - đây chính là nơi chúng tôi hay gặp. Đang là giờ học, nhưng tất nhiên, không có buổi học nào ở một nơi như thế này cả.\nĐây là nơi mà tôi và Shimamura trở thành bạn. Chúng tô...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 557,
+        title: "Adolescent Adam",
+        slug: "/truyen/557-adolescent-adam",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-Rb0TcCUYL8A/WO2wSCT7H0I/AAAAAAAAKKE/6hXsl3q_j7g/w215/series_557.jpg",
+        ),
+        description: Some(
+            "Khuyến cáo đây là Ero Novel 18+\n\nMột gia đình nhỏ huyên náo, một nhóm bạn cùng lớp vui nhộn và một chàng trai sinh vào ngày đầu tiên của năm theo lịch âm với một cuộc sống bình thường như bao người kh...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 15922,
+        title: "Adventures of Lord El-Melloi II",
+        slug: "/truyen/15922-adventures-of-lord-el-melloi-ii",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s15922-fca03631-ace0-4466-98eb-1b7d4d1aaed0.jpg",
+        ),
+        description: Some(
+            "Hành trình đi đây đi đó của Lượng...Xin lỗi, nhầm, Waver Velvet hay còn gọi là Lord El-Melloi II",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 18334,
+        title: "After ‘flirting-for-hire’ with a yandere, it’s hard for me to escape even if I had wings.",
+        slug: "/truyen/18334-after-flirting-for-hire-with-a-yandere-its-hard-for-me-to-escape-even-if-i-had-wings",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18334-117b1290-0409-4f54-90df-8e56c4c3636c.jpg",
+        ),
+        description: Some(
+            "Là một người ‘tán tỉnh thuê’ có tay nghề chuyên nghiệp. Tôi sẽ giúp các khách hàng của mình đạt được mục tiêu và rời đi mà không thu hút sự chú ý tới bản thân. Nhưng người mà tôi đã ‘tán tỉnh’ có chút...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 20404,
+        title: "After a Desperate Struggle to Avoid Annihilation, My Party Became Unwell",
+        slug: "/truyen/20404-after-a-desperate-struggle-to-avoid-annihilation-my-party-became-unwell",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s20404-abeb6385-7643-4e26-84d1-9e99278a16e9.jpg",
+        ),
+        description: Some(
+            "“--Wolka! Khôngggg! Đừng chết mà!!”\nWolka là người chuyển sinh từ Nhật Bản, giờ anh đã trở thành mạo hiểm giả. Vào một ngày tổ đội của anh đang trong công cuộc thám hiểm hầm ngục, cả nhóm đã bị một co...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 9282,
+        title: "After being cheated on and abandoned by my childhood friend, I ended up dating an idol",
+        slug: "/truyen/9282-after-being-cheated-on-and-abandoned-by-my-childhood-friend-i-ended-up-dating-an-idol",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Yoshikawa Daikichi , năm hai sơ trung, đã chứng kiến bạn gái, đồng thời cũng là bạn thuở nhỏ của cậu, Beniya Akari , lừa dối cậu. Khi cậu hỏi về điều này, cô chỉ đơn giản là thừa nhận và bỏ cậu lại.\nA...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 15137,
+        title: "After Being Thrown Out by My Stepmother, My Former Sister Pounced on Me",
+        slug: "/truyen/15137-after-being-thrown-out-by-my-stepmother-my-former-sister-pounced-on-me",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "\"Biến khỏi đây đi\"\nVào ngày cuối cùng của kì nghỉ xuân, và cậu chỉ là học sinh năm nhất. Tuy vẫn còn trẻ, nhưng mẹ kế đã đuổi cậu ra khỏi nhà. Akito Iwaki bị đuổi ra ngoài mà không một lời báo trước,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 7438,
+        title: "After Coincidentally Saving the New Transfer Student’s Little Sister, We Gradually Grew Closer",
+        slug: "/truyen/7438-after-coincidentally-saving-the-new-transfer-students-little-sister-we-gradually-grew-closer",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s7438-789a4383-7084-4430-aea8-aa493757af89-m.jpg",
+        ),
+        description: Some(
+            "Một ngày, một cô gái, giống như mọi cô gái mà bạn đã nghe qua trong một câu chuyện cổ tích-- Charlotte Bennett đã chuyển đến trường của Aoyagi Akihito với tư cách là một học sinh chuyển trường. Chứng...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 14870,
+        title: "After I Save The Ice Princess From Another School From a Mol*ster, We Started as Friends",
+        slug: "/truyen/14870-after-i-save-the-ice-princess-from-another-school-from-a-molster-we-started-as-friends",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s14870-589312e1-d39a-48a6-a779-a38cfe9d56c9.jpg",
+        ),
+        description: Some(
+            "Minori Souta là một học sinh cao trung bình thường. Hôm nay, cậu vẫn tiếp tục cuộc sống thường nhật như bao ngày.\n\u{a0}\nMặc dù vậy. Cậu ấy vẫn vui vẻ mỗi khi đi đến trường.\n\u{a0}\nBởi vì có một cô gái rất xinh...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 9217,
+        title: "After Responding Seriously to a Marriage Promise, I Married my Cute Childhood Friend ~The Start of a Money Saving Life with my Wife~",
+        slug: "/truyen/9217-tup-leu-tranh-hai-trai-tim-vang",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "- Khi mình trưởng thành, mình nhất định sẽ làm vợ của Mii!\nĐó là một câu nói ngây thơ, vô nghĩ vô lo của một cô bé lớp mầm Kurashiki Kouri. Để đáp lại những câu từ đấy, Mii, hay Kudou Michihisa, người...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 8581,
+        title: "After Responding Seriously to a Marriage Promise, I Married my Cute Childhood Friend ~The Start of a Money Saving Life with my Wife~",
+        slug: "/truyen/8581-after-responding-seriously-to-a-marriage-promise-i-married-my-cute-childhood-friend-the-start-of-a-money-saving-life-with-my-wife",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "\"Em đã từng nghĩ rằng, sẽ thật hạnh phúc nếu được tán tỉnh Mii-kun mỗi ngày.\"\n\"Thế hiện giờ em không cảm thấy hạnh phúc sao?\"\n\"Không, em hạnh phúc lắm, nhưng chỉ hạnh phúc thôi là không đủ để lấp đầy...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 21242,
+        title: "After School, at a Family Restaurant at Night, With That Girl From My Class",
+        slug: "/truyen/21242-after-school-at-a-family-restaurant-at-night-with-that-girl-from-my-class",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s21242-3d898b74-f8ea-436e-add4-e82d3d82bffa.jpg",
+        ),
+        description: Some(
+            "Narumi Kouta là một học sinh cao trung năm hai. Mẹ cậu tái hôn, và cùng với người cha dượng mới, cậu có một cô em gái kế tài giỏi. Không thể thích nghi với cuộc sống mới, cậu quyết định đi làm thêm để...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 6719,
+        title: "AGI: Virtual Girl Wants to Fall in Love",
+        slug: "/truyen/6719-agi-virtual-girl-wants-to-fall-in-love",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s6719-3105e250-ab1e-4eaf-9071-6ff3db178969-m.jpg",
+        ),
+        description: Some(
+            "Cô nàng thế giới ảo \"fall in luv\" với chủ nhân của cô ấy?\nTrong phòng thí nghiệm trường đại học, Nishiki Mamoru đang giúp đỡ phát triển một AI có nhận thức riêng, Hệ thống AGI. Một ngày nọ, cậu nhận t...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 8283,
+        title: "Ai bảo romcom không có thực?",
+        slug: "/truyen/8283-ai-dam-bao-rom-com-khong-co-thuc",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s8283-a0ea2250-6379-43be-8c9d-f65ac7fc69ec-m.jpg",
+        ),
+        description: Some(
+            "Đây là một câu chuyện tình lãng mạn hài hước siêu lý tưởng dựng lên bằng dữ liệu!\n\u{a0}\n“Tôi muốn trải nghiệm tình yêu trong romcom.”\n\u{a0}\nNhững đọc giả yêu thích light novel, yêu thích romcom đều từng mơ mộ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 12079,
+        title: "Ai đó đã chiếm hữu cơ thể tôi",
+        slug: "/truyen/12079-ai-do-da-chiem-huu-co-the-toi",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12079-9364dcfc-a164-4bb3-b539-f57fe05f0780-m.jpg",
+        ),
+        description: Some(
+            "“Xin hãy dựa vào em. Em là người duy nhất chị có thể dựa vào.”“…”“Ngoài em ra, chị không còn ai.”“…”“Chỉ mình tôi thôi.”Sao lại có sự ảo tưởng ghê tởm thế này.* * *Mười năm qua, ai đó đã chiếm hữu cơ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 12386,
+        title: "AI Kon Katsu no Susume ~ Unmei no Aite wa Douseideshita!?~",
+        slug: "/truyen/12386-ai-kon-katsu-no-susume-unmei-no-aite-wa-douseideshita",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Câu chuyện diễn ra vào một tương lai không xa, nơi công nghệ AI (trí tuệ nhân tạo) tạo nên ảnh hưởng rất lớn vào đời sống của con người, đặc biệt là vấn đề hôn nhân.\nMinato Aki quyết định đi đến kết h...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 17671,
+        title: "Ai Là Kẻ Sát Hại Anh Hùng?",
+        slug: "/truyen/17671-who-killed-the-hero",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s17671-85af2563-f079-4c2b-b9db-f384d75af240.jpg",
+        ),
+        description: Some(
+            "“Vị Anh Hùng sẽ đánh bại Quỷ Vương đang ở trong ngôi làng này.”\nĐó là lời sấm truyền của một nhà tiên tri. Cả dân làng đều hết mực tin vào lời tiên đoán ấy; sự tồn tại của chàng thiếu niên tinh thông...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548517,
+        updated_at: 1747548517,
+    },
+    NovelRaw {
+        id: 15099,
+        title: "Ai mà ngờ một tên cô độc chuyên thu âm tại gia như tôi, lại trở thành \"cây viết ma\" cho cô nàng thiên tài xinh đẹp đó chứ",
+        slug: "/truyen/15099-ai-ma-ngo-mot-ten-co-doc-chuyen-thu-am-tai-gia-nhu-toi-lai-tro-thanh-cay-viet-ma-cho-co-nang-thien-tai-xinh-dep-do-chu",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15099-1e0016e0-35de-4421-ae57-72ef0464fef8-m.jpg",
+        ),
+        description: Some(
+            "“Cậu có thể tặng mình một bài hát được không, Onuma-kun?”\nĐây là lời khẩn cầu của nàng thiếu nữ xinh đẹp, người từng được mệnh danh là thiên tài nhưng giờ đây lại không thể cất lên giọng hát…\nQuay lại...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 18133,
+        title: "Aisare Tenshi na Classmate ga, Ore ni Dake Itazura ni Hohoemu",
+        slug: "/truyen/18133-the-classmate-who-is-adored-by-everyone-smiles-teasingly-only-at-me",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18133-cc915c64-0450-41a4-8ccd-5885a3d164b7.jpg",
+        ),
+        description: Some(
+            "Satomi Chika hay còn được gọi là [Thiên sứ hoà bình] vừa xinh đẹp vừa đáng yêu. Ichinose Souma là một chàng trai thích làm đồ ngọt.\nSouma đã nhờ Chika nếm thử đồ ngọt mình làm và đổi lại cậu phải trôn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 3316,
+        title: "Aiso mata \u{304} n ~tsu",
+        slug: "/truyen/3316-a-so-mata-n-tsu",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-JvWdDzRYOF0/W6fMtRrnN1I/AAAAAAABorA/soWy_rCgkFcXMDxppmGRfMNLhrGPr-SNQCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Đó là vào tháng ba và Yoshina Tsutomu, người mà đã đỗ kì thi vào trường đại học mà cậu ấy rất mong muốn được đỗ, đang tận hưởng kì nghỉ xuân của mình sau khi tốt nghiệp trung học phổ thông.\nTuy nhiên,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 12613,
+        title: "Aizawa-kun không thể yêu.",
+        slug: "/truyen/12613-aizawa-kun-khong-the-yeu",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12613-c7435def-928b-45b2-bf15-ebc5bbe42927-m.jpg",
+        ),
+        description: Some(
+            "\"Tôi không thể yêu cô...\"\n\u{a0}\nNhân vật chính, Aizawa Tatsumi, không thể yêu. Ngay từ khi còn bé, anh ta đã phải xa cách với gia đình, thế nhưng luôn có một cô bé/cô gái ở bên cậu, bạn tốt nhất của cậu t...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 2144,
+        title: "AKATEN NO ASUKA ~ ONNA YUUSHA WA IN KANNI OTSU~",
+        slug: "/truyen/2144-akaten-no-asuka-onna-yuusha-wa-in-kanni-otsu",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-zxv7iXMbCUE/Woz7Pj7G0BI/AAAAAAAA_9k/Orn7W7fH4woiRCIQfisYdOKKiJxWt68DgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Kashiwagi Yuuto, người đã chán với cuộc sống của mình, đã chết trong một tai nạn bất ngờ. Sao cái chết đó,\u{a0}Yuuto được trao cho cái\u{a0}quyền năng(cheat) có thể tạo ra mọi món\u{a0}đồ\u{a0}ở đẳng cấp Thánh\u{a0}cụ từ một...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 16101,
+        title: "Akatsuki no Shōkanshi ～Watashi wo Isekai Shōkan Shita Ano Musume no Koto o , Nani Ga Nan Demo Mamoritai～",
+        slug: "/truyen/16101-akatsuki-no-shokanshi-watashi-wo-isekai-shokan-shita-ano-musume-no-koto-o-nani-ga-nan-demo-mamoritai-akatsuki-no-shokanshi-watashi-wo-isekai-shokan-shita-ano-musume-no-koto-o-nani-ga-nan-demo-mamoritai-100-11",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Sau những năm tháng lẻ loi một mình, Kagaya Rei bỗng nhiên bị triệu hồi tới một thế giới mới bởi một cô gái tên là Rinna.\nNhờ đó, Rei đã có thể đặt chân tới thế giới của Kiếm và Pháp thuật mà mình hằn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 15712,
+        title: "Akihabara Radio Tower",
+        slug: "/truyen/15712-akihabara-radio-tower",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s15712-efefc97f-c61f-4c42-9aae-49ee8764f722-m.jpg",
+        ),
+        description: Some(
+            "“Cậu là, Takahashi?”\nTakahashi là một thanh niên trẻ tuổi đã tạch đại học hai năm liên tiếp. Cậu bị cha mẹ đá ra khỏi nhà, và nhờ sự giới thiệu của ông chú Yakuza mà cậu chuyển tới sống một mình trong...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 2317,
+        title: "Akugyaku no Black Maria",
+        slug: "/truyen/2317-akugyaku-no-black-maria",
+        thumbnail: Some(
+            "https://1.bp.blogspot.com/-BLtpwNOxjYQ/WuRiVJRy9kI/AAAAAAABKAc/C08_YJNy4bQbc-C0Lt1P-NSPzwZRfoZNwCHMYCw/w215/default.png",
+        ),
+        description: Some(
+            "Mất trí nhớ, sống bảy năm ở thế giới khác. Shizuru là một bác sĩ vào ban ngày và là một tên sát nhân\u{a0}vào ban đêm.\n\nMột tổ chức đầy những người đẹp điên rồ, một người phụ nữ mù lãnh đạo tổ chức ấy.\n\nNh...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 11853,
+        title: "Akugyaku no Black Maria",
+        slug: "/truyen/11853-akugyaku-no-black-maria",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s11853-61c2e3f7-1ac6-47b6-8156-7ba3ad66f5d5-m.jpg",
+        ),
+        description: Some(
+            "Năm lên 12 tuổi, cậu, Shizuru Midouka, bị rơi vào một thế giới khác có tên là『Khu Vườn Nhỏ』.\nMột vùng đất nơi sự tồn tại của các vị thần gần gũi tới mức khả năng thể chất của những người phụ thuộc v...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 8010,
+        title: "Akuma Koujo ~ Yurui Akuma no Monogatari ~",
+        slug: "/truyen/8010-akuma-koujo-yurui-akuma-no-monogatari",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s8010-56d5bf5a-4d06-4da8-a2a3-271f3cdcbea0.jpg",
+        ),
+        description: Some(
+            "Mượn tóm tắt của người dịch trước :\nÁc Ma mơ thấy một giấc mộng sống trong kiếp người rồi lại tái sinh làm một đứa trẻ loài người, vậy cô ấy là người hay Ác ma?\nCốt truyện thú vị, vẻ đẹp của nữ chính...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 934,
+        title: "Akuma Koujo ~ Yurui Akuma no Monogatari ~",
+        slug: "/truyen/934-akuma-koujo-yurui-akuma-no-monogatari",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s934-bc7e9f3a-46c5-475f-bc80-d93971f77b42-m.jpg",
+        ),
+        description: Some(
+            "Ác Ma mơ thấy một giấc mộng sống trong kiếp người rồi lại tái sinh làm một đứa trẻ loài người, vậy cô ấy là người hay Ác ma?\nCốt truyện thú vị, vẻ đẹp của nữ chính (sau khi tái sinh) được miêu tả như...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 7194,
+        title: "Akuma no Meido-san",
+        slug: "/truyen/7194-akuma-no-meido-san",
+        thumbnail: Some(
+            "https://docln.net/img/nocover.jpg",
+        ),
+        description: Some(
+            "Bị bắt nạt và đẩy ra khỏi một vách đá bởi các bạn cùng lớp, một cô gái mở mắt cùng với tiếng sấm rền vang. Khi trở lại lớp học, cô và mọi người trong lớp đã được triệu hồi. Họ được triệu hồi đến một t...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 5434,
+        title: "Akuma Wa Ikai De Kami To Naru",
+        slug: "/truyen/5434-akuma-wa-ikai-de-kami-to-naru",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s5434-bc32e0fc-b00b-44f6-b328-dfc7604dd1b5-m.jpg",
+        ),
+        description: Some(
+            "Một VRMMORPG mới, “World of Yggdrasia”, chiêu mộ các beta tester từ khắp mọi nơi trên thế giới.Mười ngàn testers bắt đầu chuyến phiêu lưu trong một thế giới của kiếm và ma thuật có kích thước tương tự...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 4435,
+        title: "Akuma wa ikai de kami to naru",
+        slug: "/truyen/4435-akuma-wa-ikai-de-kami-to-naru",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4435-9b5ad9fa-d190-4a7d-98a5-147c1d4e20b9-m.jpg",
+        ),
+        description: Some(
+            "Một VRMMORPG mới, “World of Yggdrasia”, chiêu mộ các beta tester từ khắp mọi nơi trên thế giới.Mười ngàn testers bắt đầu chuyến phiêu lưu trong một thế giới của kiếm và ma thuật có kích thước tương tự...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 4400,
+        title: "Akuyaku Reijo Nanode Rasubosu o Katte Mimashita",
+        slug: "/truyen/4400-akuyaku-reijo-nanode-rasubosu-o-katte-mimashita",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4400-0e9d55a5-c9f8-4fc1-b003-c71fdd895cb0-m.jpg",
+        ),
+        description: Some(
+            "Đây là thế giới trong otome game mà tôi chơi từ kiếp trước, đúng không? Nếu vậy, tôi đang bị kẹt trong cuộc chiến giữa Nữ Chính và Quỷ Vương, người sẽ chết là tôi.....không đùa đâu!Hãy tránh death fla...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 1074,
+        title: "Akuyaku Reijo Ni Koi Wo Shite",
+        slug: "/truyen/1074-akuyaku-reijo-ni-koi-wo-shite",
+        thumbnail: Some(
+            "https://1.bp.blogspot.com/-YgVbBx-HItU/WcOsM5f310I/AAAAAAAAtjU/PAcnt-XZyHgPfsZb5KVMmMWPY6FcMvA7wCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Khi lấy lại được ý thức, cậu đã sẵn ở trong thế giới khác. Không hề gặp gỡ nào với Thần linh, cũng không được ban tặng bất cứ thứ gì, đây chỉ là một lần chuyển sinh bất ngờ xảy ra. Không còn có đủ thờ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 2666,
+        title: "Akuyaku Reijo Ni Koi Wo Shite",
+        slug: "/truyen/2666-akuyaku-reijo-ni-koi-wo-shite",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-qHVYauGOLLk/WxDxh8Du9nI/AAAAAAABRCc/phBdghg6SLY72pwc4619MNTl1K1J6pEdACHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Khi tỉnh lại cậu đã ở một thế giới khác. Không gặp Thượng đế, không cheat skills, chỉ là đột ngột tái sinh. Chẳng có thời gian để tìm hiểu mọi thứ, câu gặp rắc rối chết người ngay từ đầu và rồi bằng c...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 2217,
+        title: "Akuyaku Reijo Ni Koi Wo Shite",
+        slug: "/truyen/2217-akuyaku-reijo-ni-koi-wo-shite",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-ECaBm5K8be8/Wp4mejHTNpI/AAAAAAABCC0/hYUZ1LxeTiMtQCj51ZOa-RxRzIEvjt26gCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Khi lấy lại được ý thức, cậu đã sẵn ở trong thế giới khác. Không hề gặp gỡ nào với Thần linh, cũng không được ban tặng bất cứ thứ gì, đây chỉ là một lần chuyển sinh bất ngờ xảy ra. Không còn có đủ thờ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 2745,
+        title: "Akuyaku reijō wa, shomin ni totsugitai! !",
+        slug: "/truyen/2745-akuyaku-reijo-wa-shomin-ni-totsugitai",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-Z9IBWXt2qsg/WySOSbaEjDI/AAAAAAABUt4/xE-TD3JKml8D6sprk1SKOQdAIghIRWKzgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Tôi đầu thai làm nhân vật tiểu thư xấu xa Isabella trong trò chơi tôi đang chơi \"Love Magical\" ư !???Thành thực mà nói tôi chả quan tâm đến ngã nhị hoàng tử, người tôi yêu chỉ là một thường dân thôi,...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 9489,
+        title: "Akuyaku Reijou no Ani ni Tensei Shimashita",
+        slug: "/truyen/9489-ive-been-reincarnated-as-a-villainess-older-brother",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s9489-7246d661-492e-40a4-97d0-7c26aa900e26-m.jpg",
+        ),
+        description: Some(
+            "Cain nhận ra mình được chuyển sinh đến thế giới trong Otome Game. Cậu mang theo những ký ức tiền kiếp về việc từng là một Let's Play Youtuber (Youtuber làm video chơi game). Giờ đây cậu là anh trai củ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 21674,
+        title: "Akuyaku Reijou no Ani ni Tensei Shimashita",
+        slug: "/truyen/21674-akuyaku-reijou-no-ani-ni-tensei-shimashita",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s21674-e70d2682-854d-459a-b76a-cf01fef57faf.jpg",
+        ),
+        description: Some(
+            "Sau cái chết đột ngột và được tái sinh một thời gian, main nhận ra bản thân đã được chuyển sinh vào một trò chơi Otome Game anh\u{a0} chơi ở kiếp trước. Kể từ khi cô em gái vừa mới chào đời\u{a0} nhận được cái...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 13132,
+        title: "Akuyaku Reijou no Naka no Hito",
+        slug: "/truyen/13132-akuyaku-reijou-no-naka-no-hito",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s13132-b54d7335-163a-412e-bf63-52e6361d3790-m.jpg",
+        ),
+        description: Some(
+            "Emi Kobayashi, một cô gái bình thường đem lòng yêu các trò chơi Otome, tỉnh dậy và thấy bản thân đã biến thành Remilia, phản diện của một trò chơi Otome có tên [Thánh nữ và Hành trình thanh tẩy/kỵ sĩ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 18602,
+        title: "Akuyaku Reijou wa Danna-sama wo Yasesasetai",
+        slug: "/truyen/18602-akuyaku-reijou-wa-danna-sama-wo-yasesasetai",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18602-f017dc22-3964-44da-970e-61929686c121.jpg",
+        ),
+        description: Some(
+            "Cô con gái một Bá tước - Camilla, người đã thua trong cuộc chiến giành quyền làm hôn thê của Nhị hoàng tử. Ngài đã chọn con gái một Nam tước làm định mệnh của đời mình. Khác hẳn với Camilla, kẻ được g...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 12523,
+        title: "Akuyaku Reijou, Shomin ni Ochiru",
+        slug: "/truyen/12523-the-villainess-becomes-a-commoner",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12523-10ac0b70-92f2-43b4-b7e1-4450810fe4f1-m.jpg",
+        ),
+        description: Some(
+            "Sau khi bị sát hại, kiếp sau của tôi là cô tiểu thư nhà giàu bị cả thiên hạ căm ghét!? Không chỉ vậy, đây là tương lai vài năm sau khi tôi qua đời, chuyện quái quỷ gì đang xảy ra vậy? Còn nữa, tôi đâu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 17272,
+        title: "Akuyaku Suki no Ore, Oshi Kyara ni Tensei",
+        slug: "/truyen/17272-akuyaku-suki-no-ore-oshi-kyara-ni-tensei",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s17272-800d8a46-3e2d-4efe-985d-18c7d4b112e8.jpg",
+        ),
+        description: Some(
+            "Tôi sẽ gian lận bằng kiến thức đã có để lật ngược quá khứ của những kẻ phản diện (đáng lẽ) phải đi theo số phận đau buồn!\nLúc nào cũng bị so sánh với đứa em gái ưu tú của mình, mất đi tư cách trở thàn...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 3025,
+        title: "Akuyaku Tensei Dakedo Doushite Kou Natta",
+        slug: "/truyen/3025-akuyaku-tensei-dakedo-doushite-kou-natta",
+        thumbnail: Some(
+            "https://2.bp.blogspot.com/-zYbP4TQvWkI/W176admXV5I/AAAAAAABdxc/jSyLrk6xDDgueoGfKx2WqW0XARhLRRQwgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Eliza Kaldia là người được tái sinh trong vai một nữ nhân vật quý tộc phản diện trong một cái otome game giả tưởng. Cô bị kẹt trong một thế giới mà trong đó hình ảnh của cô về cách một tiểu thư quý tộ...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 3438,
+        title: "Albert Ke no Reijou wa Botsuraku wo go Shomou desu",
+        slug: "/truyen/3438-albert-ke-no-reijou-wa-botsuraku-wo-go-shomou-desu",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-lr757Okqzng/W88v0aMtZZI/AAAAAAABtWc/IG212lCV--4Lf7odFFk7ufI5lNn1JiUNACHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Con gái gia tộc Albert, Mary Albert, đã nhớ lại những ký ức tiền kiếp của mình giữa lễ khai giảng. Theo trí nhớ của cô thì đây là thế mới trong Otome-game mà cô từng chơi còn cô là một nhân vật trong...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 176,
+        title: "Aldnoah Zero Extra",
+        slug: "/truyen/176-aldnoah-zero-extra",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-dQlQvG8mpkQ/WO2vzKRDyAI/AAAAAAAAJ8I/xWtCs2jEoOc/w215/series_176.jpg",
+        ),
+        description: Some(
+            "Một phần cốt truyện về nhân vật Inaho",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 12110,
+        title: "Alice in the Massacre",
+        slug: "/truyen/12110-alice-in-the-massacre",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s12110-10506c3c-5d79-4bc2-8315-42bf23ba1f3b-m.jpg",
+        ),
+        description: Some(
+            "Máu, rỉ sét, và thế lực bóng đêm! Một cô gái mất trí nhớ, tỉnh dậy giữa vùng đất ác mộng.\nNhững thực thể vặn vẹo gọi cô là \"Alice,\" chúng lần lượt tấn công cô, hết kẻ này tới kẻ khác.\nKhông một chút ý...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 3839,
+        title: "Alice Mare",
+        slug: "/truyen/3839-alice-mare",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-OpC3ks9iRWE/XDRmlowAkFI/AAAAAAACA40/LPiOHtU10P0jGNmsQlpgUMTe5gBKeK1jgCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Allen là một cậu bé bị mất trí nhớ.Mất đi cha mẹ, cậu được đưa đến một cơ sở kín tách biệt với thế giới bên ngoài.Một ngày, cậu tìm hiểu về một tin đồn mà cậu nghe từ những đứa trẻ khác tại cơ sở, và....",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 21134,
+        title: "Alicemare",
+        slug: "/truyen/21134-alicemare",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s21134-38a33bcf-4bf1-47b6-b523-b9d795668959.jpg",
+        ),
+        description: Some(
+            "Allen là một cậu bé bị mất trí nhớ.\nMất đi cha mẹ, cậu được đưa đến một cơ sở kín tách biệt với thế giới bên ngoài.\nMột ngày, cậu tìm hiểu về một tin đồn mà cậu nghe từ những đứa trẻ khác tại cơ sở, v...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 104,
+        title: "All you need is kill",
+        slug: "/truyen/104-all-you-need-is-kill",
+        thumbnail: Some(
+            "https://4.bp.blogspot.com/-ozcZ84PVYDc/WO2voloYBAI/AAAAAAAAJ3o/sEHkYDWXlPo/w215/series_104.jpg",
+        ),
+        description: Some(
+            "Một anh lính bất tử do năng lực làm chủ luân hồi chiến đấu trên Chiến giáp cơ giới trước đàn quái vật lúc nhúc tên Mimic",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 6278,
+        title: "Allison",
+        slug: "/truyen/6278-allison",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s6278-39ccda7e-c872-4a38-8c99-2dbff01636d2-m.jpg",
+        ),
+        description: Some(
+            "Lấy bối cảnh từ một thế giới mà ở đó chỉ có một lục địa duy nhất, bị chia cắt bởi sông Lutoni và dãy núi Trung Tâm trở thành hai quốc gia đương chiến là Roxche và Sou Beil, câu chuyện kể về Allison, m...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 4115,
+        title: "Almadianos Eiyuuden",
+        slug: "/truyen/4115-almadianos-eiyuuden",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s4115-74c66e7b-ae3f-4b3d-a882-ef34fac9c239-m.jpeg",
+        ),
+        description: Some(
+            "Ở thế giới Dulmond, có 1 vị pháp sư đã dành hết cuộc đời mình để theo đuổi đỉnh cao của ma pháp. Và hàng thế kỷ trước, ông ta đã đạt được mong ước của mình khi hợp nhất với 1 ngôi sao.Thế nhưng cái gi...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 14261,
+        title: "Almark ~ Kiếm phương Bắc, Gậy phép phương Nam ~",
+        slug: "/truyen/14261-almark-kiem-phuong-bac-dua-phep-phuong-nam",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s14261-f5144b9e-ee6f-41e3-80aa-b219ff5affb5-m.jpg",
+        ),
+        description: Some(
+            "Cậu bé Almark đã sống như một thành viên của đoàn lính đánh thuê tại vùng đất mênh mông phương Bắc, nơi các cuộc chiến tranh diễn ra không ngừng nghỉ. Tuân theo lời hứa với cha, cậu nhập học tại một h...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 1400,
+        title: "Although I Am Only Level 1, but with This Unique Skill, I Am the Strongest",
+        slug: "/truyen/1400-although-i-am-only-level-1-but-with-this-unique-skill-i-am-the-strongest",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-DVyZzfJ1-3Q/WZffWw0T3GI/AAAAAAAAm88/l4EiHyhakuctzg3phdalfVKpkoFBnUIggCHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Satou Ryouta đã chết khi làm việc quá sức tại một công ty đen đã được chuyển sinh sang thế giới khác. Mặc dù Ryouta sống nhưng cậu đang bị một gánh nặng làm phiền đó là cấp độ của cậu ở thế giới khác...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 1943,
+        title: "Although I Am Only Level 1, but with This Unique Skill, I Am the Strongest",
+        slug: "/truyen/1943-although-i-am-only-level-1-but-with-this-unique-skill-i-am-the-strongest",
+        thumbnail: Some(
+            "https://3.bp.blogspot.com/-9zof6jegsZU/WkdY_MPEK8I/AAAAAAAA4NA/_2VQgrGkUH4xF1qm5lo1FavJlGxbpvm5ACHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Satou Ryouta đã chết khi làm việc quá sức tại một công ty đen đã được chuyển sinh sang thế giới khác. Mặc dù Ryouta sống nhưng cậu đang bị một gánh nặng làm phiền đó là cấp độ của cậu ở thế giới khác...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 2791,
+        title: "ALTHOUGH I AM ONLY LEVEL 1, BUT WITH THIS UNIQUE SKILL, I AM THE STRONGEST",
+        slug: "/truyen/2791-although-i-am-only-level-1-but-with-this-unique-skill-i-am-the-strongest",
+        thumbnail: Some(
+            "https://1.bp.blogspot.com/-2OTWYBAccnM/Wy0Z5E2WyEI/AAAAAAABV2Y/qUu8-P6nRSkvBmzC5NKRQqvVE9JUbJk5ACHMYCw/w215/default.jpg",
+        ),
+        description: Some(
+            "Satou Ryouta đã chết khi làm việc quá sức tại một công ty đen đã được chuyển sinh sang thế giới khác. Mặc dù Ryouta sống nhưng cậu đang bị một gánh nặng làm phiền đó là cấp độ của cậu ở thế giới khác...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 17980,
+        title: "Altina the Sword Princess",
+        slug: "/truyen/17980-altina-the-sword-princess",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s17980-7054f948-3cb1-4b84-9c94-143d69dbd348.jpg",
+        ),
+        description: Some(
+            "Regis Aurick là một con mọt sách chính hiệu, ngoài ra với binh khí anh chẳng dùng được món nào ra hồn. Anh phục vự quân đội với vai trò là một sĩ quan tham mưu nhưng bị buộc tội và đày tới làm việc vù...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 13484,
+        title: "Amaetai Osananajimi wa \"Nan demo Iu Koto Kikuken\" wo Motte, Kiss wo Shitai to Sematte Kuru",
+        slug: "/truyen/13484-amaetai-osananajimi-wa-nan-demo-iu-koto-kikuken-wo-motte-kiss-wo-shitai-to-sematte-kuru",
+        thumbnail: Some(
+            "https://i.docln.net/lightnovel/covers/s13484-38105152-aea6-4460-a68f-75a09e58efec-m.jpg",
+        ),
+        description: Some(
+            "Chuyện tình thanh xuân bi hài về một cô bạn thuở thơ ấu xinh đẹp ép buộc tôi phải hôn và tình tứ với nhỏ!?\nHibiya Sayu, cô bạn thuở nhỏ đã tỏ tình với tôi. Thứ mà cô ấy có trong tay chính là tấm phiếu...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 17322,
+        title: "Amagi Brilliant Park",
+        slug: "/truyen/17322-amagi-brilliant-park",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s17322-e16fcb3a-00a3-4383-8515-6b79828849e0.jpg",
+        ),
+        description: Some(
+            "\"Tuy hơi đường đột nhưng mà Kanie kun ơi, cùng đi công viên giải trí với tôi nhé?\"\nSento Isuzu - nữ sinh xinh đẹp và bí ẩn vừa chuyển trường đến đưa ra lời mời hẹn hò với Kanie Seiya tại lớp học sau g...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+    NovelRaw {
+        id: 18166,
+        title: "Amalgam Hound",
+        slug: "/truyen/18166-amalgam-hound",
+        thumbnail: Some(
+            "https://i.hako.vn/ln/series/covers/s18166-3caa074c-48a0-4b9d-b5c5-7925482f987c.jpg",
+        ),
+        description: Some(
+            "Một con chó trung thành hay một cỗ máy tàn bạo? Amalgam: những vũ khí chiến lược đáng sợ được phái tới tiền tuyến của các cuộc chiến. Là chỉ huy của một đơn vị điều tra đặc biệt với nhiệm vụ săn lùng...",
+        ),
+        author_id: Some(
+            0,
+        ),
+        artist_id: Some(
+            0,
+        ),
+        created_at: 1747548518,
+        updated_at: 1747548518,
+    },
+]

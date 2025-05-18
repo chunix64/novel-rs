@@ -1,3 +1,0 @@
-trait SiteAdapter {
-    fn get
-}
