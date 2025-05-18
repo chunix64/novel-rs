@@ -12,6 +12,7 @@ struct Selectors {
     thumbnail: Selector,
     description: Selector,
     preview: Selector,
+    max_page: Selector,
 }
 
 static SELECTORS: Lazy<Selectors> = Lazy::new(|| Selectors {
@@ -20,23 +21,26 @@ static SELECTORS: Lazy<Selectors> = Lazy::new(|| Selectors {
     thumbnail: Selector::parse(r#"div[data-bg]"#).unwrap(),
     description: Selector::parse(r#"div[style]"#).unwrap(),
     preview: Selector::parse(".thumb-section-flow main.row .thumb-item-flow .ln-tooltip").unwrap(),
+    max_page: Selector::parse("a.paging_item.paging_prevnext.next").unwrap(),
 });
 
-fn get_item(tooltip: &ElementRef, preview: &ElementRef) -> NovelRaw {
-    NovelRaw {
-        id: parse_id(tooltip),
-        title: parse_title(tooltip),
-        slug: parse_slug(preview),
-        thumbnail: parse_thumbnail(preview),
-        description: parse_description(tooltip),
-        author_id: Some(0),
-        artist_id: Some(0),
-        created_at: current_stamp() as i64,
-        updated_at: current_stamp() as i64,
-    }
+pub fn parse_max_page(html: &str) -> i64 {
+    Html::parse_document(html)
+        .select(&SELECTORS.max_page)
+        .next()
+        .unwrap()
+        .attr("href")
+        .unwrap()
+        .to_string()
+        .split("page=")
+        .nth(1)
+        .and_then(|x| Some(x.trim()))
+        .unwrap()
+        .parse::<i64>()
+        .unwrap()
 }
 
-pub async fn parse_items(html: &str) -> Vec<NovelRaw> {
+pub fn parse_items(html: &str) -> Vec<NovelRaw> {
     let raw = Html::parse_document(html);
     let mut result: Vec<NovelRaw> = Vec::new();
 
@@ -53,6 +57,20 @@ pub async fn parse_items(html: &str) -> Vec<NovelRaw> {
     }
 
     result
+}
+
+fn get_item(tooltip: &ElementRef, preview: &ElementRef) -> NovelRaw {
+    NovelRaw {
+        id: parse_id(tooltip),
+        title: parse_title(tooltip),
+        slug: parse_slug(preview),
+        thumbnail: parse_thumbnail(preview),
+        description: parse_description(tooltip),
+        author_id: Some(0),
+        artist_id: Some(0),
+        created_at: current_stamp() as i64,
+        updated_at: current_stamp() as i64,
+    }
 }
 
 fn parse_id(tooltip: &ElementRef) -> i64 {
