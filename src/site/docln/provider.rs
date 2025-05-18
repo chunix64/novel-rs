@@ -31,3 +31,16 @@ impl ContentProvider for DoclnProvider {
         contents
     }
 }
+
+impl DoclnProvider {
+    async fn get_items_range(&self, start: i64, end: i64) -> Vec<NovelRaw> {
+        let mut items: Vec<NovelRaw> = Vec::new();
+        for i in start..=end {
+            let html = fetch(i).await;
+            let mut part = parse_items(&html);
+            items.append(&mut part);
+        }
+
+        items
+    }
+}
