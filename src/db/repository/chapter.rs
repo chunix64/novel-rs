@@ -24,24 +24,19 @@ impl ChapterRepository {
 
     pub async fn insert(
         &self,
-        title: &str,
-        novel_id: Option<i64>,
-        created_at: i64,
-        updated_at: i64,
-        content: &str,
-        chapter_number: Option<i64>,
+        chapter: &Chapter,
     ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!(
             "INSERT INTO {} (title, novel_id, created_at, updated_at, content, chapter_number) VALUES (?, ?, ?, ?, ?, ?)",
             TABLE_NAME
         );
         sqlx::query(&query)
-            .bind(title)
-            .bind(novel_id)
-            .bind(created_at)
-            .bind(updated_at)
-            .bind(content)
-            .bind(chapter_number)
+            .bind(chapter.title.clone())
+            .bind(chapter.novel_id)
+            .bind(chapter.created_at)
+            .bind(chapter.updated_at)
+            .bind(chapter.content.clone())
+            .bind(chapter.chapter_number)
             .execute(&self.pool)
             .await
     }

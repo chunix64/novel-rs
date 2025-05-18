@@ -24,24 +24,21 @@ impl NovelRepository {
 
     pub async fn insert(
         &self,
-        title: &str,
-        description: Option<&str>,
-        author_id: Option<i64>,
-        artist_id: Option<i64>,
-        created_at: i64,
-        updated_at: i64,
+        novel: &Novel,
     ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!(
-            "INSERT INTO {} (title, description, author_id, artist_id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)",
+            "INSERT INTO {} (title, slug, thumbnail, description, author_id, artist_id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
             TABLE_NAME
         );
         sqlx::query(&query)
-            .bind(title)
-            .bind(description)
-            .bind(author_id)
-            .bind(artist_id)
-            .bind(created_at)
-            .bind(updated_at)
+            .bind(novel.title.clone())
+            .bind(novel.slug.clone())
+            .bind(novel.thumbnail.clone())
+            .bind(novel.description.clone())
+            .bind(novel.author_id)
+            .bind(novel.artist_id)
+            .bind(novel.created_at)
+            .bind(novel.updated_at)
             .execute(&self.pool)
             .await
     }
@@ -49,6 +46,8 @@ impl NovelRepository {
     pub async fn update(
         &self,
         title: &str,
+        slug: &str,
+        thumbnail: Option<&str>,
         description: Option<&str>,
         author_id: Option<i64>,
         artist_id: Option<i64>,
@@ -57,12 +56,14 @@ impl NovelRepository {
     ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!(
             "UPDATE {}
-            SET title = ?, description = ?, author_id = ?, artist_id = ?, updated_at = ?
+            SET title = ?, slug = ?, thumbnail = ?, description = ?, author_id = ?, artist_id = ?, updated_at = ?
             WHERE id = ?",
             TABLE_NAME,
         );
         sqlx::query(&query)
             .bind(title)
+            .bind(slug)
+            .bind(thumbnail)
             .bind(description)
             .bind(author_id)
             .bind(artist_id)

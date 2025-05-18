@@ -1,10 +1,7 @@
 use once_cell::sync::Lazy;
 use scraper::{ElementRef, Html, Selector};
 
-use crate::{
-    site::content::novels::NovelRaw,
-    utils::{http::fetch_url, time::current_stamp},
-};
+use crate::{site::content::novels::NovelRaw, utils::time::current_stamp};
 
 struct Selectors {
     title: Selector,
@@ -66,8 +63,8 @@ fn get_item(tooltip: &ElementRef, preview: &ElementRef) -> NovelRaw {
         slug: parse_slug(preview),
         thumbnail: parse_thumbnail(preview),
         description: parse_description(tooltip),
-        author_id: Some(0),
-        artist_id: Some(0),
+        author_id: None,
+        artist_id: None,
         created_at: current_stamp() as i64,
         updated_at: current_stamp() as i64,
     }

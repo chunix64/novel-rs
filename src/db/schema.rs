@@ -37,6 +37,7 @@ pub async fn init_db(db: &SqlitePool) -> Result<(), sqlx::Error> {
         CREATE TABLE IF NOT EXISTS novels (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT NOT NULL,
+            slug TEXT NOT NULL,
             thumbnail TEXT,
             author_id INTEGER,
             artist_id INTEGER,

@@ -13,17 +13,9 @@ impl ContentProvider for DoclnProvider {
     type Content = ChapterRaw;
 
     async fn get_items(&self) -> Vec<Self::Item> {
-        let mut items: Vec<Self::Item> = Vec::new();
         let html = fetch(1).await;
         let max_page = parse_max_page(&html);
-
-        for i in 1..=max_page {
-            let html = fetch(i).await;
-            let mut part = parse_items(&html);
-            items.append(&mut part);
-        }
-
-        items
+        self.get_items_range(1, max_page).await
     }
 
     async fn get_contents(&self) -> Vec<Self::Content> {
@@ -33,14 +25,16 @@ impl ContentProvider for DoclnProvider {
 }
 
 impl DoclnProvider {
-    async fn get_items_range(&self, start: i64, end: i64) -> Vec<NovelRaw> {
+    pub async fn get_items_range(&self, start: i64, end: i64) -> Vec<NovelRaw> {
+        println!("Start get Novels!");
         let mut items: Vec<NovelRaw> = Vec::new();
         for i in start..=end {
             let html = fetch(i).await;
             let mut part = parse_items(&html);
             items.append(&mut part);
+            println!("Novels done: {}", i);
         }
-
+        println!("Finished get Novels!");
         items
     }
 }

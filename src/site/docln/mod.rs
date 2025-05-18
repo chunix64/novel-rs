@@ -1,3 +1,3 @@
-mod parser;
 mod html;
+mod parser;
 pub mod provider;
