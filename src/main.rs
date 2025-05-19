@@ -25,5 +25,5 @@ async fn main() {
     }
 
     let novel_service = NovelService::new(provider, database);
-    novel_service.sync_novels().await;
+    println!("Test: {:#?}", novel_service.test().await);
 }

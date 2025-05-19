@@ -21,6 +21,21 @@ where
         .await
 }
 
+pub async fn get_limit<T>(
+    pool: &sqlx::SqlitePool,
+    table_name: &str,
+    count: i64,
+) -> Result<Vec<T>, sqlx::Error>
+where
+    T: for<'r> sqlx::FromRow<'r, sqlx::sqlite::SqliteRow> + Send + Unpin,
+{
+    let query = format!("SELECT * FROM {} LIMIT ?", table_name);
+    sqlx::query_as::<_, T>(&query)
+        .bind(count)
+        .fetch_all(pool)
+        .await
+}
+
 pub async fn delete(
     pool: &sqlx::SqlitePool,
     id: i64,

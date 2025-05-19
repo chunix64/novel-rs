@@ -15,7 +15,6 @@ pub struct NovelRaw {
 
 #[derive(Debug)]
 pub struct ChapterRaw {
-    pub id: i64,
     pub title: String,
     pub slug: String,
     pub novel_id: i64,
@@ -23,6 +22,12 @@ pub struct ChapterRaw {
     pub updated_at: i64,
     pub content: String,
     pub chapter_number: Option<i64>,
+}
+
+#[derive(Debug)]
+pub struct ChapterMeta {
+    pub title: String,
+    pub slug: String,
 }
 
 impl ItemRaw for NovelRaw {}

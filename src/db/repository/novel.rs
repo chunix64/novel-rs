@@ -22,6 +22,10 @@ impl NovelRepository {
         helpers::get_by_id::<Entity>(&self.pool, id, TABLE_NAME).await
     }
 
+    pub async fn get_limit(&self, count: i64) -> Result<Vec<Entity>, sqlx::Error> {
+        helpers::get_limit(&self.pool, TABLE_NAME, count).await
+    }
+
     pub async fn insert(
         &self,
         novel: &Novel,
