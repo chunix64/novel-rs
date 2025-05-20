@@ -24,6 +24,7 @@ impl From<ChapterRaw> for Chapter {
         Self {
             id: raw.chapter_number.unwrap_or_default(),
             title: raw.title,
+            slug: raw.slug,
             novel_id: raw.novel_id,
             created_at: raw.created_at,
             updated_at: raw.created_at,

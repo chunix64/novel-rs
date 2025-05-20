@@ -80,4 +80,8 @@ impl NovelRepository {
     pub async fn delete(&self, id: i64) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         helpers::delete(&self.pool, id, TABLE_NAME).await
     }
+
+    pub async fn slug_exists(&self, slug: &str) -> bool {
+        helpers::slug_exists(&self.pool, slug, TABLE_NAME).await
+    }
 }

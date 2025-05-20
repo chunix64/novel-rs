@@ -27,11 +27,12 @@ impl ChapterRepository {
         chapter: &Chapter,
     ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!(
-            "INSERT INTO {} (title, novel_id, created_at, updated_at, content, chapter_number) VALUES (?, ?, ?, ?, ?, ?)",
+            "INSERT INTO {} (title, slug, novel_id, created_at, updated_at, content, chapter_number) VALUES (?, ?, ?, ?, ?, ?, ?)",
             TABLE_NAME
         );
         sqlx::query(&query)
             .bind(chapter.title.clone())
+            .bind(chapter.slug.clone())
             .bind(chapter.novel_id)
             .bind(chapter.created_at)
             .bind(chapter.updated_at)
@@ -69,5 +70,9 @@ impl ChapterRepository {
 
     pub async fn delete(&self, id: i64) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         helpers::delete(&self.pool, id, TABLE_NAME).await
+    }
+
+    pub async fn slug_exists(&self, slug: &str) -> bool {
+        helpers::slug_exists(&self.pool, slug, TABLE_NAME).await
     }
 }

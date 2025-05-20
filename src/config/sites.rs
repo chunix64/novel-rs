@@ -1,38 +1,37 @@
-use crate::utils::string::to_snake_case;
+use crate::{db::Database, service::novel::NovelService, site::docln::provider::DoclnProvider};
 
-pub struct Site {
-    pub name: String,
-    pub alias: String,
-    pub db_name: String,
-    pub language: String,
+pub enum SiteEnum {
+    Docln,
 }
 
-impl Site {
-    fn new(
-        name: impl Into<String>,
-        alias: Option<String>,
-        db_name: Option<String>,
-        language: impl Into<String>,
-    ) -> Self {
-        let name: String = name.into();
-        let alias = alias.unwrap_or_else(|| to_snake_case(&name));
-        let db_name = db_name.unwrap_or_else(|| alias.clone());
-        let language_str = language.into();
-        let language = if language_str.trim().is_empty() {
-            "und".to_string() // und is undetermined language (unknown)
-        } else {
-            language_str
-        };
+pub enum ServiceEnum {
+    Novel(NovelService),
+}
 
-        Self {
-            name,
-            alias,
-            db_name,
-            language,
+impl SiteEnum {
+    pub fn from_str(name: &str) -> Option<Self> {
+        match name {
+            "docln" => Some(Self::Docln),
+            _ => None,
         }
     }
-}
 
-pub fn get_sites() -> Vec<Site> {
-    vec![Site::new("docln", None, None, "vi")]
+    pub fn create_service(&self, database: Database) -> ServiceEnum {
+        match self {
+            Self::Docln => {
+                let provider = DoclnProvider;
+                ServiceEnum::Novel(NovelService::new(provider, database))
+            }
+        }
+    }
+
+    pub fn database_name(&self) -> String {
+        match self {
+            Self::Docln => "docln".to_string(),
+        }
+    }
+
+    pub fn get_site() -> Vec<Self> {
+        vec![Self::Docln]
+    }
 }

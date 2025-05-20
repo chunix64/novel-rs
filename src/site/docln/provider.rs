@@ -30,7 +30,6 @@ impl DoclnProvider {
         let chapter_metas = parse_chapters_list(&html);
         println!("Start get Chapter!");
         for (index, chapter_meta) in chapter_metas.iter().enumerate() {
-            println!("Start get: {}", index);
             let chapter_html = fetch_chapters(&chapter_meta.slug).await;
             let content = parse_chapter_content(&chapter_html);
             let now = current_stamp() as i64;
@@ -44,9 +43,10 @@ impl DoclnProvider {
                 chapter_number: Some(index as i64),
             };
             result.push(chapter_raw);
-            println!("Get done: {}", index);
+            println!("Get chapter done: {}", index);
         }
 
+        println!("Finished get chapter!");
         result
     }
 
@@ -57,7 +57,7 @@ impl DoclnProvider {
             let html = fetch_novels(i).await;
             let mut part = parse_novels(&html);
             items.append(&mut part);
-            println!("Novels done: {}", i);
+            println!("Get novel done: {}", i);
         }
         println!("Finished get Novels!");
         items

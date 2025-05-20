@@ -1,22 +1,36 @@
 use std::path::Path;
 use tokio::fs::{self, File};
 
-use crate::{config::sites::Site, db::schema::init_db};
+use crate::{
+    config::{cli::Cli, sites::SiteEnum},
+    db::schema::init_db,
+};
 
-pub async fn init_environment(sites: &Vec<Site>, database_url: &String) -> sqlx::SqlitePool {
-    create_folders(&database_url).await;
-    create_databases(&sites, &database_url).await;
+pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqlitePool {
+    let master_pool = sqlx::sqlite::SqlitePoolOptions::new()
+        .connect(&format!("sqlite://{}/master.sqlite3", &cli.database_url))
+        .await
+        .unwrap();
+    let master_path = Path::new(&cli.database_url).join("master.sqlite3");
+    let pool_path = SiteEnum::from_str(&cli.site).unwrap().database_name();
 
-    let master_path = Path::new(&database_url).join("master.sqlite3");
+    create_folders(&cli.database_url).await;
+    create_databases(&sites, &cli.database_url).await;
+
     if !master_path.exists() {
         File::create(&master_path).await.unwrap();
     }
 
+    println!("path: {:#?}", pool_path);
     let pool = sqlx::sqlite::SqlitePoolOptions::new()
-        .connect(&format!("sqlite://{}/master.sqlite3", &database_url))
+        .connect(&format!(
+            "sqlite://{}/{}.sqlite3",
+            &cli.database_url, &pool_path
+        ))
         .await
         .unwrap();
     init_db(&pool).await.unwrap();
+    init_db(&master_pool).await.unwrap();
     pool
 }
 
@@ -38,11 +52,10 @@ async fn create_folders(database_url: &String) {
     }
 }
 
-async fn create_databases(sites: &Vec<Site>, database_url: &String) {
+async fn create_databases(sites: &Vec<SiteEnum>, database_url: &String) {
     for site in sites {
-        let site_path = Path::new(&database_url).join(&format!("{}.sqlite3", site.db_name));
+        let site_path = Path::new(&database_url).join(&format!("{}.sqlite3", site.database_name()));
         let db_uri = format!("sqlite://{}", site_path.display());
-        println!("path: {:#?}", site_path);
         if !site_path.exists() {
             File::create(&site_path).await.unwrap();
             init_database(&db_uri).await;

@@ -44,3 +44,19 @@ pub async fn delete(
     let query = format!("DELETE FROM {} WHERE id = ?", table_name);
     sqlx::query(&query).bind(id).execute(pool).await
 }
+
+pub async fn slug_exists(pool: &sqlx::SqlitePool, slug: &str, table_name: &str) -> bool {
+    let query = format!("SELECT slug FROM {} WHERE slug = ?", table_name);
+    match sqlx::query_scalar::<_, String>(&query)
+        .bind(slug)
+        .fetch_optional(pool)
+        .await
+    {
+        Ok(Some(_)) => true,
+        Ok(None) => false,
+        Err(e) => {
+            println!("{:#?}", e);
+            false
+        }
+    }
+}

@@ -43,6 +43,7 @@ pub struct NovelTag {
 pub struct Chapter {
     pub id: i64,
     pub title: String,
+    pub slug: String,
     pub novel_id: i64,
     pub created_at: i64,
     pub updated_at: i64,
