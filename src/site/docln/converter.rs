@@ -1,6 +1,6 @@
 use scraper::{ElementRef, html::Select};
 
-use crate::utils::markdown::image_to_md;
+use crate::utils::markdown::{em_to_md, image_to_md};
 
 pub fn chapter_to_markdown(contents: Select) -> String {
     let mut result: String = String::new();
@@ -9,6 +9,7 @@ pub fn chapter_to_markdown(contents: Select) -> String {
             if let Some(child) = ElementRef::wrap(child_element) {
                 match child.value().name() {
                     "img" => result.push_str(&image_to_md(&child)),
+                    "em" => result.push_str(&em_to_md(&child)),
                     _ => {}
                 }
             } else if let Some(text) = child_element.value().as_text() {

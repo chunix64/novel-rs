@@ -5,3 +5,8 @@ pub fn image_to_md(element: &ElementRef) -> String {
     let alt = element.attr("alt").unwrap().trim().to_string();
     format!("![{}]({})", alt, src)
 }
+
+pub fn em_to_md(element: &ElementRef) -> String {
+    let text = element.inner_html();
+    format!("_{}_", text)
+}

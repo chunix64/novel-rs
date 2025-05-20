@@ -1,5 +1,8 @@
 use crate::{
-    db::{models::{Chapter, Novel}, Database},
+    db::{
+        Database,
+        models::{Chapter, Novel},
+    },
     site::docln::provider::DoclnProvider,
 };
 
@@ -25,10 +28,7 @@ impl NovelService {
 
     pub async fn sync_all_novel_chapters(&self) {}
 
-    pub async fn sync_chapters_for_novel(
-        &self,
-        id: i64,
-    ) {
+    pub async fn sync_chapters_for_novel(&self, id: i64) {
         let slug = self.database.novel.get_limit(1).await.unwrap()[0]
             .slug
             .clone();

@@ -20,7 +20,11 @@ impl DoclnProvider {
         self.get_novels_range(1, max_page).await
     }
 
-    pub async fn get_chapters_with_novel_id(&self, slug: &String, novel_id: i64) -> Vec<ChapterRaw> {
+    pub async fn get_chapters_with_novel_id(
+        &self,
+        slug: &String,
+        novel_id: i64,
+    ) -> Vec<ChapterRaw> {
         let mut result: Vec<ChapterRaw> = Vec::new();
         let html = fetch_chapters(slug).await;
         let chapter_metas = parse_chapters_list(&html);

@@ -1,5 +1,5 @@
 use once_cell::sync::Lazy;
-use scraper::{selectable::Selectable, ElementRef, Html, Selector};
+use scraper::{ElementRef, Html, Selector, selectable::Selectable};
 
 use crate::{
     site::content::novels::{ChapterMeta, ChapterRaw, NovelRaw},
