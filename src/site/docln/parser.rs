@@ -1,10 +1,12 @@
 use once_cell::sync::Lazy;
-use scraper::{ElementRef, Html, Selector};
+use scraper::{selectable::Selectable, ElementRef, Html, Selector};
 
 use crate::{
     site::content::novels::{ChapterMeta, ChapterRaw, NovelRaw},
     utils::time::current_stamp,
 };
+
+use super::converter::chapter_to_markdown;
 
 struct Selectors {
     novel_title: Selector,
@@ -85,7 +87,8 @@ fn parse_attribute(element: &ElementRef, attribute: &str) -> String {
 // Content Helpers
 pub fn parse_chapter_content(html: &str) -> String {
     let raw = Html::parse_document(html);
-    
+    let chapter_contents = raw.select(&SELECTORS.chapter_contents);
+    chapter_to_markdown(chapter_contents)
 }
 
 pub fn get_chapter(chapter_meta: ChapterMeta, index: i64, content: String) -> ChapterRaw {

@@ -1,5 +1,5 @@
 use crate::{
-    db::{Database, models::Novel},
+    db::{models::{Chapter, Novel}, Database},
     site::docln::provider::DoclnProvider,
 };
 
@@ -23,14 +23,27 @@ impl NovelService {
         }
     }
 
-    pub async fn sync_all_novel_chapters() {}
+    pub async fn sync_all_novel_chapters(&self) {}
 
-    pub async fn sync_chapters_for_novel(id: i64) {}
-
-    pub async fn test(&self) -> Vec<crate::site::content::novels::ChapterRaw> {
+    pub async fn sync_chapters_for_novel(
+        &self,
+        id: i64,
+    ) {
         let slug = self.database.novel.get_limit(1).await.unwrap()[0]
             .slug
             .clone();
-        self.provider.get_chapters(&slug).await
+        let raw_chapters = self.provider.get_chapters_with_novel_id(&slug, id).await;
+        for raw_chapter in raw_chapters {
+            let chapter: Chapter = raw_chapter.into();
+            self.database.chapter.insert(&chapter).await.unwrap();
+            println!("Inserted: {}", &chapter.id);
+        }
+    }
+
+    pub async fn test(&self) {
+        let id = self.database.novel.get_limit(1).await.unwrap()[0]
+            .id
+            .clone();
+        self.sync_chapters_for_novel(id).await;
     }
 }

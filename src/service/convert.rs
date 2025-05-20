@@ -1,4 +1,7 @@
-use crate::{db::models::Novel, site::content::novels::NovelRaw};
+use crate::{
+    db::models::{Chapter, Novel},
+    site::content::novels::{ChapterRaw, NovelRaw},
+};
 
 impl From<NovelRaw> for Novel {
     fn from(raw: NovelRaw) -> Self {
@@ -12,6 +15,20 @@ impl From<NovelRaw> for Novel {
             artist_id: raw.artist_id,
             created_at: raw.created_at,
             updated_at: raw.updated_at,
+        }
+    }
+}
+
+impl From<ChapterRaw> for Chapter {
+    fn from(raw: ChapterRaw) -> Self {
+        Self {
+            id: raw.chapter_number.unwrap_or_default(),
+            title: raw.title,
+            novel_id: raw.novel_id,
+            created_at: raw.created_at,
+            updated_at: raw.created_at,
+            content: raw.content,
+            chapter_number: raw.chapter_number,
         }
     }
 }

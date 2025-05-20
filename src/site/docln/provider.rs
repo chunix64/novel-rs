@@ -20,12 +20,13 @@ impl DoclnProvider {
         self.get_novels_range(1, max_page).await
     }
 
-    pub async fn get_chapters(&self, slug: &String, novel_id: i64) -> Vec<ChapterRaw> {
+    pub async fn get_chapters_with_novel_id(&self, slug: &String, novel_id: i64) -> Vec<ChapterRaw> {
         let mut result: Vec<ChapterRaw> = Vec::new();
         let html = fetch_chapters(slug).await;
         let chapter_metas = parse_chapters_list(&html);
-
+        println!("Start get Chapter!");
         for (index, chapter_meta) in chapter_metas.iter().enumerate() {
+            println!("Start get: {}", index);
             let chapter_html = fetch_chapters(&chapter_meta.slug).await;
             let content = parse_chapter_content(&chapter_html);
             let now = current_stamp() as i64;
@@ -39,6 +40,7 @@ impl DoclnProvider {
                 chapter_number: Some(index as i64),
             };
             result.push(chapter_raw);
+            println!("Get done: {}", index);
         }
 
         result
