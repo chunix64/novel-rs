@@ -7,15 +7,14 @@ use crate::{
 };
 
 pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqlitePool {
+    create_folders(&cli.database_url).await;
+    create_databases(&sites, &cli.database_url).await;
     let master_pool = sqlx::sqlite::SqlitePoolOptions::new()
         .connect(&format!("sqlite://{}/master.sqlite3", &cli.database_url))
         .await
         .unwrap();
     let master_path = Path::new(&cli.database_url).join("master.sqlite3");
     let pool_path = SiteEnum::from_str(&cli.site).unwrap().database_name();
-
-    create_folders(&cli.database_url).await;
-    create_databases(&sites, &cli.database_url).await;
 
     if !master_path.exists() {
         File::create(&master_path).await.unwrap();
