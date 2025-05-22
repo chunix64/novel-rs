@@ -17,6 +17,9 @@ pub struct Cli {
     #[arg(short, long, default_value = "docln")]
     pub site: String,
 
-    #[arg(long, default_value_t = 1000)]
-    pub delay: u64,
+    #[arg(long, default_value_t = 0)]
+    pub delay_min: u64,
+
+    #[arg(long, default_value_t = 500)]
+    pub delay_max: u64,
 }

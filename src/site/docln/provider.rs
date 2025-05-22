@@ -3,11 +3,12 @@ use futures_core::Stream;
 use futures_util::{StreamExt, pin_mut};
 
 use crate::{
+    config::{self, provider::ProviderConfig},
     site::{
         content::novels::{ChapterRaw, NovelRaw},
         docln::{html::fetch_novels, parser::parse_novel_max_page},
     },
-    utils::time::current_stamp,
+    utils::time::{current_stamp, sleep_random_range},
 };
 
 use super::{
@@ -15,9 +16,15 @@ use super::{
     parser::{parse_chapter_content, parse_chapters_list, parse_novels},
 };
 
-pub struct DoclnProvider;
+pub struct DoclnProvider {
+    config: ProviderConfig,
+}
 
 impl DoclnProvider {
+    pub fn new(config: ProviderConfig) -> Self {
+        Self { config }
+    }
+
     pub fn get_novels(&self) -> impl Stream<Item = NovelRaw> {
         stream! {
         let html = fetch_novels(1).await;
@@ -55,6 +62,7 @@ impl DoclnProvider {
                 println!("Get chapter with id {} done: {}/{}",
                     novel_id,index,
                     chapter_metas.len());
+                sleep_random_range(self.config.delay_min(), self.config.delay_max()).await;
             }
         }
     }
@@ -63,12 +71,13 @@ impl DoclnProvider {
         stream! {
             println!("Start get Novels!");
             for i in start..=end {
-            let html = fetch_novels(i).await;
-            let part = parse_novels(&html);
-            for novel in part {
-                yield novel;
-            }
-            println!("Get novel done: {}/{}", i, end);
+                let html = fetch_novels(i).await;
+                let part = parse_novels(&html);
+                for novel in part {
+                    yield novel;
+                }
+                println!("Get novel done: {}/{}", i, end);
+                sleep_random_range(self.config.delay_min(), self.config.delay_max()).await;
         }
             println!("Finished get Novels!");
         }

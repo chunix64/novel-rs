@@ -6,7 +6,7 @@ mod db;
 mod service;
 mod site;
 mod utils;
-use config::{cli::Cli, sites::SiteEnum};
+use config::{app::AppConfig, cli::Cli, sites::SiteEnum};
 use core::cli::handle_cli;
 use db::Database;
 use utils::env::init_environment;
@@ -17,5 +17,6 @@ async fn main() {
     let sites = SiteEnum::get_site();
     let pool = init_environment(&sites, &cli).await;
     let database = Database::new(pool);
-    handle_cli(cli, database).await;
+    let app_config = AppConfig::new(cli.delay_min, cli.delay_max);
+    handle_cli(cli, database, app_config).await;
 }

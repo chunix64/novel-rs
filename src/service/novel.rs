@@ -1,6 +1,7 @@
 use futures_util::{StreamExt, pin_mut};
 
 use crate::{
+    config::app::AppConfig,
     db::{
         Database,
         models::{Chapter, Novel},
@@ -13,7 +14,7 @@ use super::SiteService;
 pub struct NovelService {
     provider: DoclnProvider,
     database: Database,
-    delay: u64,
+    app_config: AppConfig,
 }
 
 impl SiteService for NovelService {
@@ -21,11 +22,11 @@ impl SiteService for NovelService {
 }
 
 impl NovelService {
-    pub fn new(provider: DoclnProvider, database: Database, delay: u64) -> Self {
+    pub fn new(provider: DoclnProvider, database: Database, app_config: AppConfig) -> Self {
         Self {
             provider,
             database,
-            delay,
+            app_config,
         }
     }
 
