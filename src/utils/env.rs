@@ -18,13 +18,13 @@ pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqliteP
         .connect(&format!("sqlite://{}/master.sqlite3", &cli.database_url))
         .await
         .unwrap();
-    let pool_path = SiteEnum::from_str(&cli.site).unwrap().database_name();
+    let pool_name = SiteEnum::from_str(&cli.site).unwrap().database_name();
 
-    println!("path: {:#?}", pool_path);
+    println!("path: {:#?}", pool_name);
     let pool = sqlx::sqlite::SqlitePoolOptions::new()
         .connect(&format!(
             "sqlite://{}/{}.sqlite3",
-            &cli.database_url, &pool_path
+            &cli.database_url, &pool_name
         ))
         .await
         .unwrap();

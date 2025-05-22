@@ -5,7 +5,7 @@ pub async fn fetch_novels(index: i64) -> String {
     fetch_url(&url).await.text().await.unwrap()
 }
 
-pub async fn fetch_chapters(slug: &String) -> String {
+pub async fn fetch_chapters(slug: &str) -> String {
     let url = format!("https://docln.net{}", slug);
     fetch_url(&url).await.text().await.unwrap()
 }

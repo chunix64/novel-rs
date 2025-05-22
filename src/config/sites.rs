@@ -1,5 +1,7 @@
 use crate::{db::Database, service::novel::NovelService, site::docln::provider::DoclnProvider};
 
+use super::cli::Cli;
+
 pub enum SiteEnum {
     Docln,
 }
@@ -16,11 +18,11 @@ impl SiteEnum {
         }
     }
 
-    pub fn create_service(&self, database: Database) -> ServiceEnum {
+    pub fn create_service(&self, database: Database, cli: &Cli) -> ServiceEnum {
         match self {
             Self::Docln => {
                 let provider = DoclnProvider;
-                ServiceEnum::Novel(NovelService::new(provider, database))
+                ServiceEnum::Novel(NovelService::new(provider, database, cli.delay))
             }
         }
     }
