@@ -84,4 +84,8 @@ impl NovelRepository {
     pub async fn slug_exists(&self, slug: &str) -> bool {
         helpers::slug_exists(&self.pool, slug, TABLE_NAME).await
     }
+
+    pub async fn count(&self) -> i64 {
+        helpers::count(&self.pool, TABLE_NAME).await
+    }
 }

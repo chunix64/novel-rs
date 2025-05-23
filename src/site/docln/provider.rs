@@ -3,18 +3,18 @@ use futures_core::Stream;
 use futures_util::{StreamExt, pin_mut};
 
 use crate::{
-    config::{self, provider::ProviderConfig},
+    config::provider::ProviderConfig,
     site::{
         content::novels::{ChapterRaw, NovelRaw},
-        docln::{html::fetch_novels, parser::parse_novel_max_page},
+        docln::{
+            html::{fetch_chapters_retry, fetch_novels_retry},
+            parser::parse_novel_max_page,
+        },
     },
     utils::time::{current_stamp, sleep_random_range},
 };
 
-use super::{
-    html::fetch_chapters,
-    parser::{parse_chapter_content, parse_chapters_list, parse_novels},
-};
+use super::parser::{parse_chapter_content, parse_chapters_list, parse_novels};
 
 pub struct DoclnProvider {
     config: ProviderConfig,
@@ -27,7 +27,9 @@ impl DoclnProvider {
 
     pub fn get_novels(&self) -> impl Stream<Item = NovelRaw> {
         stream! {
-        let html = fetch_novels(1).await;
+        let html = fetch_novels_retry(1, self.config.delay_min(),
+        self.config.delay_max(), None)
+            .await.unwrap();
         let max_page = parse_novel_max_page(&html);
         let novels_stream = self.get_novels_range(1, max_page);
         pin_mut!(novels_stream);
@@ -43,10 +45,18 @@ impl DoclnProvider {
         novel_id: i64,
     ) -> impl Stream<Item = ChapterRaw> {
         stream! {
-            let html = fetch_chapters(slug).await;
+            let html = fetch_chapters_retry(slug,
+                    self.config.delay_min(),
+                    self.config.delay_max(),
+                    None
+                ).await.unwrap();
             let chapter_metas = parse_chapters_list(&html);
             for (index, chapter_meta) in chapter_metas.iter().enumerate() {
-                let chapter_html = fetch_chapters(&chapter_meta.slug).await;
+                let chapter_html = fetch_chapters_retry(&chapter_meta.slug,
+                    self.config.delay_min(),
+                    self.config.delay_max(),
+                    None
+                    ).await.unwrap();
                 let content = parse_chapter_content(&chapter_html);
                 let now = current_stamp() as i64;
                 let chapter_raw = ChapterRaw {
@@ -62,7 +72,7 @@ impl DoclnProvider {
                 println!("Get chapter with id {} done: {}/{}",
                     novel_id,index,
                     chapter_metas.len());
-                sleep_random_range(self.config.delay_min(), self.config.delay_max()).await;
+                self.sleep().await;
             }
         }
     }
@@ -71,15 +81,22 @@ impl DoclnProvider {
         stream! {
             println!("Start get Novels!");
             for i in start..=end {
-                let html = fetch_novels(i).await;
+                let html = fetch_novels_retry(i, self.config.delay_min(),
+                    self.config.delay_max(), None)
+                    .await.unwrap();
+                std::fs::write(format!("data/cache/debug-page-{}.html", i), &html).expect("Failed Write");
                 let part = parse_novels(&html);
                 for novel in part {
                     yield novel;
                 }
                 println!("Get novel done: {}/{}", i, end);
-                sleep_random_range(self.config.delay_min(), self.config.delay_max()).await;
-        }
+                self.sleep().await;
+            }
             println!("Finished get Novels!");
         }
+    }
+
+    async fn sleep(&self) {
+        sleep_random_range(self.config.delay_min(), self.config.delay_max()).await;
     }
 }

@@ -17,6 +17,9 @@ pub async fn handle_cli(cli: Cli, database: Database, app_config: AppConfig) {
             if cli.sync_contents {
                 service.sync_all_novel_chapters().await;
             }
+            if cli.test {
+                service.test().await;
+            }
         }
     }
 }

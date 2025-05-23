@@ -38,6 +38,9 @@ impl NovelService {
             let novel: Novel = raw_novel.into();
             if !self.database.novel.slug_exists(&novel.slug).await {
                 self.database.novel.insert(&novel).await.unwrap();
+                println!("Count: {}", self.database.novel.count().await);
+            } else {
+                println!("Skip get novels for {}: {}", novel.id, novel.title);
             }
         }
     }
@@ -46,8 +49,12 @@ impl NovelService {
         let novels = self.database.novel.get_all().await.unwrap();
         for (index, novel) in novels.iter().enumerate() {
             let id = novel.id;
-            println!("Start get chapters for {}/{}", index, novels.len());
-            self.sync_chapters_for_novel(id).await;
+            if !self.database.chapter.slug_exists(&novel.slug).await {
+                println!("Start get chapters for {}/{}", index, novels.len());
+                self.sync_chapters_for_novel(id).await;
+            } else {
+                println!("Skip get chapters for {}/{}", index, novels.len());
+            }
         }
     }
 
@@ -69,5 +76,9 @@ impl NovelService {
                 println!("Inserted chapter: {}", &chapter.id);
             }
         }
+    }
+
+    pub async fn test(&self) {
+        // println!("test: {:#?}", self.database.novel.slug_exists(&novel.slug).await);
     }
 }

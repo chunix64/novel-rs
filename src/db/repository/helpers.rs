@@ -60,3 +60,14 @@ pub async fn slug_exists(pool: &sqlx::SqlitePool, slug: &str, table_name: &str) 
         }
     }
 }
+
+pub async fn count(pool: &sqlx::SqlitePool, table_name: &str) -> i64 {
+    let query = format!("SELECT COUNT(*) FROM {}", table_name);
+    match sqlx::query_scalar::<_, i64>(&query).fetch_one(pool).await {
+        Ok(count) => count,
+        Err(e) => {
+            println!("{:#?}", e);
+            0
+        }
+    }
+}
