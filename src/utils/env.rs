@@ -7,15 +7,16 @@ use crate::{
 };
 
 pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqlitePool {
-    create_folders(&cli.database_url).await;
-    create_databases(&sites, &cli.database_url).await;
-    let master_path = Path::new(&cli.database_url).join("master.sqlite3");
+    let database_url = "data/db";
+    create_folders().await;
+    create_databases(&sites, &database_url.to_string()).await;
+    let master_path = Path::new(&database_url).join("master.sqlite3");
     if !master_path.exists() {
         File::create(&master_path).await.unwrap();
     }
 
     let master_pool = sqlx::sqlite::SqlitePoolOptions::new()
-        .connect(&format!("sqlite://{}/master.sqlite3", &cli.database_url))
+        .connect(&format!("sqlite://{}/master.sqlite3", &database_url))
         .await
         .unwrap();
     let pool_name = SiteEnum::from_str(&cli.site).unwrap().database_name();
@@ -24,7 +25,7 @@ pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqliteP
     let pool = sqlx::sqlite::SqlitePoolOptions::new()
         .connect(&format!(
             "sqlite://{}/{}.sqlite3",
-            &cli.database_url, &pool_name
+            &database_url, &pool_name
         ))
         .await
         .unwrap();
@@ -33,9 +34,9 @@ pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqliteP
     pool
 }
 
-async fn create_folders(database_url: &String) {
+async fn create_folders() {
     let folders = [
-        database_url,
+        "data/db",
         "data/archives",
         "data/logs",
         "data/cache",

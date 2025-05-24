@@ -16,3 +16,12 @@ pub fn to_snake_case(text: &str) -> String {
     }
     result
 }
+
+pub fn get_valid_file_name(file_name: &str) -> String {
+    let separate = "__";
+    file_name
+        .strip_prefix("/")
+        .unwrap()
+        .replace("/", separate)
+        .replace("\\", separate)
+}

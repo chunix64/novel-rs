@@ -3,11 +3,12 @@ use futures_core::Stream;
 use futures_util::{StreamExt, pin_mut};
 
 use crate::{
+    cache::manager::CacheManager,
     config::provider::ProviderConfig,
     site::{
         content::novels::{ChapterRaw, NovelRaw},
         docln::{
-            html::{fetch_chapters_retry, fetch_novels_retry},
+            html::{fetch_chapters_wrapper, fetch_novels_wrapper},
             parser::parse_novel_max_page,
         },
     },
@@ -18,21 +19,32 @@ use super::parser::{parse_chapter_content, parse_chapters_list, parse_novels};
 
 pub struct DoclnProvider {
     config: ProviderConfig,
+    cache_manager: CacheManager,
 }
 
 impl DoclnProvider {
-    pub fn new(config: ProviderConfig) -> Self {
-        Self { config }
+    pub fn new(config: ProviderConfig, cache_manager: CacheManager) -> Self {
+        Self {
+            config,
+            cache_manager,
+        }
     }
 
     pub fn get_novels(&self) -> impl Stream<Item = NovelRaw> {
         stream! {
-        let html = fetch_novels_retry(1, self.config.delay_min(),
-        self.config.delay_max(), None)
-            .await.unwrap();
-        let max_page = parse_novel_max_page(&html);
-        let novels_stream = self.get_novels_range(1, max_page);
-        pin_mut!(novels_stream);
+            let html = fetch_novels_wrapper(
+                1,
+                self.config.delay_min(),
+                self.config.delay_max(),
+                None,
+                &self.cache_manager,
+                self.config.is_cache(),
+            )
+            .await
+            .unwrap();
+            let max_page = parse_novel_max_page(&html);
+            let novels_stream = self.get_novels_range(1, max_page);
+            pin_mut!(novels_stream);
             while let Some(novel) = novels_stream.next().await {
                 yield novel;
             }
@@ -45,18 +57,28 @@ impl DoclnProvider {
         novel_id: i64,
     ) -> impl Stream<Item = ChapterRaw> {
         stream! {
-            let html = fetch_chapters_retry(slug,
-                    self.config.delay_min(),
-                    self.config.delay_max(),
-                    None
-                ).await.unwrap();
+            let html = fetch_chapters_wrapper(
+                slug,
+                self.config.delay_min(),
+                self.config.delay_max(),
+                None,
+                &self.cache_manager,
+                self.config.is_cache(),
+            )
+            .await
+            .unwrap();
             let chapter_metas = parse_chapters_list(&html);
             for (index, chapter_meta) in chapter_metas.iter().enumerate() {
-                let chapter_html = fetch_chapters_retry(&chapter_meta.slug,
+                let chapter_html = fetch_chapters_wrapper(
+                    &chapter_meta.slug,
                     self.config.delay_min(),
                     self.config.delay_max(),
-                    None
-                    ).await.unwrap();
+                    None,
+                    &self.cache_manager,
+                    self.config.is_cache(),
+                )
+                .await
+                .unwrap();
                 let content = parse_chapter_content(&chapter_html);
                 let now = current_stamp() as i64;
                 let chapter_raw = ChapterRaw {
@@ -69,9 +91,12 @@ impl DoclnProvider {
                     chapter_number: Some(index as i64),
                 };
                 yield chapter_raw;
-                println!("Get chapter with id {} done: {}/{}",
-                    novel_id,index,
-                    chapter_metas.len());
+                println!(
+                    "Get chapter with id {} done: {}/{}",
+                    novel_id,
+                    index,
+                    chapter_metas.len()
+                );
                 self.sleep().await;
             }
         }
@@ -81,10 +106,16 @@ impl DoclnProvider {
         stream! {
             println!("Start get Novels!");
             for i in start..=end {
-                let html = fetch_novels_retry(i, self.config.delay_min(),
-                    self.config.delay_max(), None)
-                    .await.unwrap();
-                std::fs::write(format!("data/cache/debug-page-{}.html", i), &html).expect("Failed Write");
+                let html = fetch_novels_wrapper(
+                    i,
+                    self.config.delay_min(),
+                    self.config.delay_max(),
+                    None,
+                    &self.cache_manager,
+                    self.config.is_cache(),
+                )
+                .await
+                .unwrap();
                 let part = parse_novels(&html);
                 for novel in part {
                     yield novel;

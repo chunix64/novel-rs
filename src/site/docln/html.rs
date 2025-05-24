@@ -1,6 +1,9 @@
-use crate::utils::{
-    http::fetch_url,
-    time::{calculate_hybrid_delay, sleep_random_range},
+use crate::{
+    cache::manager::CacheManager,
+    utils::{
+        http::fetch_url,
+        time::{calculate_hybrid_delay, sleep_random_range},
+    },
 };
 
 pub async fn fetch_novels(index: i64) -> (u16, Option<String>) {
@@ -30,6 +33,42 @@ pub async fn fetch_chapters(slug: &str) -> (u16, Option<String>) {
     (status_code, content)
 }
 
+pub async fn fetch_novels_retry_with_cache(
+    index: i64,
+    sleep_min: u64,
+    sleep_max: u64,
+    max_retry: Option<u64>,
+    cache_manager: &CacheManager,
+) -> Option<String> {
+    let fetch_fn = || fetch_novels_retry(index, sleep_min, sleep_max, max_retry);
+    let sub_path = "novels";
+    let file_name = format!("page-{}.html", index.to_string());
+    let html = fetch_with_cache(fetch_fn, sub_path, &file_name, cache_manager).await;
+    html
+}
+
+pub async fn fetch_novels_wrapper(
+    index: i64,
+    sleep_min: u64,
+    sleep_max: u64,
+    max_retry: Option<u64>,
+    cache_manager: &CacheManager,
+    is_cache: bool,
+) -> Option<String> {
+    if is_cache {
+        return fetch_novels_retry_with_cache(
+            index,
+            sleep_min,
+            sleep_max,
+            max_retry,
+            cache_manager,
+        )
+        .await;
+    } else {
+        return fetch_novels_retry(index, sleep_min, sleep_max, max_retry).await;
+    }
+}
+
 pub async fn fetch_chapters_retry(
     slug: &str,
     sleep_min: u64,
@@ -39,6 +78,42 @@ pub async fn fetch_chapters_retry(
     let html: Option<String> =
         fetch_with_retry(|| fetch_chapters(slug), sleep_min, sleep_max, max_retry).await;
     html
+}
+
+pub async fn fetch_chapters_retry_with_cache(
+    slug: &str,
+    sleep_min: u64,
+    sleep_max: u64,
+    max_retry: Option<u64>,
+    cache_manager: &CacheManager,
+) -> Option<String> {
+    let fetch_fn = || fetch_chapters_retry(slug, sleep_min, sleep_max, max_retry);
+    let sub_path = "chapters";
+    let file_name = format!("{}.html", slug);
+    let html = fetch_with_cache(fetch_fn, sub_path, &file_name, cache_manager).await;
+    html
+}
+
+pub async fn fetch_chapters_wrapper(
+    slug: &str,
+    sleep_min: u64,
+    sleep_max: u64,
+    max_retry: Option<u64>,
+    cache_manager: &CacheManager,
+    is_cache: bool,
+) -> Option<String> {
+    if is_cache {
+        return fetch_chapters_retry_with_cache(
+            slug,
+            sleep_min,
+            sleep_max,
+            max_retry,
+            cache_manager,
+        )
+        .await;
+    } else {
+        return fetch_chapters_retry(slug, sleep_min, sleep_max, max_retry).await;
+    }
 }
 
 pub async fn fetch_with_retry<F, Fut>(
@@ -53,8 +128,8 @@ where
 {
     let mut attempt = 1;
     // sleep should be never <= 0 and max should be > min
-    let sleep_min = sleep_min.max(1);
-    let sleep_max = sleep_max.max(2);
+    let sleep_min = sleep_min.max(2);
+    let sleep_max = sleep_max.max(3);
     let html: Option<String> = loop {
         let (status_code, html) = fetch_fn().await;
         if status_code == 200 {
@@ -88,4 +163,22 @@ where
     html
 }
 
+pub async fn fetch_with_cache<F, Fut>(
+    mut fetch_fn: F,
+    sub_path: &str,
+    file_name: &str,
+    cache_manager: &CacheManager,
+) -> Option<String>
+where
+    F: FnMut() -> Fut,
+    Fut: std::future::Future<Output = Option<String>>,
+{
+    if cache_manager.is_exists(sub_path, &file_name).await {
+        return cache_manager.load(sub_path, &file_name).await;
+    } else {
+        let html = fetch_fn().await.unwrap();
+        cache_manager.save(sub_path, &file_name, &html).await;
+        return Some(html.to_string());
+    }
+}
 // TODO: fetch_with_cache

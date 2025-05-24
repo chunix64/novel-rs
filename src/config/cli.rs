@@ -14,11 +14,11 @@ pub struct Cli {
     #[arg(long, default_value_t = false)]
     pub test: bool,
 
-    #[arg(long, default_value = "data/db")]
-    pub database_url: String,
-
     #[arg(short, long, default_value = "docln")]
     pub site: String,
+
+    #[arg(short, long, default_value = "data")]
+    pub data_path: String,
 
     #[arg(long, default_value_t = 1000)]
     pub delay_min: u64,

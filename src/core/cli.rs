@@ -7,7 +7,7 @@ use crate::{
     db::Database,
 };
 
-pub async fn handle_cli(cli: Cli, database: Database, app_config: AppConfig) {
+pub async fn handle_cli(cli: &Cli, database: Database, app_config: AppConfig) {
     let service_enum = SiteEnum::from_str(&cli.site).unwrap();
     match service_enum.create_service(database, app_config) {
         ServiceEnum::Novel(service) => {
