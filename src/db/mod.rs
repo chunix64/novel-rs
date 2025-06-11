@@ -1,6 +1,6 @@
 use repository::{
     artist::ArtistRepository, author::AuthorRepository, chapter::ChapterRepository,
-    novel::NovelRepository, novel_tag::NovelTagRepository, tag::TagRepository,
+    post::PostRepository, post_tag::PostTagRepository, tag::TagRepository,
 };
 use sqlx::SqlitePool;
 
@@ -14,8 +14,8 @@ pub struct Database {
     pub author: AuthorRepository,
     pub artist: ArtistRepository,
     pub tag: TagRepository,
-    pub novel: NovelRepository,
-    pub novel_tag: NovelTagRepository,
+    pub post: PostRepository,
+    pub post_tag: PostTagRepository,
     pub chapter: ChapterRepository,
 }
 
@@ -24,16 +24,16 @@ impl Database {
         let author = AuthorRepository::new(pool.clone());
         let artist = ArtistRepository::new(pool.clone());
         let tag = TagRepository::new(pool.clone());
-        let novel = NovelRepository::new(pool.clone());
-        let novel_tag = NovelTagRepository::new(pool.clone());
+        let post = PostRepository::new(pool.clone());
+        let post_tag = PostTagRepository::new(pool.clone());
         let chapter = ChapterRepository::new(pool.clone());
         Self {
             pool,
             author,
             artist,
             tag,
-            novel,
-            novel_tag,
+            post,
+            post_tag,
             chapter,
         }
     }

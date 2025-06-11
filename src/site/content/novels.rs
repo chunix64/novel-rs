@@ -7,8 +7,9 @@ pub struct NovelRaw {
     pub slug: String,
     pub thumbnail: Option<String>,
     pub description: Option<String>,
-    pub author_id: Option<i64>,
-    pub artist_id: Option<i64>,
+    pub authors: Vec<String>,
+    pub artists: Vec<String>,
+    pub tags: Vec<String>,
     pub created_at: i64,
     pub updated_at: i64,
 }

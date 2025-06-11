@@ -2,11 +2,14 @@ use once_cell::sync::Lazy;
 use scraper::{ElementRef, Html, Selector, selectable::Selectable};
 
 use crate::{
-    site::content::novels::{ChapterMeta, ChapterRaw, NovelRaw},
+    site::{
+        content::novels::{ChapterMeta, ChapterRaw, NovelRaw},
+        docln::converter::element_to_markdown,
+    },
     utils::time::current_stamp,
 };
 
-use super::converter::chapter_to_markdown;
+use super::converter::elements_to_markdown;
 
 struct Selectors {
     novel_title: Selector,
@@ -17,6 +20,11 @@ struct Selectors {
     novel_max_page: Selector,
     chapters: Selector,
     chapter_contents: Selector,
+    enrich_info_box: Selector,
+    enrich_description: Selector,
+    enrich_author: Selector,
+    enrich_artist: Selector,
+    enrich_tag: Selector,
 }
 
 static SELECTORS: Lazy<Selectors> = Lazy::new(|| Selectors {
@@ -29,6 +37,11 @@ static SELECTORS: Lazy<Selectors> = Lazy::new(|| Selectors {
     novel_max_page: Selector::parse("a.paging_item.paging_prevnext.next").unwrap(),
     chapters: Selector::parse(".chapter-name a").unwrap(),
     chapter_contents: Selector::parse("#chapter-content p").unwrap(),
+    enrich_info_box: Selector::parse(".feature-section.at-series.clear").unwrap(),
+    enrich_description: Selector::parse(".summary-content").unwrap(),
+    enrich_author: Selector::parse(r#".info-value a[href*="/tac-gia/"]"#).unwrap(),
+    enrich_artist: Selector::parse(r#".info-value a[href*="/hoa-si/"]"#).unwrap(),
+    enrich_tag: Selector::parse(".series-gernes a").unwrap(),
 });
 
 // Main function
@@ -79,6 +92,24 @@ pub fn parse_chapters_list(html: &str) -> Vec<ChapterMeta> {
     result
 }
 
+pub fn parse_novel_enrich(novel: NovelRaw, html: &str) -> NovelRaw {
+    let document = Html::parse_document(&html);
+    let info_box = document.select(&SELECTORS.enrich_info_box).next().unwrap();
+    let separate = "; ";
+    NovelRaw {
+        id: novel.id,
+        title: novel.title,
+        slug: novel.slug,
+        thumbnail: novel.thumbnail,
+        description: parse_description_enrich(&info_box),
+        authors: parse_authors(&info_box, separate),
+        artists: parse_artists(&info_box, separate),
+        tags: parse_tags(&info_box),
+        created_at: novel.created_at,
+        updated_at: current_stamp() as i64,
+    }
+}
+
 // Helpers
 fn parse_attribute(element: &ElementRef, attribute: &str) -> String {
     element.attr(attribute).unwrap().trim().to_string()
@@ -88,7 +119,7 @@ fn parse_attribute(element: &ElementRef, attribute: &str) -> String {
 pub fn parse_chapter_content(html: &str) -> String {
     let raw = Html::parse_document(html);
     let chapter_contents = raw.select(&SELECTORS.chapter_contents);
-    chapter_to_markdown(chapter_contents)
+    elements_to_markdown(chapter_contents, "\n\n")
 }
 
 pub fn get_chapter(chapter_meta: ChapterMeta, index: i64, content: String) -> ChapterRaw {
@@ -126,8 +157,9 @@ fn get_novel(tooltip: &ElementRef, preview: &ElementRef) -> NovelRaw {
         slug: parse_novel_slug(preview),
         thumbnail: parse_novel_thumbnail(preview),
         description: parse_novel_description(tooltip),
-        author_id: None,
-        artist_id: None,
+        authors: Vec::new(),
+        artists: Vec::new(),
+        tags: Vec::new(),
         created_at: current_stamp() as i64,
         updated_at: current_stamp() as i64,
     }
@@ -185,4 +217,47 @@ fn parse_novel_description(tooltip: &ElementRef) -> Option<String> {
             .trim()
             .to_string(),
     )
+}
+
+// Enrich Helpers
+fn parse_description_enrich(info_box: &ElementRef) -> Option<String> {
+    let description = info_box
+        .select(&SELECTORS.enrich_description)
+        .next()
+        .unwrap();
+
+    Some(element_to_markdown(&description, "\n").trim().to_string())
+}
+
+fn parse_people(info_box: &ElementRef, people_selector: &Selector, separate: &str) -> Vec<String> {
+    let mut people: Vec<String> = Vec::new();
+    let people_element = info_box.select(people_selector).next();
+    if !people_element.is_some() {
+        return people;
+    }
+
+    let people_raw = people_element.unwrap().inner_html().trim().to_string();
+    people.extend(people_raw.split(separate).map(String::from));
+    people
+}
+
+fn parse_authors(info_box: &ElementRef, separate: &str) -> Vec<String> {
+    parse_people(info_box, &SELECTORS.enrich_author, separate)
+}
+
+fn parse_artists(info_box: &ElementRef, separate: &str) -> Vec<String> {
+    parse_people(info_box, &SELECTORS.enrich_artist, separate)
+}
+
+fn parse_tags(info_box: &ElementRef) -> Vec<String> {
+    let mut tags: Vec<String> = Vec::new();
+    let tag_elements = info_box
+        .select(&SELECTORS.enrich_tag)
+        .filter(|el| el.attr("href").is_some())
+        .collect::<Vec<_>>();
+    for tag_element in tag_elements {
+        let tag = tag_element.inner_html().trim().to_string();
+        tags.push(tag);
+    }
+    tags
 }

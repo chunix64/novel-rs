@@ -4,8 +4,9 @@ use crate::{
     config::app::AppConfig,
     db::{
         Database,
-        models::{Chapter, Novel},
+        models::{Chapter, Post},
     },
+    service::convert::novel_raw_to_post,
     site::docln::provider::DoclnProvider,
 };
 
@@ -35,10 +36,11 @@ impl NovelService {
 
         pin_mut!(raw_novels);
         while let Some(raw_novel) = raw_novels.next().await {
-            let novel: Novel = raw_novel.into();
-            if !self.database.novel.slug_exists(&novel.slug).await {
-                self.database.novel.insert(&novel).await.unwrap();
-                println!("Count: {}", self.database.novel.count().await);
+            let content_type_id = 1;
+            let novel: Post = novel_raw_to_post(raw_novel, content_type_id);
+            if !self.database.post.slug_exists(&novel.slug).await {
+                self.database.post.insert(&novel).await.unwrap();
+                println!("Count: {}", self.database.post.count().await);
             } else {
                 println!("Skip get novels for {}: {}", novel.id, novel.title);
             }
@@ -46,7 +48,7 @@ impl NovelService {
     }
 
     pub async fn sync_all_novel_chapters(&self) {
-        let novels = self.database.novel.get_all().await.unwrap();
+        let novels = self.database.post.get_all().await.unwrap();
         for (index, novel) in novels.iter().enumerate() {
             let id = novel.id;
             if !self.database.chapter.slug_exists(&novel.slug).await {
@@ -61,13 +63,13 @@ impl NovelService {
     pub async fn sync_chapters_for_novel(&self, id: i64) {
         let slug = self
             .database
-            .novel
+            .post
             .get_by_id(id)
             .await
             .unwrap()
             .slug
             .clone();
-        let raw_chapters = self.provider.get_chapters_with_novel_id(&slug, id);
+        let raw_chapters = self.provider.get_chapters_with_novel_slug(&slug, id);
         pin_mut!(raw_chapters);
         while let Some(raw_chapter) = raw_chapters.next().await {
             let chapter: Chapter = raw_chapter.into();
@@ -76,9 +78,5 @@ impl NovelService {
                 println!("Inserted chapter: {}", &chapter.id);
             }
         }
-    }
-
-    pub async fn test(&self) {
-        // println!("test: {:#?}", self.database.novel.slug_exists(&novel.slug).await);
     }
 }

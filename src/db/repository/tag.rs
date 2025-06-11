@@ -22,9 +22,17 @@ impl TagRepository {
         helpers::get_by_id::<Entity>(&self.pool, id, TABLE_NAME).await
     }
 
-    pub async fn insert(&self, name: &str) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
-        let query = format!("INSERT INTO {} (name) VALUES (?)", TABLE_NAME);
-        sqlx::query(&query).bind(name).execute(&self.pool).await
+    pub async fn insert(
+        &self,
+        name: &str,
+        category: &str,
+    ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
+        let query = format!("INSERT INTO {} (name, category) VALUES (?, ?)", TABLE_NAME);
+        sqlx::query(&query)
+            .bind(name)
+            .bind(category)
+            .execute(&self.pool)
+            .await
     }
 
     pub async fn delete(&self, id: i64) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {

@@ -1,15 +1,15 @@
-use crate::db::models::Chapter;
+use crate::db::models::Post;
 
 use super::helpers;
 
-static TABLE_NAME: &str = "chapters";
-type Entity = Chapter;
+static TABLE_NAME: &str = "posts";
+type Entity = Post;
 
-pub struct ChapterRepository {
+pub struct PostRepository {
     pool: sqlx::SqlitePool,
 }
 
-impl ChapterRepository {
+impl PostRepository {
     pub fn new(pool: sqlx::SqlitePool) -> Self {
         Self { pool }
     }
@@ -22,25 +22,37 @@ impl ChapterRepository {
         helpers::get_by_id::<Entity>(&self.pool, id, TABLE_NAME).await
     }
 
+    pub async fn get_limit(&self, count: i64) -> Result<Vec<Entity>, sqlx::Error> {
+        helpers::get_limit(&self.pool, TABLE_NAME, count).await
+    }
+
     pub async fn insert(
         &self,
-        chapter: &Chapter,
+        post: &Post,
     ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!(
-            "INSERT INTO {}
-            (title, slug, post_id, created_at, updated_at, content, chapter_number)
+            "INSERT INTO {} 
+            (
+            content_type_id,
+            title,
+            slug,
+            thumbnail,
+            description,
+            created_at,
+            updated_at
+            ) 
             VALUES
             (?, ?, ?, ?, ?, ?, ?)",
             TABLE_NAME
         );
         sqlx::query(&query)
-            .bind(chapter.title.clone())
-            .bind(chapter.slug.clone())
-            .bind(chapter.post_id)
-            .bind(chapter.created_at)
-            .bind(chapter.updated_at)
-            .bind(chapter.content.clone())
-            .bind(chapter.chapter_number)
+            .bind(post.content_type_id)
+            .bind(post.title.clone())
+            .bind(post.slug.clone())
+            .bind(post.thumbnail.clone())
+            .bind(post.description.clone())
+            .bind(post.created_at)
+            .bind(post.updated_at)
             .execute(&self.pool)
             .await
     }
@@ -51,5 +63,9 @@ impl ChapterRepository {
 
     pub async fn slug_exists(&self, slug: &str) -> bool {
         helpers::slug_exists(&self.pool, slug, TABLE_NAME).await
+    }
+
+    pub async fn count(&self) -> i64 {
+        helpers::count(&self.pool, TABLE_NAME).await
     }
 }

@@ -9,7 +9,7 @@ use crate::{
         content::novels::{ChapterRaw, NovelRaw},
         docln::{
             html::{fetch_chapters_wrapper, fetch_novels_wrapper},
-            parser::parse_novel_max_page,
+            parser::{parse_novel_enrich, parse_novel_max_page},
         },
     },
     utils::time::{current_stamp, sleep_random_range},
@@ -51,7 +51,7 @@ impl DoclnProvider {
         }
     }
 
-    pub fn get_chapters_with_novel_id(
+    pub fn get_chapters_with_novel_slug(
         &self,
         slug: &str,
         novel_id: i64,
@@ -118,7 +118,16 @@ impl DoclnProvider {
                 .unwrap();
                 let part = parse_novels(&html);
                 for novel in part {
-                    yield novel;
+                    let enrich_html = fetch_chapters_wrapper(
+                        &novel.slug,
+                        self.config.delay_min(),
+                        self.config.delay_max(),
+                        None,
+                        &self.cache_manager,
+                        self.config.is_cache(),
+                    ).await.unwrap();
+                    let enriched_novel = parse_novel_enrich(novel, &enrich_html);
+                    yield enriched_novel;
                 }
                 println!("Get novel done: {}/{}", i, end);
                 self.sleep().await;

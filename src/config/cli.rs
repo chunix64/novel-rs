@@ -11,9 +11,6 @@ pub struct Cli {
     #[arg(long, default_value_t = false)]
     pub sync_contents: bool,
 
-    #[arg(long, default_value_t = false)]
-    pub test: bool,
-
     #[arg(short, long, default_value = "docln")]
     pub site: String,
 
