@@ -49,8 +49,8 @@ pub fn calculate_hybrid_delay(
 ) -> u64 {
     let logarithm_delay = calculate_logarithm_delay(base, attempt, min, max, log_base);
     if logarithm_delay > 500 {
-        return logarithm_delay;
+        logarithm_delay
     } else {
-        return calculate_exponent_delay(logarithm_delay, exponent_base).clamp(min, max);
+        calculate_exponent_delay(logarithm_delay, exponent_base).clamp(min, max)
     }
 }

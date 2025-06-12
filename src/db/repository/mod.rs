@@ -1,9 +1,9 @@
+pub mod artist;
+pub mod author;
+pub mod chapter;
 pub mod helpers;
 pub mod post;
-pub mod chapter;
-pub mod author;
-pub mod artist;
-pub mod tag;
-pub mod post_tag;
-pub mod post_author;
 pub mod post_artist;
+pub mod post_author;
+pub mod post_tag;
+pub mod tag;

@@ -49,10 +49,9 @@ pub fn parse_novel_max_page(html: &str) -> i64 {
         .unwrap()
         .attr("href")
         .unwrap()
-        .to_string()
         .split("page=")
         .nth(1)
-        .and_then(|x| Some(x.trim()))
+        .map(|x| x.trim())
         .unwrap()
         .parse::<i64>()
         .unwrap()
@@ -62,7 +61,7 @@ pub fn parse_novels(html: &str) -> Vec<NovelRaw> {
     let raw = Html::parse_document(html);
     let mut result: Vec<NovelRaw> = Vec::new();
 
-    for (_i, preview) in raw.select(&SELECTORS.novel_previews).enumerate() {
+    for preview in raw.select(&SELECTORS.novel_previews) {
         // attr format: data-tooltip-content="#series_15056"
         let tooltip = preview
             .attr("data-tooltip-content")
@@ -90,7 +89,7 @@ pub fn parse_chapters_list(html: &str) -> Vec<ChapterMeta> {
 }
 
 pub fn parse_novel_enrich(html: &str) -> NovelEnrich {
-    let document = Html::parse_document(&html);
+    let document = Html::parse_document(html);
     let info_box = document.select(&SELECTORS.enrich_info_box).next().unwrap();
     let separate = "; ";
     NovelEnrich {
@@ -133,17 +132,17 @@ pub fn parse_chapter_content(html: &str) -> String {
 
 fn parse_chapter_meta(chapter: &ElementRef) -> ChapterMeta {
     ChapterMeta {
-        title: parse_chapter_title(&chapter),
-        slug: parse_chapter_slug(&chapter),
+        title: parse_chapter_title(chapter),
+        slug: parse_chapter_slug(chapter),
     }
 }
 
 fn parse_chapter_title(chapter: &ElementRef) -> String {
-    parse_attribute(&chapter, "title")
+    parse_attribute(chapter, "title")
 }
 
 fn parse_chapter_slug(chapter: &ElementRef) -> String {
-    parse_attribute(&chapter, "href")
+    parse_attribute(chapter, "href")
 }
 
 // Item Helpers
@@ -163,7 +162,7 @@ fn get_novel(tooltip: &ElementRef, preview: &ElementRef) -> NovelRaw {
 }
 
 fn parse_novel_id(tooltip: &ElementRef) -> i64 {
-    parse_attribute(&tooltip, "id")
+    parse_attribute(tooltip, "id")
         .strip_prefix("series_")
         .unwrap()
         .parse::<i64>()
@@ -229,12 +228,10 @@ fn parse_description_enrich(info_box: &ElementRef) -> Option<String> {
 fn parse_people(info_box: &ElementRef, people_selector: &Selector, separate: &str) -> Vec<String> {
     let mut people: Vec<String> = Vec::new();
     let people_element = info_box.select(people_selector).next();
-    if !people_element.is_some() {
-        return people;
+    if people_element.is_some() {
+        let people_raw = people_element.unwrap().inner_html().trim().to_string();
+        people.extend(people_raw.split(separate).map(String::from));
     }
-
-    let people_raw = people_element.unwrap().inner_html().trim().to_string();
-    people.extend(people_raw.split(separate).map(String::from));
     people
 }
 

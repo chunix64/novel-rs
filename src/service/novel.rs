@@ -16,10 +16,7 @@ pub struct NovelService {
 
 impl NovelService {
     pub fn new(provider: DoclnProvider, database: Database) -> Self {
-        Self {
-            provider,
-            database,
-        }
+        Self { provider, database }
     }
 
     pub async fn sync_novels(&self) {

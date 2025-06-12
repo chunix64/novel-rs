@@ -42,9 +42,8 @@ pub async fn fetch_novels_retry_with_cache(
 ) -> Option<String> {
     let fetch_fn = || fetch_novels_retry(index, sleep_min, sleep_max, max_retry);
     let sub_path = "novels";
-    let file_name = format!("page-{}.html", index.to_string());
-    let html = fetch_with_cache(fetch_fn, sub_path, &file_name, cache_manager).await;
-    html
+    let file_name = format!("page-{}.html", index);
+    fetch_with_cache(fetch_fn, sub_path, &file_name, cache_manager).await
 }
 
 pub async fn fetch_novels_wrapper(
@@ -65,7 +64,7 @@ pub async fn fetch_novels_wrapper(
         )
         .await;
     } else {
-        return fetch_novels_retry(index, sleep_min, sleep_max, max_retry).await;
+        fetch_novels_retry(index, sleep_min, sleep_max, max_retry).await
     }
 }
 
@@ -90,8 +89,7 @@ pub async fn fetch_chapters_retry_with_cache(
     let fetch_fn = || fetch_chapters_retry(slug, sleep_min, sleep_max, max_retry);
     let sub_path = "chapters";
     let file_name = format!("{}.html", slug);
-    let html = fetch_with_cache(fetch_fn, sub_path, &file_name, cache_manager).await;
-    html
+    fetch_with_cache(fetch_fn, sub_path, &file_name, cache_manager).await
 }
 
 pub async fn fetch_chapters_wrapper(
@@ -173,12 +171,12 @@ where
     F: FnMut() -> Fut,
     Fut: std::future::Future<Output = Option<String>>,
 {
-    if cache_manager.is_exists(sub_path, &file_name).await {
-        return cache_manager.load(sub_path, &file_name).await;
+    if cache_manager.is_exists(sub_path, file_name).await {
+        return cache_manager.load(sub_path, file_name).await;
     } else {
         let html = fetch_fn().await.unwrap();
-        cache_manager.save(sub_path, &file_name, &html).await;
-        return Some(html.to_string());
+        cache_manager.save(sub_path, file_name, &html).await;
+        Some(html.to_string())
     }
 }
 // TODO: fetch_with_cache

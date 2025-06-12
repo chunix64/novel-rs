@@ -9,7 +9,7 @@ use crate::{
 pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqlitePool {
     let database_url = "data/db";
     create_folders().await;
-    create_databases(&sites, &database_url.to_string()).await;
+    create_databases(sites, database_url).await;
     let master_path = Path::new(&database_url).join("master.sqlite3");
     if !master_path.exists() {
         File::create(&master_path).await.unwrap();
@@ -55,7 +55,7 @@ async fn create_folders() {
 async fn create_databases(sites: &Vec<SiteEnum>, database_url: &str) {
     for site in sites {
         let database_path = Path::new(&database_url).join("sites");
-        let site_path = database_path.join(&format!("{}.sqlite3", site.database_name()));
+        let site_path = database_path.join(format!("{}.sqlite3", site.database_name()));
         let db_uri = format!("sqlite://{}", site_path.display());
         if !site_path.exists() {
             File::create(&site_path).await.unwrap();
@@ -64,7 +64,7 @@ async fn create_databases(sites: &Vec<SiteEnum>, database_url: &str) {
     }
 }
 
-async fn init_database(database_url: &String) -> sqlx::SqlitePool {
+async fn init_database(database_url: &str) -> sqlx::SqlitePool {
     let pool = sqlx::sqlite::SqlitePoolOptions::new()
         .connect(database_url)
         .await
