@@ -28,10 +28,5 @@ pub fn element_to_markdown(element: &ElementRef, whitespace: &str) -> String {
         result.push_str(whitespace);
     }
 
-    // remove last whitespace
-    if result.ends_with(whitespace) {
-        result.truncate(result.len() - whitespace.len());
-    }
-
     result
 }

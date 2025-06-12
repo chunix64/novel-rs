@@ -22,10 +22,6 @@ impl PostRepository {
         helpers::get_by_id::<Entity>(&self.pool, id, TABLE_NAME).await
     }
 
-    pub async fn get_limit(&self, count: i64) -> Result<Vec<Entity>, sqlx::Error> {
-        helpers::get_limit(&self.pool, TABLE_NAME, count).await
-    }
-
     pub async fn get_by_slug(&self, slug: &str) -> Result<Entity, sqlx::Error> {
         helpers::get_one_by_slug(&self.pool, slug, TABLE_NAME).await
     }
@@ -61,10 +57,6 @@ impl PostRepository {
             .bind(false)
             .execute(&self.pool)
             .await
-    }
-
-    pub async fn delete(&self, id: i64) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
-        helpers::delete(&self.pool, id, TABLE_NAME).await
     }
 
     pub async fn slug_exists(&self, slug: &str) -> bool {

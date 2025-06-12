@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub async fn get_all<T>(pool: &sqlx::SqlitePool, table_name: &str) -> Result<Vec<T>, sqlx::Error>
 where
     T: for<'r> sqlx::FromRow<'r, sqlx::sqlite::SqliteRow> + Send + Unpin,

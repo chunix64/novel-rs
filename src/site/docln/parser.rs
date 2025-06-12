@@ -2,14 +2,11 @@ use once_cell::sync::Lazy;
 use scraper::{ElementRef, Html, Selector, selectable::Selectable};
 
 use crate::{
-    site::{
-        content::novels::{ChapterMeta, ChapterRaw, NovelEnrich, NovelRaw},
-        docln::converter::element_to_markdown,
-    },
+    site::content::novels::{ChapterMeta, ChapterRaw, NovelEnrich, NovelRaw},
     utils::time::current_stamp,
 };
 
-use super::converter::elements_to_markdown;
+use crate::utils::html::{element_to_markdown, elements_to_markdown};
 
 struct Selectors {
     novel_title: Selector,
@@ -105,6 +102,23 @@ pub fn parse_novel_enrich(html: &str) -> NovelEnrich {
     }
 }
 
+pub fn parse_chapter(
+    chapter_meta: &ChapterMeta,
+    index: i64,
+    novel_id: i64,
+    content: String,
+) -> ChapterRaw {
+    ChapterRaw {
+        title: chapter_meta.title.clone(),
+        slug: chapter_meta.slug.clone(),
+        novel_id,
+        created_at: current_stamp() as i64,
+        updated_at: current_stamp() as i64,
+        content,
+        chapter_number: Some(index),
+    }
+}
+
 // Helpers
 fn parse_attribute(element: &ElementRef, attribute: &str) -> String {
     element.attr(attribute).unwrap().trim().to_string()
@@ -115,18 +129,6 @@ pub fn parse_chapter_content(html: &str) -> String {
     let raw = Html::parse_document(html);
     let chapter_contents = raw.select(&SELECTORS.chapter_contents);
     elements_to_markdown(chapter_contents, "\n\n")
-}
-
-pub fn get_chapter(chapter_meta: ChapterMeta, index: i64, content: String) -> ChapterRaw {
-    ChapterRaw {
-        title: chapter_meta.title,
-        slug: chapter_meta.slug,
-        novel_id: 0,
-        created_at: current_stamp() as i64,
-        updated_at: current_stamp() as i64,
-        content,
-        chapter_number: Some(index),
-    }
 }
 
 fn parse_chapter_meta(chapter: &ElementRef) -> ChapterMeta {

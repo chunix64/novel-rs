@@ -8,14 +8,14 @@ use crate::{
     site::{
         content::novels::{ChapterRaw, NovelEnrich, NovelRaw},
         docln::{
-            html::{fetch_chapters_wrapper, fetch_novels_wrapper},
+            http::{fetch_chapters_wrapper, fetch_novels_wrapper},
             parser::{parse_novel_enrich, parse_novel_max_page},
         },
     },
-    utils::time::{current_stamp, sleep_random_range},
+    utils::time::sleep_random_range,
 };
 
-use super::parser::{parse_chapter_content, parse_chapters_list, parse_novels};
+use super::parser::{parse_chapter, parse_chapter_content, parse_chapters_list, parse_novels};
 
 pub struct DoclnProvider {
     config: ProviderConfig,
@@ -80,16 +80,7 @@ impl DoclnProvider {
                 .await
                 .unwrap();
                 let content = parse_chapter_content(&chapter_html);
-                let now = current_stamp() as i64;
-                let chapter_raw = ChapterRaw {
-                    title: chapter_meta.title.clone(),
-                    slug: chapter_meta.slug.clone(),
-                    novel_id,
-                    created_at: now,
-                    updated_at: now,
-                    content,
-                    chapter_number: Some(index as i64),
-                };
+                let chapter_raw = parse_chapter(chapter_meta, index as i64, novel_id, content);
                 yield chapter_raw;
                 println!(
                     "Get chapter with id {} done: {}/{}",

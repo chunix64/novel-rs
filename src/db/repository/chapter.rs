@@ -3,7 +3,7 @@ use crate::db::models::Chapter;
 use super::helpers;
 
 static TABLE_NAME: &str = "chapters";
-type Entity = Chapter;
+// type Entity = Chapter;
 
 pub struct ChapterRepository {
     pool: sqlx::SqlitePool,
@@ -12,14 +12,6 @@ pub struct ChapterRepository {
 impl ChapterRepository {
     pub fn new(pool: sqlx::SqlitePool) -> Self {
         Self { pool }
-    }
-
-    pub async fn get_all(&self) -> Result<Vec<Entity>, sqlx::Error> {
-        helpers::get_all::<Entity>(&self.pool, TABLE_NAME).await
-    }
-
-    pub async fn get_by_id(&self, id: i64) -> Result<Entity, sqlx::Error> {
-        helpers::get_by_id::<Entity>(&self.pool, id, TABLE_NAME).await
     }
 
     pub async fn insert(
@@ -43,10 +35,6 @@ impl ChapterRepository {
             .bind(chapter.chapter_number)
             .execute(&self.pool)
             .await
-    }
-
-    pub async fn delete(&self, id: i64) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
-        helpers::delete(&self.pool, id, TABLE_NAME).await
     }
 
     pub async fn slug_exists(&self, slug: &str) -> bool {

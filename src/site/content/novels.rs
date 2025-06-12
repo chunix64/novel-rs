@@ -1,4 +1,4 @@
-use super::base::{ContentRaw, ItemRaw};
+#![allow(dead_code)]
 
 #[derive(Debug)]
 pub struct NovelRaw {
@@ -39,6 +39,3 @@ pub struct ChapterMeta {
     pub title: String,
     pub slug: String,
 }
-
-impl ItemRaw for NovelRaw {}
-impl ContentRaw for ChapterRaw {}

@@ -5,7 +5,7 @@ use repository::{
 };
 use sqlx::SqlitePool;
 
-use crate::db::{models::PostArtist, repository::post_artist::{self, PostArtistRepository}};
+use crate::db::repository::post_artist::PostArtistRepository;
 
 mod repository;
 
@@ -13,7 +13,6 @@ pub mod models;
 pub mod schema;
 
 pub struct Database {
-    pool: SqlitePool,
     pub post: PostRepository,
     pub chapter: ChapterRepository,
     pub author: AuthorRepository,
@@ -35,7 +34,6 @@ impl Database {
         let post_author = PostAuthorRepository::new(pool.clone());
         let post_artist = PostArtistRepository::new(pool.clone());
         Self {
-            pool,
             post,
             chapter,
             author,
@@ -45,9 +43,5 @@ impl Database {
             post_author,
             post_artist,
         }
-    }
-
-    pub fn pool(&self) -> &SqlitePool {
-        &self.pool
     }
 }

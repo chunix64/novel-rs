@@ -29,7 +29,7 @@ impl SiteEnum {
                 let cache_path = PathBuf::from(app_config.data_path()).join("cache");
                 let cache_manager = CacheManager::new(&cache_path);
                 let provider = DoclnProvider::new(ProviderConfig::from(&app_config), cache_manager);
-                ServiceEnum::Novel(NovelService::new(provider, database, app_config))
+                ServiceEnum::Novel(NovelService::new(provider, database))
             }
         }
     }
