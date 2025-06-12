@@ -24,7 +24,7 @@ pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqliteP
     println!("path: {:#?}", pool_name);
     let pool = sqlx::sqlite::SqlitePoolOptions::new()
         .connect(&format!(
-            "sqlite://{}/{}.sqlite3",
+            "sqlite://{}/sites/{}.sqlite3",
             &database_url, &pool_name
         ))
         .await
@@ -36,7 +36,7 @@ pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqliteP
 
 async fn create_folders() {
     let folders = [
-        "data/db",
+        "data/db/sites",
         "data/archives",
         "data/logs",
         "data/cache",
@@ -52,9 +52,10 @@ async fn create_folders() {
     }
 }
 
-async fn create_databases(sites: &Vec<SiteEnum>, database_url: &String) {
+async fn create_databases(sites: &Vec<SiteEnum>, database_url: &str) {
     for site in sites {
-        let site_path = Path::new(&database_url).join(&format!("{}.sqlite3", site.database_name()));
+        let database_path = Path::new(&database_url).join("sites");
+        let site_path = database_path.join(&format!("{}.sqlite3", site.database_name()));
         let db_uri = format!("sqlite://{}", site_path.display());
         if !site_path.exists() {
             File::create(&site_path).await.unwrap();

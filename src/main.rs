@@ -4,13 +4,14 @@ mod cache;
 mod config;
 mod core;
 mod db;
+mod init;
 mod service;
 mod site;
 mod utils;
 use config::{app::AppConfig, cli::Cli, sites::SiteEnum};
 use core::cli::handle_cli;
 use db::Database;
-use utils::env::init_environment;
+use init::environment::init_environment;
 
 #[tokio::main()]
 async fn main() {
