@@ -6,7 +6,7 @@ use crate::{
     cache::manager::CacheManager,
     config::provider::ProviderConfig,
     site::{
-        content::novels::{ChapterRaw, NovelRaw},
+        content::novels::{ChapterRaw, NovelEnrich, NovelRaw},
         docln::{
             html::{fetch_chapters_wrapper, fetch_novels_wrapper},
             parser::{parse_novel_enrich, parse_novel_max_page},
@@ -118,22 +118,28 @@ impl DoclnProvider {
                 .unwrap();
                 let part = parse_novels(&html);
                 for novel in part {
-                    let enrich_html = fetch_chapters_wrapper(
-                        &novel.slug,
-                        self.config.delay_min(),
-                        self.config.delay_max(),
-                        None,
-                        &self.cache_manager,
-                        self.config.is_cache(),
-                    ).await.unwrap();
-                    let enriched_novel = parse_novel_enrich(novel, &enrich_html);
-                    yield enriched_novel;
+                    yield novel;
                 }
                 println!("Get novel done: {}/{}", i, end);
                 self.sleep().await;
             }
             println!("Finished get Novels!");
         }
+    }
+
+    pub async fn get_novel_enrich(&self, slug: &str) -> NovelEnrich {
+        let enrich_html = fetch_chapters_wrapper(
+            slug,
+            self.config.delay_min(),
+            self.config.delay_max(),
+            None,
+            &self.cache_manager,
+            self.config.is_cache(),
+        )
+        .await
+        .unwrap();
+
+        parse_novel_enrich(&enrich_html)
     }
 
     async fn sleep(&self) {

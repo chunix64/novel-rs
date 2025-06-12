@@ -3,7 +3,7 @@ use clap::Parser;
 #[derive(Parser, Debug)]
 pub struct Cli {
     #[arg(long, default_value_t = false)]
-    pub cache: bool,
+    pub no_cache: bool,
 
     #[arg(long, default_value_t = false)]
     pub sync_items: bool,

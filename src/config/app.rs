@@ -1,12 +1,12 @@
 pub struct AppConfig {
     delay_min: u64,
     delay_max: u64,
-    cache: bool,
+    no_cache: bool,
     data_path: String,
 }
 
 impl AppConfig {
-    pub fn new(delay_min: u64, delay_max: u64, cache: bool, data_path: &str) -> Self {
+    pub fn new(delay_min: u64, delay_max: u64, no_cache: bool, data_path: &str) -> Self {
         let mut delay_min = delay_min;
         if delay_max < delay_min {
             println!("Delay max should be greater or equal Delay min!");
@@ -16,7 +16,7 @@ impl AppConfig {
         Self {
             delay_min,
             delay_max,
-            cache,
+            no_cache,
             data_path: data_path.to_string(),
         }
     }
@@ -30,7 +30,7 @@ impl AppConfig {
     }
 
     pub fn is_cache(&self) -> bool {
-        self.cache
+        !self.no_cache
     }
 
     pub fn data_path(&self) -> String {

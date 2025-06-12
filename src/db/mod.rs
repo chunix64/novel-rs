@@ -1,8 +1,11 @@
 use repository::{
     artist::ArtistRepository, author::AuthorRepository, chapter::ChapterRepository,
-    post::PostRepository, post_tag::PostTagRepository, tag::TagRepository,
+    post::PostRepository, post_author::PostAuthorRepository, post_tag::PostTagRepository,
+    tag::TagRepository,
 };
 use sqlx::SqlitePool;
+
+use crate::db::{models::PostArtist, repository::post_artist::{self, PostArtistRepository}};
 
 mod repository;
 
@@ -11,30 +14,36 @@ pub mod schema;
 
 pub struct Database {
     pool: SqlitePool,
+    pub post: PostRepository,
+    pub chapter: ChapterRepository,
     pub author: AuthorRepository,
     pub artist: ArtistRepository,
     pub tag: TagRepository,
-    pub post: PostRepository,
     pub post_tag: PostTagRepository,
-    pub chapter: ChapterRepository,
+    pub post_author: PostAuthorRepository,
+    pub post_artist: PostArtistRepository,
 }
 
 impl Database {
     pub fn new(pool: SqlitePool) -> Self {
+        let post = PostRepository::new(pool.clone());
+        let chapter = ChapterRepository::new(pool.clone());
         let author = AuthorRepository::new(pool.clone());
         let artist = ArtistRepository::new(pool.clone());
         let tag = TagRepository::new(pool.clone());
-        let post = PostRepository::new(pool.clone());
         let post_tag = PostTagRepository::new(pool.clone());
-        let chapter = ChapterRepository::new(pool.clone());
+        let post_author = PostAuthorRepository::new(pool.clone());
+        let post_artist = PostArtistRepository::new(pool.clone());
         Self {
             pool,
+            post,
+            chapter,
             author,
             artist,
             tag,
-            post,
             post_tag,
-            chapter,
+            post_author,
+            post_artist,
         }
     }
 

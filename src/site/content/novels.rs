@@ -15,6 +15,15 @@ pub struct NovelRaw {
 }
 
 #[derive(Debug)]
+pub struct NovelEnrich {
+    pub description: Option<String>,
+    pub authors: Vec<String>,
+    pub artists: Vec<String>,
+    pub tags: Vec<String>,
+    pub updated_at: i64,
+}
+
+#[derive(Debug)]
 pub struct ChapterRaw {
     pub title: String,
     pub slug: String,

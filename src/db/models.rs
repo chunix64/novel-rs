@@ -19,6 +19,7 @@ pub struct Post {
     pub description: Option<String>,
     pub created_at: i64,
     pub updated_at: i64,
+    pub is_enriched: bool,
 }
 
 #[derive(FromRow, Debug)]
@@ -37,7 +38,14 @@ pub struct Artist {
 pub struct Tag {
     pub id: i64,
     pub name: String,
-    pub category: Option<String>,
+    pub description: Option<String>,
+    pub tag_category_id: i64,
+}
+
+#[derive(FromRow, Debug)]
+pub struct TagCategory {
+    pub id: i64,
+    pub name: String,
 }
 
 #[derive(FromRow, Debug)]

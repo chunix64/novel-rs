@@ -3,7 +3,7 @@ use scraper::{ElementRef, Html, Selector, selectable::Selectable};
 
 use crate::{
     site::{
-        content::novels::{ChapterMeta, ChapterRaw, NovelRaw},
+        content::novels::{ChapterMeta, ChapterRaw, NovelEnrich, NovelRaw},
         docln::converter::element_to_markdown,
     },
     utils::time::current_stamp,
@@ -92,20 +92,15 @@ pub fn parse_chapters_list(html: &str) -> Vec<ChapterMeta> {
     result
 }
 
-pub fn parse_novel_enrich(novel: NovelRaw, html: &str) -> NovelRaw {
+pub fn parse_novel_enrich(html: &str) -> NovelEnrich {
     let document = Html::parse_document(&html);
     let info_box = document.select(&SELECTORS.enrich_info_box).next().unwrap();
     let separate = "; ";
-    NovelRaw {
-        id: novel.id,
-        title: novel.title,
-        slug: novel.slug,
-        thumbnail: novel.thumbnail,
+    NovelEnrich {
         description: parse_description_enrich(&info_box),
         authors: parse_authors(&info_box, separate),
         artists: parse_artists(&info_box, separate),
         tags: parse_tags(&info_box),
-        created_at: novel.created_at,
         updated_at: current_stamp() as i64,
     }
 }

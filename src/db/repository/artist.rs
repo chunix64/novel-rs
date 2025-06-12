@@ -22,6 +22,17 @@ impl ArtistRepository {
         helpers::get_by_id::<Entity>(&self.pool, id, TABLE_NAME).await
     }
 
+    pub async fn get_by_name(&self, name: &str) -> Result<Entity, sqlx::Error> {
+        helpers::get_one_by_name(&self.pool, name, TABLE_NAME).await
+    }
+
+    pub async fn get_or_insert_id(&self, name: &str) -> i64 {
+        if !self.name_exist(name).await {
+            self.insert(name).await.unwrap();
+        }
+        self.get_by_name(name).await.unwrap().id
+    }
+
     pub async fn insert(&self, name: &str) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!("INSERT INTO {} (name) VALUES (?)", TABLE_NAME);
         sqlx::query(&query).bind(name).execute(&self.pool).await
@@ -29,5 +40,9 @@ impl ArtistRepository {
 
     pub async fn delete(&self, id: i64) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         helpers::delete(&self.pool, id, TABLE_NAME).await
+    }
+
+    pub async fn name_exist(&self, name: &str) -> bool {
+        helpers::name_exists(&self.pool, name, TABLE_NAME).await
     }
 }

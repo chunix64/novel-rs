@@ -18,6 +18,6 @@ async fn main() {
     let sites = SiteEnum::get_site();
     let pool = init_environment(&sites, &cli).await;
     let database = Database::new(pool);
-    let app_config = AppConfig::new(cli.delay_min, cli.delay_max, cli.cache, &cli.data_path);
+    let app_config = AppConfig::new(cli.delay_min, cli.delay_max, cli.no_cache, &cli.data_path);
     handle_cli(&cli, database, app_config).await;
 }

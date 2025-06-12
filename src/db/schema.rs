@@ -3,9 +3,9 @@ use sqlx::SqlitePool;
 pub async fn init_db(db: &SqlitePool) -> Result<(), sqlx::Error> {
     sqlx::query("PRAGMA foreign_keys = ON;").execute(db).await?;
 
-    init_schema(db).await;
-    init_index(db).await;
-    init_db_value(db).await;
+    init_schema(db).await?;
+    init_index(db).await?;
+    init_db_value(db).await?;
     Ok(())
 }
 
@@ -32,6 +32,7 @@ async fn init_schema(db: &SqlitePool) -> Result<(), sqlx::Error> {
             description TEXT,
             created_at INTEGER NOT NULL,
             updated_at INTEGER NOT NULL,
+            is_enriched BOOLEAN NOT NULL DEFAULT 0,
             FOREIGN KEY(content_type_id) REFERENCES content_types(id) ON DELETE RESTRICT,
             UNIQUE(slug)
         );"#,
@@ -66,7 +67,20 @@ async fn init_schema(db: &SqlitePool) -> Result<(), sqlx::Error> {
         CREATE TABLE IF NOT EXISTS tags (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
-        category TEXT,
+        description TEXT,
+        tag_category_id INTEGER,
+        FOREIGN KEY(tag_category_id) REFERENCES tag_categories(id) ON DELETE RESTRICT,
+        UNIQUE(name)
+    );"#,
+    )
+    .execute(db)
+    .await?;
+
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS tag_categories (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
         UNIQUE(name)
     );"#,
     )
@@ -147,7 +161,7 @@ async fn init_index(db: &SqlitePool) -> Result<(), sqlx::Error> {
         .execute(db)
         .await?;
 
-    sqlx::query("CREATE INDEX IF NOT EXISTS idx_tags_category ON tags(category);")
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_tags_tag_category_id ON tags(tag_category_id);")
         .execute(db)
         .await?;
 
@@ -189,7 +203,7 @@ async fn init_index(db: &SqlitePool) -> Result<(), sqlx::Error> {
 
     sqlx::query(
         r#"
-        CREATE VIRTUAL TABLE posts_fts USING fts5(
+        CREATE VIRTUAL TABLE IF NOT EXISTS posts_fts USING fts5(
         title, 
         description,
         content='posts',
@@ -209,6 +223,16 @@ async fn init_db_value(db: &SqlitePool) -> Result<(), sqlx::Error> {
         INSERT OR IGNORE INTO content_types (name) 
         VALUES 
         ('novel');
+        "#,
+    )
+    .execute(db)
+    .await?;
+
+    sqlx::query(
+        r#"
+        INSERT OR IGNORE INTO tag_categories (name) 
+        VALUES 
+        ('genres');
         "#,
     )
     .execute(db)
