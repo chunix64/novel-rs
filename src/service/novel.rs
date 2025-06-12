@@ -121,7 +121,7 @@ impl NovelService {
             let tag_id = self
                 .database
                 .tag
-                .get_or_insert_id(&tag, tag_category_id)
+                .get_or_insert_id(&tag, None, tag_category_id)
                 .await;
             let post_tag = PostTag { post_id, tag_id };
 

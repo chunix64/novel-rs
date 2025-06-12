@@ -26,9 +26,16 @@ impl TagRepository {
         helpers::get_one_by_name(&self.pool, name, TABLE_NAME).await
     }
 
-    pub async fn get_or_insert_id(&self, name: &str, tag_category_id: i64) -> i64 {
+    pub async fn get_or_insert_id(
+        &self,
+        name: &str,
+        description: Option<&str>,
+        tag_category_id: i64,
+    ) -> i64 {
         if !self.name_exist(name).await {
-            self.insert(name, tag_category_id).await.unwrap();
+            self.insert(name, description, tag_category_id)
+                .await
+                .unwrap();
         }
         self.get_by_name(name).await.unwrap().id
     }
@@ -36,14 +43,16 @@ impl TagRepository {
     pub async fn insert(
         &self,
         name: &str,
+        description: Option<&str>,
         tag_category_id: i64,
     ) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {
         let query = format!(
-            "INSERT INTO {} (name, tag_category_id) VALUES (?, ?)",
+            "INSERT INTO {} (name, description ,tag_category_id) VALUES (?, ?, ?)",
             TABLE_NAME
         );
         sqlx::query(&query)
             .bind(name)
+            .bind(description)
             .bind(tag_category_id)
             .execute(&self.pool)
             .await
