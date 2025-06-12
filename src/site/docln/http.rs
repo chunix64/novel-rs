@@ -174,7 +174,6 @@ where
     Fut: std::future::Future<Output = Option<String>>,
 {
     if cache_manager.is_exists(sub_path, &file_name).await {
-        println!("DEBUG: cache loaded");
         return cache_manager.load(sub_path, &file_name).await;
     } else {
         let html = fetch_fn().await.unwrap();

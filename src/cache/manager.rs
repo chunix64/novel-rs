@@ -1,6 +1,6 @@
+use crate::utils::string::get_valid_file_name;
 use std::path::{Path, PathBuf};
 use tokio::fs;
-use crate::utils::string::get_valid_file_name;
 
 pub struct CacheManager {
     path: PathBuf,
@@ -25,6 +25,7 @@ impl CacheManager {
     }
 
     pub async fn load<P: AsRef<Path>>(&self, sub_path: P, file_name: &str) -> Option<String> {
+        let file_name = get_valid_file_name(file_name);
         let file_path = self.path.join(sub_path).join(file_name);
         if fs::metadata(&file_path).await.is_err() {
             return None;
@@ -35,6 +36,7 @@ impl CacheManager {
     }
 
     pub async fn is_exists<P: AsRef<Path>>(&self, sub_path: P, file_name: &str) -> bool {
+        let file_name = get_valid_file_name(file_name);
         let file_path = self.path.join(sub_path).join(file_name);
         if fs::metadata(&file_path).await.is_err() {
             return false;
