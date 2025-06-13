@@ -1,5 +1,7 @@
 #![allow(dead_code)]
 
+use tracing::error;
+
 pub async fn get_all<T>(pool: &sqlx::SqlitePool, table_name: &str) -> Result<Vec<T>, sqlx::Error>
 where
     T: for<'r> sqlx::FromRow<'r, sqlx::sqlite::SqliteRow> + Send + Unpin,
@@ -81,7 +83,7 @@ pub async fn slug_exists(pool: &sqlx::SqlitePool, slug: &str, table_name: &str) 
         Ok(Some(_)) => true,
         Ok(None) => false,
         Err(e) => {
-            println!("{:#?}", e);
+            error!(%table_name, %slug, error = ?e, "Failed to check if slug exists");
             false
         }
     }
@@ -97,7 +99,7 @@ pub async fn name_exists(pool: &sqlx::SqlitePool, name: &str, table_name: &str) 
         Ok(Some(_)) => true,
         Ok(None) => false,
         Err(e) => {
-            println!("{:#?}", e);
+            error!(%table_name, %name, error = ?e, "Failed to check if name exists");
             false
         }
     }
@@ -108,7 +110,7 @@ pub async fn count(pool: &sqlx::SqlitePool, table_name: &str) -> i64 {
     match sqlx::query_scalar::<_, i64>(&query).fetch_one(pool).await {
         Ok(count) => count,
         Err(e) => {
-            println!("{:#?}", e);
+            error!(%table_name, error = ?e,"Failed to count rows in rows");
             0
         }
     }

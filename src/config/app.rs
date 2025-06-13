@@ -1,3 +1,5 @@
+use tracing::warn;
+
 pub struct AppConfig {
     delay_min: u64,
     delay_max: u64,
@@ -9,9 +11,9 @@ impl AppConfig {
     pub fn new(delay_min: u64, delay_max: u64, no_cache: bool, data_path: &str) -> Self {
         let mut delay_min = delay_min;
         if delay_max < delay_min {
-            println!("Delay max should be greater or equal Delay min!");
+            warn!("Delay max should be greater or equal Delay min!");
             delay_min = delay_max;
-            println!("So Delay min = Delay max now!");
+            warn!(%delay_min, "So Delay min = Delay max now!");
         }
         Self {
             delay_min,

@@ -6,6 +6,7 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 async-stream = "0.3.6"
+chrono = "0.4.41"
 clap = { version = "4.5.38", features = ["derive"] }
 futures-core = "0.3.31"
 futures-util = "0.3.31"
@@ -15,3 +16,5 @@ reqwest = "0.12.15"
 scraper = "0.23.1"
 sqlx = { version = "0.8.5", features = ["sqlite", "runtime-tokio"] }
 tokio = { version = "1.45.0", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }

@@ -1,3 +1,5 @@
+use tracing::warn;
+
 use crate::{
     cache::manager::CacheManager,
     utils::{
@@ -134,12 +136,12 @@ where
             if let Some(content) = html {
                 break Some(content);
             } else {
-                println!("STATUS OK but has no html");
+                warn!("STATUS 200 OK but has no HTML");
                 break None;
             }
         }
 
-        println!("Failed attempt: {}", attempt);
+        warn!(%attempt, "Failed fetch data, retrying");
 
         if let Some(max) = max_retry {
             // sleep_rate is same with attempt
@@ -179,4 +181,3 @@ where
         Some(html.to_string())
     }
 }
-// TODO: fetch_with_cache

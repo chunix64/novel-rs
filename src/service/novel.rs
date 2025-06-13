@@ -1,4 +1,5 @@
 use futures_util::{StreamExt, pin_mut};
+use tracing::{debug, info};
 
 use crate::{
     db::{
@@ -28,10 +29,13 @@ impl NovelService {
             let novel: Post = novel_raw_to_post(&raw_novel, content_type_id);
             if !self.database.post.slug_exists(&novel.slug).await {
                 self.database.post.insert(&novel).await.unwrap();
+                info!(%novel.id, %novel.title, "Inserted novel");
                 self.enrich_novel(&raw_novel.slug).await;
-                println!("Count: {}", self.database.post.count().await);
+                info!(%novel.id, %novel.title, "Enriched novel");
+                let count = self.database.post.count().await;
+                debug!(%count, "Current number of posts");
             } else {
-                println!("Skip get novels for {}: {}", novel.id, novel.title);
+                info!(%novel.id, %novel.title, "Skip get novel (already exists)");
             }
         }
     }
@@ -41,23 +45,32 @@ impl NovelService {
         for (index, novel) in novels.iter().enumerate() {
             let id = novel.id;
             if !self.database.chapter.slug_exists(&novel.slug).await {
-                println!("Start get chapters for {}/{}", index, novels.len());
+                info!(%index, total = %novels.len(),"Start get chapters");
                 self.sync_chapters_for_novel(id).await;
             } else {
-                println!("Skip get chapters for {}/{}", index, novels.len());
+                info!(%index, total = %novels.len(), "Skip get chapters (already exists)");
             }
         }
     }
 
-    pub async fn sync_chapters_for_novel(&self, id: i64) {
-        let slug = self.database.post.get_by_id(id).await.unwrap().slug.clone();
-        let raw_chapters = self.provider.get_chapters_with_novel_slug(&slug, id);
+    pub async fn sync_chapters_for_novel(&self, novel_id: i64) {
+        let slug = self
+            .database
+            .post
+            .get_by_id(novel_id)
+            .await
+            .unwrap()
+            .slug
+            .clone();
+        let raw_chapters = self.provider.get_chapters_with_novel_slug(&slug, novel_id);
         pin_mut!(raw_chapters);
         while let Some(raw_chapter) = raw_chapters.next().await {
             let chapter: Chapter = raw_chapter.into();
             if !self.database.chapter.slug_exists(&chapter.slug).await {
                 self.database.chapter.insert(&chapter).await.unwrap();
-                println!("Inserted chapter: {}", &chapter.id);
+                info!(
+                    %chapter.id, %novel_id, "Inserted chapter"
+                );
             }
         }
     }

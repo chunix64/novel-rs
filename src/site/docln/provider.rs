@@ -1,6 +1,7 @@
 use async_stream::stream;
 use futures_core::Stream;
 use futures_util::{StreamExt, pin_mut};
+use tracing::info;
 
 use crate::{
     cache::manager::CacheManager,
@@ -82,11 +83,11 @@ impl DoclnProvider {
                 let content = parse_chapter_content(&chapter_html);
                 let chapter_raw = parse_chapter(chapter_meta, index as i64, novel_id, content);
                 yield chapter_raw;
-                println!(
-                    "Get chapter with id {} done: {}/{}",
-                    novel_id,
-                    index,
-                    chapter_metas.len()
+                info!(
+                    %novel_id,
+                    %index,
+                    total = %chapter_metas.len(),
+                    "Get chapter done",
                 );
                 self.sleep().await;
             }
@@ -95,7 +96,7 @@ impl DoclnProvider {
 
     pub fn get_novels_range(&self, start: i64, end: i64) -> impl Stream<Item = NovelRaw> {
         stream! {
-            println!("Start get Novels!");
+            info!(%start, %end, "Start get novels");
             for i in start..=end {
                 let html = fetch_novels_wrapper(
                     i,
@@ -111,10 +112,10 @@ impl DoclnProvider {
                 for novel in part {
                     yield novel;
                 }
-                println!("Get novel done: {}/{}", i, end);
+                info!(index = %i, total = %end, "Get part of novel done");
                 self.sleep().await;
             }
-            println!("Finished get Novels!");
+            info!(%start, %end, "Finished get Novels");
         }
     }
 

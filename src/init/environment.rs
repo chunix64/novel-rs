@@ -1,5 +1,6 @@
 use std::path::Path;
 use tokio::fs::{self, File};
+use tracing::info;
 
 use crate::{
     config::{cli::Cli, sites::SiteEnum},
@@ -21,7 +22,7 @@ pub async fn init_environment(sites: &Vec<SiteEnum>, cli: &Cli) -> sqlx::SqliteP
         .unwrap();
     let pool_name = SiteEnum::from_str(&cli.site).unwrap().database_name();
 
-    println!("path: {:#?}", pool_name);
+    info!(site = %pool_name, "initalized environment");
     let pool = sqlx::sqlite::SqlitePoolOptions::new()
         .connect(&format!(
             "sqlite://{}/sites/{}.sqlite3",

@@ -1,6 +1,7 @@
 use crate::utils::string::get_valid_file_name;
 use std::path::{Path, PathBuf};
 use tokio::fs;
+use tracing::debug;
 
 pub struct CacheManager {
     path: PathBuf,
@@ -21,7 +22,7 @@ impl CacheManager {
         }
         let file_path = save_dir.join(file_name);
         fs::write(&file_path, data).await.unwrap();
-        println!("Cache saved: {}", &file_path.display());
+        debug!(file_path = %file_path.display(), kind = %"save", "Cache saved");
     }
 
     pub async fn load<P: AsRef<Path>>(&self, sub_path: P, file_name: &str) -> Option<String> {
@@ -31,7 +32,8 @@ impl CacheManager {
             return None;
         }
 
-        let content = fs::read_to_string(file_path).await.unwrap();
+        let content = fs::read_to_string(&file_path).await.unwrap();
+        debug!(file_path = %file_path.display(), kind = %"load", "Cache loaded");
         Some(content)
     }
 
