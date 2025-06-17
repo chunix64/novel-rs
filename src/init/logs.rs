@@ -2,6 +2,7 @@ use tracing::level_filters::LevelFilter;
 use tracing_subscriber::EnvFilter;
 use tracing_subscriber::fmt::time::FormatTime;
 
+#[allow(dead_code)]
 struct LogsTime;
 
 impl FormatTime for LogsTime {
@@ -28,6 +29,6 @@ pub fn init_logs() {
         .with_max_level(tracing::Level::TRACE)
         .with_env_filter(filter)
         .with_target(false)
-        .with_timer(LogsTime)
+        // .with_timer(LogsTime)
         .init();
 }
