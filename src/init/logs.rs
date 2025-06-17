@@ -12,14 +12,20 @@ impl FormatTime for LogsTime {
 }
 
 pub fn init_logs() {
-    let filter = EnvFilter::builder()
-        .with_default_directive(LevelFilter::WARN.into())
-        .from_env()
-        .unwrap()
-        .add_directive("novel_rs=debug".parse().unwrap());
+    let builder = EnvFilter::builder().with_default_directive(LevelFilter::WARN.into());
+
+    let filter = match builder.from_env() {
+        Ok(filter) => filter,
+        Err(e) => {
+            eprintln!("Invalid RUST_LOG env: {}", e);
+            builder.from_env_lossy()
+        }
+    };
+
+    let filter = filter.add_directive("novel_rs=trace".parse().expect("Invaled log directive"));
 
     tracing_subscriber::fmt()
-        .with_max_level(tracing::Level::DEBUG)
+        .with_max_level(tracing::Level::TRACE)
         .with_env_filter(filter)
         .with_target(false)
         .with_timer(LogsTime)

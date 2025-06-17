@@ -1,5 +1,5 @@
 use futures_util::{StreamExt, pin_mut};
-use tracing::{debug, info};
+use tracing::{debug, error, info};
 
 use crate::{
     db::{
@@ -26,107 +26,181 @@ impl NovelService {
         pin_mut!(raw_novels);
         while let Some(raw_novel) = raw_novels.next().await {
             let content_type_id = 1;
-            let novel: Post = novel_raw_to_post(&raw_novel, content_type_id);
+            let novel: Post = novel_raw_to_post(raw_novel, content_type_id);
             if !self.database.post.slug_exists(&novel.slug).await {
-                self.database.post.insert(&novel).await.unwrap();
-                info!(%novel.id, %novel.title, "Inserted novel");
-                self.enrich_novel(&raw_novel.slug).await;
-                info!(%novel.id, %novel.title, "Enriched novel");
+                match self.database.post.insert(&novel).await {
+                    Ok(_) => info!(target = %"service", %novel.id, %novel.title, "Inserted novel"),
+                    Err(error) => {
+                        error!(target = %"service", %novel.id, %novel.title, ?error, "Failed to insert novel")
+                    }
+                };
+                self.enrich_novel(&novel.slug).await;
+                info!(target = %"service", %novel.id, %novel.title, "Enriched novel");
                 let count = self.database.post.count().await;
-                debug!(%count, "Current number of posts");
+                debug!(target = %"service", %count, "Current number of posts");
             } else {
-                info!(%novel.id, %novel.title, "Skip get novel (already exists)");
+                info!(target = %"service", %novel.id, %novel.title, "Skip get novel (already exists)");
             }
         }
     }
 
     pub async fn sync_all_novel_chapters(&self) {
-        let novels = self.database.post.get_all().await.unwrap();
+        let novels = match self.database.post.get_all().await {
+            Ok(novels) => {
+                debug!(target = %"service", count = %novels.len(), "Got all post");
+                novels
+            }
+            Err(error) => {
+                error!(target = %"service", ?error, "Failed to get all post, skip");
+                return;
+            }
+        };
         for (index, novel) in novels.iter().enumerate() {
             let id = novel.id;
             if !self.database.chapter.slug_exists(&novel.slug).await {
-                info!(%index, total = %novels.len(),"Start get chapters");
+                info!(target = %"service", %index, total = %novels.len(),"Start get chapters");
                 self.sync_chapters_for_novel(id).await;
             } else {
-                info!(%index, total = %novels.len(), "Skip get chapters (already exists)");
+                info!(target = %"service", %index, total = %novels.len(), "Skip get chapters (already exists)");
             }
         }
     }
 
     pub async fn sync_chapters_for_novel(&self, novel_id: i64) {
-        let slug = self
-            .database
-            .post
-            .get_by_id(novel_id)
-            .await
-            .unwrap()
-            .slug
-            .clone();
-        let raw_chapters = self.provider.get_chapters_with_novel_slug(&slug, novel_id);
+        let post = match self.database.post.get_by_id(novel_id).await {
+            Ok(post) => {
+                debug!(target = %"service", post_id = %post.id, "Got post");
+                post
+            }
+            Err(error) => {
+                error!(target = %"service", ?error, "Failed to get post, skip");
+                return;
+            }
+        };
+        let slug = &post.slug;
+        let raw_chapters = self.provider.get_chapters_with_novel_slug(slug, novel_id);
         pin_mut!(raw_chapters);
         while let Some(raw_chapter) = raw_chapters.next().await {
             let chapter: Chapter = raw_chapter.into();
             if !self.database.chapter.slug_exists(&chapter.slug).await {
-                self.database.chapter.insert(&chapter).await.unwrap();
-                info!(
-                    %chapter.id, %novel_id, "Inserted chapter"
-                );
+                match self.database.chapter.insert(&chapter).await {
+                    Ok(_) => info!(target = %"service", %chapter.id, %novel_id, "Inserted chapter"),
+                    Err(error) => {
+                        error!(target = %"service", %chapter.id, %novel_id, ?error, "Failed to inserted chapter")
+                    }
+                };
             }
         }
     }
 
     pub async fn enrich_novel(&self, slug: &str) {
-        let post_id = self.database.post.get_by_slug(slug).await.unwrap().id;
-        let enrich_novel = self.provider.get_novel_enrich(slug).await;
+        let post = match self.database.post.get_by_slug(slug).await {
+            Ok(post) => {
+                debug!(target = %"service", post_id = %post.id, "Got post");
+                post
+            }
+            Err(error) => {
+                error!(target = %"service", ?error, "Failed to get post, skip");
+                return;
+            }
+        };
+        let post_id = post.id;
+        let enrich_novel = match self.provider.get_novel_enrich(slug).await {
+            Some(enrich_novel) => enrich_novel,
+            None => {
+                error!(target = %"service", %post_id, "Failed to get novel enrich");
+                return;
+            }
+        };
 
         if let Some(description) = enrich_novel.description {
-            self.database
+            match self
+                .database
                 .post
                 .update_description(post_id, &description)
                 .await
-                .unwrap();
+            {
+                Ok(_) => debug!(target = %"service", %post.id, "Updated description"),
+                Err(error) => {
+                    error!(target = %"service", %post.id, ?error, "Failed to update description")
+                }
+            };
         }
-        self.database
+        match self
+            .database
             .post
             .update_updated_at(post_id, enrich_novel.updated_at)
             .await
-            .unwrap();
-        self.database
-            .post
-            .update_is_enriched(post_id, true)
-            .await
-            .unwrap();
+        {
+            Ok(_) => debug!(target = %"service", %post.id, "Updated created_at"),
+            Err(error) => {
+                error!(target = %"service", %post.id, ?error, "Failed to update created_at")
+            }
+        };
+
+        match self.database.post.update_is_enriched(post_id, true).await {
+            Ok(_) => debug!(target = %"service", %post.id, "Updated is_enriched"),
+            Err(error) => {
+                error!(target = %"service", %post.id, ?error, "Failed to update is_enriched")
+            }
+        };
 
         for author in enrich_novel.authors {
-            let author_id = self.database.author.get_or_insert_id(&author).await;
+            let author_id = match self.database.author.get_or_insert_id(&author).await {
+                Ok(author_id) => author_id,
+                Err(error) => {
+                    error!(target = %"service", %author, ?error, "Failed to get author_id");
+                    continue;
+                }
+            };
             let post_author = PostAuthor { post_id, author_id };
-            self.database
-                .post_author
-                .insert(&post_author)
-                .await
-                .unwrap();
+            match self.database.post_author.insert(&post_author).await {
+                Ok(_) => debug!(target = %"service", %post.id, %author_id, "Updated author"),
+                Err(error) => {
+                    error!(target = %"service", %post.id, %author_id, ?error, "Failed to update author")
+                }
+            };
         }
 
         for artist in enrich_novel.artists {
-            let artist_id = self.database.artist.get_or_insert_id(&artist).await;
+            let artist_id = match self.database.artist.get_or_insert_id(&artist).await {
+                Ok(artist_id) => artist_id,
+                Err(error) => {
+                    error!(target = %"service", %artist, ?error, "Failed to get artist_id");
+                    continue;
+                }
+            };
             let post_artist = PostArtist { post_id, artist_id };
-            self.database
-                .post_artist
-                .insert(&post_artist)
-                .await
-                .unwrap();
+            match self.database.post_artist.insert(&post_artist).await {
+                Ok(_) => debug!(target = %"service", %post.id, %artist_id, "Updated artist"),
+                Err(error) => {
+                    error!(target = %"service", %post.id, %artist_id, ?error, "Failed to artist")
+                }
+            };
         }
 
         for tag in enrich_novel.tags {
             let tag_category_id = 1;
-            let tag_id = self
+            let tag_id = match self
                 .database
                 .tag
                 .get_or_insert_id(&tag, None, tag_category_id)
-                .await;
+                .await
+            {
+                Ok(tag_id) => tag_id,
+                Err(error) => {
+                    error!(target = %"service", %tag, ?error, "Failed to get tag_id");
+                    continue;
+                }
+            };
             let post_tag = PostTag { post_id, tag_id };
 
-            self.database.post_tag.insert(&post_tag).await.unwrap();
+            match self.database.post_tag.insert(&post_tag).await {
+                Ok(_) => debug!(target = %"service", %post.id, %tag_id, "Updated tag"),
+                Err(error) => {
+                    error!(target = %"service", %post.id, %tag_id, ?error, "Failed to tag")
+                }
+            };
         }
     }
 }

@@ -1,3 +1,5 @@
+use tracing::error;
+
 use crate::{
     config::{
         app::AppConfig,
@@ -8,8 +10,14 @@ use crate::{
 };
 
 pub async fn handle_cli(cli: &Cli, database: Database, app_config: AppConfig) {
-    let service_enum = SiteEnum::from_str(&cli.site).unwrap();
-    match service_enum.create_service(database, app_config) {
+    let site_enum = match SiteEnum::from_str(&cli.site) {
+        Some(site_enum) => site_enum,
+        None => {
+            error!(target = %"core", site = %cli.site ,"Get site error");
+            std::process::exit(1);
+        }
+    };
+    match site_enum.create_service(database, app_config) {
         ServiceEnum::Novel(service) => {
             if cli.sync_items {
                 service.sync_novels().await;

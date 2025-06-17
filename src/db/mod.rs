@@ -25,23 +25,15 @@ pub struct Database {
 
 impl Database {
     pub fn new(pool: SqlitePool) -> Self {
-        let post = PostRepository::new(pool.clone());
-        let chapter = ChapterRepository::new(pool.clone());
-        let author = AuthorRepository::new(pool.clone());
-        let artist = ArtistRepository::new(pool.clone());
-        let tag = TagRepository::new(pool.clone());
-        let post_tag = PostTagRepository::new(pool.clone());
-        let post_author = PostAuthorRepository::new(pool.clone());
-        let post_artist = PostArtistRepository::new(pool.clone());
         Self {
-            post,
-            chapter,
-            author,
-            artist,
-            tag,
-            post_tag,
-            post_author,
-            post_artist,
+            post: PostRepository::new(pool.clone()),
+            chapter: ChapterRepository::new(pool.clone()),
+            author: AuthorRepository::new(pool.clone()),
+            artist: ArtistRepository::new(pool.clone()),
+            tag: TagRepository::new(pool.clone()),
+            post_tag: PostTagRepository::new(pool.clone()),
+            post_author: PostAuthorRepository::new(pool.clone()),
+            post_artist: PostArtistRepository::new(pool.clone()),
         }
     }
 }

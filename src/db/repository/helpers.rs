@@ -82,8 +82,8 @@ pub async fn slug_exists(pool: &sqlx::SqlitePool, slug: &str, table_name: &str) 
     {
         Ok(Some(_)) => true,
         Ok(None) => false,
-        Err(e) => {
-            error!(%table_name, %slug, error = ?e, "Failed to check if slug exists");
+        Err(error) => {
+            error!(target = %"database", %table_name, %slug, ?error, "Failed to check if slug exists");
             false
         }
     }
@@ -98,8 +98,8 @@ pub async fn name_exists(pool: &sqlx::SqlitePool, name: &str, table_name: &str) 
     {
         Ok(Some(_)) => true,
         Ok(None) => false,
-        Err(e) => {
-            error!(%table_name, %name, error = ?e, "Failed to check if name exists");
+        Err(error) => {
+            error!(target = %"database", %table_name, %name, ?error, "Failed to check if name exists");
             false
         }
     }
@@ -109,8 +109,8 @@ pub async fn count(pool: &sqlx::SqlitePool, table_name: &str) -> i64 {
     let query = format!("SELECT COUNT(*) FROM {}", table_name);
     match sqlx::query_scalar::<_, i64>(&query).fetch_one(pool).await {
         Ok(count) => count,
-        Err(e) => {
-            error!(%table_name, error = ?e,"Failed to count rows in rows");
+        Err(error) => {
+            error!(target = %"database", %table_name, ?error,"Failed to count rows in rows");
             0
         }
     }

@@ -18,11 +18,11 @@ impl AuthorRepository {
         helpers::get_one_by_name(&self.pool, name, TABLE_NAME).await
     }
 
-    pub async fn get_or_insert_id(&self, name: &str) -> i64 {
+    pub async fn get_or_insert_id(&self, name: &str) -> Result<i64, sqlx::Error> {
         if !self.name_exist(name).await {
-            self.insert(name).await.unwrap();
+            self.insert(name).await?;
         }
-        self.get_by_name(name).await.unwrap().id
+        Ok(self.get_by_name(name).await?.id)
     }
 
     pub async fn insert(&self, name: &str) -> Result<sqlx::sqlite::SqliteQueryResult, sqlx::Error> {

@@ -1,7 +1,7 @@
 use async_stream::stream;
 use futures_core::Stream;
 use futures_util::{StreamExt, pin_mut};
-use tracing::info;
+use tracing::{error, info};
 
 use crate::{
     cache::manager::CacheManager,
@@ -9,7 +9,7 @@ use crate::{
     site::{
         content::novels::{ChapterRaw, NovelEnrich, NovelRaw},
         docln::{
-            http::{fetch_chapters_wrapper, fetch_novels_wrapper},
+            http::{fetch_chapters_wrapper, fetch_novels_by_id_wrapper, fetch_novels_wrapper},
             parser::{parse_novel_enrich, parse_novel_max_page},
         },
     },
@@ -33,7 +33,7 @@ impl DoclnProvider {
 
     pub fn get_novels(&self) -> impl Stream<Item = NovelRaw> {
         stream! {
-            let html = fetch_novels_wrapper(
+            let max_page = match fetch_novels_by_id_wrapper(
                 1,
                 self.config.delay_min(),
                 self.config.delay_max(),
@@ -41,9 +41,13 @@ impl DoclnProvider {
                 &self.cache_manager,
                 self.config.is_cache(),
             )
-            .await
-            .unwrap();
-            let max_page = parse_novel_max_page(&html);
+            .await {
+                Some(html) => parse_novel_max_page(&html),
+                None => {
+                    error!(target = %"provider", fallback = 1, "Failed to get max_page, use fallback = 1");
+                    1
+                },
+            };
             let novels_stream = self.get_novels_range(1, max_page);
             pin_mut!(novels_stream);
             while let Some(novel) = novels_stream.next().await {
@@ -58,7 +62,7 @@ impl DoclnProvider {
         novel_id: i64,
     ) -> impl Stream<Item = ChapterRaw> {
         stream! {
-            let html = fetch_chapters_wrapper(
+            let html = match fetch_novels_wrapper(
                 slug,
                 self.config.delay_min(),
                 self.config.delay_max(),
@@ -66,11 +70,16 @@ impl DoclnProvider {
                 &self.cache_manager,
                 self.config.is_cache(),
             )
-            .await
-            .unwrap();
+            .await {
+                Some(html) => html,
+                None => {
+                    error!(target = %"provider", %slug, "Failed to fetch chapters site");
+                    return;
+                }
+            };
             let chapter_metas = parse_chapters_list(&html);
             for (index, chapter_meta) in chapter_metas.iter().enumerate() {
-                let chapter_html = fetch_chapters_wrapper(
+                let chapter_html = match fetch_chapters_wrapper(
                     &chapter_meta.slug,
                     self.config.delay_min(),
                     self.config.delay_max(),
@@ -78,12 +87,18 @@ impl DoclnProvider {
                     &self.cache_manager,
                     self.config.is_cache(),
                 )
-                .await
-                .unwrap();
+                .await {
+                    Some(chapter_html) => chapter_html,
+                    None => {
+                        error!(target = %"provider", slug = %chapter_meta.slug, "Failed to fetch chapter");
+                        continue;
+                    }
+                };
                 let content = parse_chapter_content(&chapter_html);
                 let chapter_raw = parse_chapter(chapter_meta, index as i64, novel_id, content);
                 yield chapter_raw;
                 info!(
+                    target = %"provider",
                     %novel_id,
                     %index,
                     total = %chapter_metas.len(),
@@ -96,9 +111,9 @@ impl DoclnProvider {
 
     pub fn get_novels_range(&self, start: i64, end: i64) -> impl Stream<Item = NovelRaw> {
         stream! {
-            info!(%start, %end, "Start get novels");
+            info!(target = %"provider", %start, %end, "Start get novels");
             for i in start..=end {
-                let html = fetch_novels_wrapper(
+                let html = match fetch_novels_by_id_wrapper(
                     i,
                     self.config.delay_min(),
                     self.config.delay_max(),
@@ -106,21 +121,26 @@ impl DoclnProvider {
                     &self.cache_manager,
                     self.config.is_cache(),
                 )
-                .await
-                .unwrap();
+                .await {
+                    Some(html) => html,
+                    None => {
+                        error!(target = %"provider", index = %i, "Failed to fetch novels");
+                        continue;
+                    }
+                };
                 let part = parse_novels(&html);
                 for novel in part {
                     yield novel;
                 }
-                info!(index = %i, total = %end, "Get part of novel done");
+                info!(target = %"provider", index = %i, total = %end, "Get part of novel done");
                 self.sleep().await;
             }
-            info!(%start, %end, "Finished get Novels");
+            info!(target = %"provider", %start, %end, "Finished get Novels");
         }
     }
 
-    pub async fn get_novel_enrich(&self, slug: &str) -> NovelEnrich {
-        let enrich_html = fetch_chapters_wrapper(
+    pub async fn get_novel_enrich(&self, slug: &str) -> Option<NovelEnrich> {
+        let enrich_html = match fetch_novels_wrapper(
             slug,
             self.config.delay_min(),
             self.config.delay_max(),
@@ -129,7 +149,13 @@ impl DoclnProvider {
             self.config.is_cache(),
         )
         .await
-        .unwrap();
+        {
+            Some(html) => html,
+            None => {
+                error!(target = %"provider", %slug, "Failed to fetch chapters site");
+                return None;
+            }
+        };
 
         parse_novel_enrich(&enrich_html)
     }

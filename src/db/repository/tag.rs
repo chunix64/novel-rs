@@ -23,13 +23,11 @@ impl TagRepository {
         name: &str,
         description: Option<&str>,
         tag_category_id: i64,
-    ) -> i64 {
+    ) -> Result<i64, sqlx::Error> {
         if !self.name_exist(name).await {
-            self.insert(name, description, tag_category_id)
-                .await
-                .unwrap();
+            self.insert(name, description, tag_category_id).await?;
         }
-        self.get_by_name(name).await.unwrap().id
+        Ok(self.get_by_name(name).await?.id)
     }
 
     pub async fn insert(

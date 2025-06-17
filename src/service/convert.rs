@@ -3,14 +3,14 @@ use crate::{
     site::content::novels::{ChapterRaw, NovelRaw},
 };
 
-pub fn novel_raw_to_post(raw: &NovelRaw, content_type_id: i64) -> Post {
+pub fn novel_raw_to_post(raw: NovelRaw, content_type_id: i64) -> Post {
     Post {
         id: raw.id,
         content_type_id,
-        title: raw.title.clone(),
-        slug: raw.slug.clone(),
-        thumbnail: raw.thumbnail.clone(),
-        description: raw.description.clone(),
+        title: raw.title,
+        slug: raw.slug,
+        thumbnail: raw.thumbnail,
+        description: raw.description,
         created_at: raw.created_at,
         updated_at: raw.updated_at,
         is_enriched: false,

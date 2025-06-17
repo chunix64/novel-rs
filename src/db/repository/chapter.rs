@@ -26,12 +26,12 @@ impl ChapterRepository {
             TABLE_NAME
         );
         sqlx::query(&query)
-            .bind(chapter.title.clone())
-            .bind(chapter.slug.clone())
+            .bind(&chapter.title)
+            .bind(&chapter.slug)
             .bind(chapter.post_id)
             .bind(chapter.created_at)
             .bind(chapter.updated_at)
-            .bind(chapter.content.clone())
+            .bind(&chapter.content)
             .bind(chapter.chapter_number)
             .execute(&self.pool)
             .await

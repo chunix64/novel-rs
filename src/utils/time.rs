@@ -1,11 +1,14 @@
 use std::time::{Duration, SystemTime, UNIX_EPOCH};
 use tokio::time::sleep;
-use tracing::info;
+use tracing::{error, info};
 
-pub fn current_stamp() -> u64 {
+pub fn current_timestamp() -> u64 {
     SystemTime::now()
         .duration_since(UNIX_EPOCH)
-        .unwrap()
+        .unwrap_or_else(|_| {
+            error!(target = %"utils", fallback = 0, "Get current timestamp error, using fallback 0");
+            Duration::new(0, 0)
+        })
         .as_secs()
 }
 
@@ -15,7 +18,7 @@ pub async fn sleep_random_range(min: u64, max: u64) {
         "Delay max should be greater or equal Delay min!"
     );
     let milis = rand::random_range(min..=max);
-    info!(delay = %milis, %min, %max, "Sleeping for random duration");
+    info!(target = %"utils", delay = %milis, %min, %max, "Sleeping for random duration");
     sleep(Duration::from_millis(milis)).await;
 }
 

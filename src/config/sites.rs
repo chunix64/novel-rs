@@ -34,9 +34,9 @@ impl SiteEnum {
         }
     }
 
-    pub fn database_name(&self) -> String {
+    pub fn database_name(&self) -> &'static str {
         match self {
-            Self::Docln => "docln".to_string(),
+            Self::Docln => "docln",
         }
     }
 
